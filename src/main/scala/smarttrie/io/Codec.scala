@@ -4,8 +4,8 @@ import java.nio.ByteBuffer
 import scala.util.Try
 
 trait Encoder[-A] {
-  def encode(value: A, buf: ByteBuffer): ByteBuffer
   def size(value: A): Int
+  def encode(value: A, buf: ByteBuffer): Unit
 }
 
 trait Decoder[+A] {
@@ -23,11 +23,21 @@ trait Codec[A] extends Encoder[A] with Decoder[A]
 
 object Codec {
 
-  def encode[A](value: A)(implicit enc: Encoder[A]): ByteBuffer = {
-    val size = enc.size(value)
-    val buf = ByteBuffer.allocate(size)
-    enc.encode(value, buf).flip()
+  def size[A](value: A)(implicit enc: Encoder[A]): Int =
+    enc.size(value)
+
+  def encode[A: Encoder](value: A): ByteBuffer = {
+    val buf = ByteBuffer.allocate(size(value))
+    encode(value, buf)
+    buf.flip()
   }
 
-  def decode(buf: ByteBuffer): Decoder.API = new Decoder.API(buf)
+  def encode[A](value: A, buf: ByteBuffer)(implicit enc: Encoder[A]): Unit =
+    enc.encode(value, buf)
+
+  def decode(bytes: Array[Byte]): Decoder.API =
+    decode(ByteBuffer.wrap(bytes))
+
+  def decode(buf: ByteBuffer): Decoder.API =
+    new Decoder.API(buf)
 }
