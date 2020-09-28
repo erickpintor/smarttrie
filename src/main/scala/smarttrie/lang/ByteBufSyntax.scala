@@ -1,14 +1,20 @@
 package smarttrie.lang
 
-import java.nio.ByteBuffer
+import io.netty.buffer.ByteBuf
 
-trait ByteBufferSyntax {
+trait ByteBufSyntax {
 
-  implicit final class BufferToString(buf: ByteBuffer) {
-    def toUTF8String: String = {
-      val arr = new Array[Byte](buf.duplicate().remaining())
-      buf.get(arr)
-      new String(arr, UTF8)
+  implicit final class BufferToString(buf: ByteBuf) {
+    def toUTF8String: String =
+      buf.toString(UTF8)
+  }
+
+  implicit final class BufferToArray(buf: ByteBuf) {
+    def toByteArray: Array[Byte] = {
+      val len = buf.readableBytes()
+      val arr = new Array[Byte](len)
+      buf.readBytes(arr)
+      arr
     }
   }
 }

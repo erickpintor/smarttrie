@@ -2,11 +2,13 @@ package smarttrie.app.traditional
 
 import bftsmart.tom.MessageContext
 import bftsmart.tom.server.defaultservices.DefaultSingleRecoverable
-import java.nio.ByteBuffer
+import io.netty.buffer.Unpooled
 import java.util
 import java.util.logging.{Level, Logger}
+import scala.util.Try
 import smarttrie.atoms._
 import smarttrie.io._
+import smarttrie.lang._
 
 final class KeyValueServer(
     private[this] var state: util.TreeMap[Key, Value] = new util.TreeMap()
@@ -31,29 +33,29 @@ final class KeyValueServer(
 
     val command = Codec.decode(bytes).tryAs[Command]
     val reply = command.fold(logAndReturn("decoding command", Error), runCommand)
-    Codec.encode(reply).array()
+    Codec.encode(reply).toByteArray
   }
 
-  def getSnapshot: Array[Byte] = {
-    var size = 0
-    state.forEach((k, v) => {
-      size += Codec.size(KeyValue(k, v))
-    })
-
-    val buf = ByteBuffer.allocate(size)
-    state.forEach((k, v) => {
-      Codec.encode(KeyValue(k, v), buf)
-    })
-    buf.flip().array()
-  }
+  def getSnapshot: Array[Byte] =
+    Codec.gathering { out =>
+      state.forEach((k, v) => {
+        out.write(k).write(v)
+      })
+    }.toByteArray
 
   def installSnapshot(bytes: Array[Byte]): Unit = {
+    def install(): Try[Unit] =
+      Try {
+        val input = Unpooled.wrappedBuffer(bytes)
+        while (input.readableBytes() > 0) {
+          val key = Codec.decode(input).as[Key]
+          val value = Codec.decode(input).as[Value]
+          state.put(key, value)
+        }
+      }
+
     state = new util.TreeMap()
-    val buf = ByteBuffer.wrap(bytes)
-    while (buf.hasRemaining) {
-      val kv = Codec.decode(buf).as[KeyValue]
-      state.put(kv.key, kv.value)
-    }
+    install().fold(logAndReturn("installing snapshot", ()), identity)
   }
 
   private def logAndReturn[A](msg: => String, value: => A)(err: Throwable): A = {

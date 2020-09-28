@@ -12,6 +12,7 @@ class KeyValueServerSpec extends Spec {
   import Reply._
 
   val aKey = Key("foo".toBuf)
+  val bKey = Key("fuzz".toBuf)
   val aValue = Value("bar".toBuf)
   val bValue = Value("bax".toBuf)
   val nullCtx = new MessageContext(0, 0, null, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0,
@@ -46,6 +47,7 @@ class KeyValueServerSpec extends Spec {
     val server = new KeyValueServer({
       val state = new util.TreeMap[Key, Value]()
       state.put(aKey, aValue)
+      state.put(bKey, bValue)
       state
     })
 
@@ -58,7 +60,7 @@ class KeyValueServerSpec extends Spec {
   }
 
   private def run(server: KeyValueServer, cmd: Command): Reply = {
-    val response = server.appExecuteOrdered(Codec.encode(cmd).array(), nullCtx)
+    val response = server.appExecuteOrdered(Codec.encode(cmd).toByteArray, nullCtx)
     Codec.decode(response).as[Reply]
   }
 }

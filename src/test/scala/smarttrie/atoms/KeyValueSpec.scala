@@ -12,8 +12,4 @@ class KeyValueSpec extends Spec with CodecAsserts {
   "Value" should "encode/decode" in {
     verifyCodec(Value("foo".toBuf))
   }
-
-  "KeyValue" should "encode/decode" in {
-    verifyCodec(KeyValue(Key("foo".toBuf), Value("bar".toBuf)))
-  }
 }
