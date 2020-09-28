@@ -1,4 +1,4 @@
-package smarttrie.app
+package smarttrie.app.server
 
 import bftsmart.tom.MessageContext
 import bftsmart.tom.server.defaultservices.DefaultSingleRecoverable

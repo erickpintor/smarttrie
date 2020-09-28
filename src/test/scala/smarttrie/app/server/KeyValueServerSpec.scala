@@ -1,4 +1,4 @@
-package smarttrie.app
+package smarttrie.app.server
 
 import bftsmart.tom.MessageContext
 import smarttrie.atoms._
@@ -10,7 +10,7 @@ class KeyValueServerSpec extends Spec {
   import Command._
   import Reply._
 
-  check("State.treeMap", State.treeMap)
+  check("State.hashMap", State.hashMap)
   check("State.trieMap", State.trieMap)
 
   def check(name: String, newState: => State): Unit = {
