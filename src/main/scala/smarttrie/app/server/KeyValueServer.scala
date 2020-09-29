@@ -26,7 +26,7 @@ final class KeyValueServer(private[this] var state: State)
         case Get(k)    => state.get(k)
         case Remove(k) => state.remove(k)
       }
-      response.map(Data).getOrElse(NotFound)
+      response.map(Data).getOrElse(Null)
     }
 
     val command = Codec.decode(bytes).tryAs[Command]

@@ -23,7 +23,7 @@ class KeyValueServerSpec extends Spec {
 
     s"KeyValueServer($name)" should "add a key" in {
       val server = new KeyValueServer(newState)
-      run(server, Set(aKey, aValue)) shouldBe NotFound
+      run(server, Set(aKey, aValue)) shouldBe Null
       run(server, Set(aKey, bValue)) shouldBe Data(aValue) // returns old value
     }
 
@@ -43,7 +43,7 @@ class KeyValueServerSpec extends Spec {
         state
       })
       run(server, Remove(aKey)) shouldBe Data(aValue) // return deleted value
-      run(server, Remove(aKey)) shouldBe NotFound
+      run(server, Remove(aKey)) shouldBe Null
     }
 
     it should "take/restore snapshot" in {
@@ -56,7 +56,7 @@ class KeyValueServerSpec extends Spec {
 
       val snapshot = server.getSnapshot
       run(server, Remove(aKey)) shouldBe Data(aValue)
-      run(server, Get(aKey)) shouldBe NotFound
+      run(server, Get(aKey)) shouldBe Null
 
       server.installSnapshot(snapshot)
       run(server, Get(aKey)) shouldBe Data(aValue)
