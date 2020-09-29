@@ -35,7 +35,7 @@ final class KeyValueServer(private[this] var state: State)
   }
 
   def getSnapshot: Array[Byte] =
-    Codec.gathering { out =>
+    Codec.writer { out =>
       state foreach {
         case (k, v) =>
           out.write(k).write(v)

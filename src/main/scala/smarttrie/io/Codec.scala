@@ -81,7 +81,7 @@ trait Codec[A] extends Encoder[A] with Decoder[A]
 
 object Codec {
 
-  def gathering(f: Encoder.Output => Any): ByteBuf = {
+  def writer(f: Encoder.Output => Any): ByteBuf = {
     val buf = Unpooled.compositeBuffer()
     val out = new Encoder.ByteBufOutput(buf)
     f(out)
@@ -90,7 +90,7 @@ object Codec {
   }
 
   def encode[A](value: A)(implicit enc: Encoder[A]): ByteBuf =
-    gathering { enc.encode(value, _) }
+    writer { enc.encode(value, _) }
 
   def decode(bytes: Array[Byte]): Decoder.API =
     decode(Unpooled.wrappedBuffer(bytes))
