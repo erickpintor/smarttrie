@@ -9,6 +9,6 @@ class ReplySpec extends Spec with CodecAsserts {
   "Reply" should "encode/decode" in {
     verifyCodec(Error: Reply)
     verifyCodec(Null: Reply)
-    verifyCodec(Data(Value("foo".toBuf)): Reply)
+    verifyCodec(Data(Value("foo".toUTF8Array)): Reply)
   }
 }

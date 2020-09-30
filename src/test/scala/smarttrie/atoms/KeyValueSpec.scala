@@ -6,10 +6,10 @@ import smarttrie.test._
 class KeyValueSpec extends Spec with CodecAsserts {
 
   "Key" should "encode/decode" in {
-    verifyCodec(Key("foo".toBuf))
+    verifyCodec(Key("foo".toUTF8Array))
   }
 
   "Value" should "encode/decode" in {
-    verifyCodec(Value("foo".toBuf))
+    verifyCodec(Value("foo".toUTF8Array))
   }
 }

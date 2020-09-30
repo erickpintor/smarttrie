@@ -16,7 +16,11 @@ scalacOptions := Seq(
   "-Ymacro-annotations"
 )
 
-// TODO: Enable this for test package
-// Seq("-opt:l:inline", "-opt-inline-from:**,!java.**,!javax.**,!jdk.**,!sun.**")
+scalacOptions in assembly ++= Seq(
+  "-opt:l:inline",
+  "-opt-inline-from:**,!java.**,!javax.**,!jdk.**,!sun.**"
+)
+
+assemblyJarName in assembly := "SmartTrie.jar"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0" % "test"

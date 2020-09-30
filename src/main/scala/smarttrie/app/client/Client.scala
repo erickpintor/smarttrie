@@ -1,10 +1,10 @@
 package smarttrie.app.client
 
 import bftsmart.tom.ServiceProxy
-import io.netty.buffer.Unpooled
-import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.atomic.AtomicInteger
 import java.util.logging.{Level, Logger}
 import java.util.{HashMap => JHashMap, Map => JMap, Set => JSet, Vector => JVector}
+import scala.io.Source
 import scala.jdk.CollectionConverters._
 import scala.util.control.NonFatal
 import site.ycsb.{ByteArrayByteIterator, ByteIterator, DB, Status}
@@ -12,20 +12,27 @@ import smarttrie.atoms._
 import smarttrie.io._
 import smarttrie.lang._
 
-final class ClientApp extends DB {
+final class Client extends DB {
   import Command._
   import Reply._
 
   private[this] val logger = Logger.getLogger("client")
-  private[this] val cache = new ConcurrentHashMap[String, Key]()
-  private[this] var proxy: ServiceProxy = _
+  private[this] val index = new AtomicInteger(0)
+  private[this] var proxies: Vector[ServiceProxy] = _
 
   override def init(): Unit = {
-    val serverID = getProperties.getProperty("serverID")
-    if (serverID eq null) {
-      throw new IllegalStateException("Missing server id")
+    val config = Source.fromFile("./config/hosts.config")
+    val servers = Vector.newBuilder[ServiceProxy]
+
+    config.getLines() foreach { line =>
+      if (!line.startsWith("#")) {
+        val parts = line.split(' ')
+        val id = parts.head.trim
+        servers += new ServiceProxy(id.toInt)
+      }
     }
-    proxy = new ServiceProxy(serverID.toInt)
+
+    proxies = servers.result()
   }
 
   def insert(
@@ -39,14 +46,14 @@ final class ClientApp extends DB {
       key: String,
       values: JMap[String, ByteIterator]
   ): Status = {
-    val k = cachedKey(key)
-    val v = singleValue(values)
+    val k = theKey(key)
+    val v = theValue(values)
     val res = execute(Set(k, v))
     toStatus(res)
   }
 
   def delete(table: String, key: String): Status = {
-    val k = cachedKey(key)
+    val k = theKey(key)
     val res = execute(Remove(k))
     toStatus(res)
   }
@@ -57,12 +64,12 @@ final class ClientApp extends DB {
       fields: JSet[String],
       result: JMap[String, ByteIterator]
   ): Status = {
-    val k = cachedKey(key)
+    val k = theKey(key)
     execute(Get(k)) match {
       case Null  => Status.OK
       case Error => Status.ERROR
       case Data(value) =>
-        val bytes = new ByteArrayByteIterator(value.buf.toByteArray)
+        val bytes = new ByteArrayByteIterator(value.data)
         result.put("field0", bytes)
         Status.OK
     }
@@ -77,12 +84,12 @@ final class ClientApp extends DB {
   ): Status =
     throw new UnsupportedOperationException
 
-  private def cachedKey(key: String): Key =
-    cache.computeIfAbsent(key, (str: String) => Key(str.toBuf))
+  private def theKey(key: String): Key =
+    Key(key.toUTF8Array)
 
-  private def singleValue(values: JMap[String, ByteIterator]): Value = {
+  private def theValue(values: JMap[String, ByteIterator]): Value = {
     val (_, bytes) = values.asScala.head
-    Value(Unpooled.wrappedBuffer(bytes.toArray))
+    Value(bytes.toArray)
   }
 
   private def toStatus(reply: Reply): Status =
@@ -93,8 +100,9 @@ final class ClientApp extends DB {
 
   private def execute(cmd: Command): Reply =
     try {
+      val proxy = proxies(index.getAndIncrement() % proxies.size)
       val msg = Codec.encode(cmd)
-      val res = proxy.invokeUnordered(msg.toByteArray)
+      val res = proxy.invokeUnordered(msg)
       Codec.decode(res).as[Reply]
     } catch {
       case NonFatal(err) =>

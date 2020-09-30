@@ -6,7 +6,7 @@ import smarttrie.io._
 import smarttrie.lang._
 import smarttrie.test._
 
-class KeyValueServerSpec extends Spec {
+class ServerSpec extends Spec {
   import Command._
   import Reply._
 
@@ -14,21 +14,22 @@ class KeyValueServerSpec extends Spec {
   check("State.trieMap", State.trieMap)
 
   def check(name: String, newState: => State): Unit = {
-    val aKey = Key("foo".toBuf)
-    val bKey = Key("fuzz".toBuf)
-    val aValue = Value("bar".toBuf)
-    val bValue = Value("bax".toBuf)
-    val nullCtx = new MessageContext(0, 0, null, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0,
-      null, null, false)
+    def aKey = Key("foo".toUTF8Array)
+    def bKey = Key("fuzz".toUTF8Array)
+    def aValue = Value("bar".toUTF8Array)
+    def bValue = Value("bax".toUTF8Array)
+    def nullCtx =
+      new MessageContext(0, 0, null, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, null, null,
+        false)
 
-    s"KeyValueServer($name)" should "add a key" in {
-      val server = new KeyValueServer(newState)
+    s"Server($name)" should "add a key" in {
+      val server = new Server(newState)
       run(server, Set(aKey, aValue)) shouldBe Null
       run(server, Set(aKey, bValue)) shouldBe Data(aValue) // returns old value
     }
 
     it should "read a key" in {
-      val server = new KeyValueServer({
+      val server = new Server({
         val state = newState
         state.put(aKey, aValue)
         state
@@ -37,7 +38,7 @@ class KeyValueServerSpec extends Spec {
     }
 
     it should "remove a key" in {
-      val server = new KeyValueServer({
+      val server = new Server({
         val state = newState
         state.put(aKey, aValue)
         state
@@ -47,7 +48,7 @@ class KeyValueServerSpec extends Spec {
     }
 
     it should "take/restore snapshot" in {
-      val server = new KeyValueServer({
+      val server = new Server({
         val state = newState
         state.put(aKey, aValue)
         state.put(bKey, bValue)
@@ -62,8 +63,8 @@ class KeyValueServerSpec extends Spec {
       run(server, Get(aKey)) shouldBe Data(aValue)
     }
 
-    def run(server: KeyValueServer, cmd: Command): Reply = {
-      val response = server.appExecuteOrdered(Codec.encode(cmd).toByteArray, nullCtx)
+    def run(server: Server, cmd: Command): Reply = {
+      val response = server.appExecuteOrdered(Codec.encode(cmd), nullCtx)
       Codec.decode(response).as[Reply]
     }
   }

@@ -19,7 +19,7 @@ object Reply {
       }
 
     def decode(input: Decoder.Input): Reply =
-      input.readByte() match {
+      input.readByte match {
         case 0 => Error
         case 1 => Null
         case 2 => Data(input.read[Value])

@@ -7,8 +7,8 @@ class CommandSpec extends Spec with CodecAsserts {
   import Command._
 
   "Command" should "serialize/deserialize" in {
-    verifyCodec(Get(Key("foo".toBuf)): Command)
-    verifyCodec(Remove(Key("foo".toBuf)): Command)
-    verifyCodec(Set(Key("foo".toBuf), Value("bar".toBuf)): Command)
+    verifyCodec(Get(Key("foo".toUTF8Array)): Command)
+    verifyCodec(Remove(Key("foo".toUTF8Array)): Command)
+    verifyCodec(Set(Key("foo".toUTF8Array), Value("bar".toUTF8Array)): Command)
   }
 }

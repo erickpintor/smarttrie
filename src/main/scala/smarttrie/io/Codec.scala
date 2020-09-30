@@ -1,7 +1,11 @@
 package smarttrie.io
 
-import io.netty.buffer.{ByteBuf, CompositeByteBuf, Unpooled}
-import scala.util.Try
+import java.io.{
+  ByteArrayInputStream,
+  ByteArrayOutputStream,
+  DataInputStream,
+  DataOutputStream
+}
 
 trait Encoder[-A] {
   def encode(value: A, out: Encoder.Output): Unit
@@ -11,21 +15,15 @@ object Encoder {
 
   trait Output {
     def write[A: Encoder](value: A): Output
-    def writeByte(n: Byte): Output
     def writeInt(n: Int): Output
-    def writeBuf(buf: ByteBuf): Output
+    def writeByte(n: Byte): Output
+    def writeBytes(arr: Array[Byte]): Output
   }
 
-  final class ByteBufOutput(private[this] val cmp: CompositeByteBuf) extends Output {
-    private[this] var out = cmp.alloc().buffer()
+  final class DefaultOutput(private[this] val out: DataOutputStream) extends Output {
 
     def write[A](value: A)(implicit enc: Encoder[A]): Output = {
       enc.encode(value, this)
-      this
-    }
-
-    def writeByte(n: Byte): Output = {
-      out.writeByte(n)
       this
     }
 
@@ -34,23 +32,19 @@ object Encoder {
       this
     }
 
-    def writeBuf(buf: ByteBuf): Output = {
-      flush()
-      if (buf.readableBytes() > 0) {
-        cmp.addComponent(true, buf)
-      }
+    def writeByte(n: Byte): Output = {
+      out.write(n)
       this
     }
 
-    def flush(): Unit =
-      if (out.readableBytes() > 0) {
-        cmp.addComponent(true, out)
-        out = out.alloc().buffer()
-      }
+    def writeBytes(arr: Array[Byte]): Output = {
+      out.write(arr)
+      this
+    }
   }
 }
 
-trait Decoder[+A] {
+trait Decoder[A] {
   def decode(input: Decoder.Input): A
 }
 
@@ -58,22 +52,23 @@ object Decoder {
 
   trait Input {
     def read[A: Decoder]: A
-    def readByte(): Byte
-    def readInt(): Int
-    def readBytes(n: Int): ByteBuf
+    def readInt: Int
+    def readByte: Byte
+    def readBytes(n: Int): Array[Byte]
+    def hasMoreBytes: Boolean
   }
 
-  final class ByteBufReader(buf: ByteBuf) extends Input {
+  final class DefaultInput(in: DataInputStream) extends Input {
     def read[A](implicit dec: Decoder[A]): A = dec.decode(this)
-    def readByte(): Byte = buf.readByte()
-    def readInt(): Int = buf.readInt()
-    def readBytes(n: Int): ByteBuf = buf.readBytes(n)
+    def readInt: Int = in.readInt()
+    def readByte: Byte = in.readByte()
+    def readBytes(n: Int): Array[Byte] = in.readNBytes(n)
+    def hasMoreBytes: Boolean = in.available() > 0
   }
 
-  final class API(buf: ByteBuf) {
-    def as[A](implicit dec: Decoder[A]): A = tryAs[A].get
-    def tryAs[A](implicit dec: Decoder[A]): Try[A] =
-      Try(dec.decode(new ByteBufReader(buf)))
+  final class API(in: Decoder.Input) {
+    def as[A](implicit dec: Decoder[A]): A =
+      dec.decode(in)
   }
 }
 
@@ -81,20 +76,21 @@ trait Codec[A] extends Encoder[A] with Decoder[A]
 
 object Codec {
 
-  def writer(f: Encoder.Output => Any): ByteBuf = {
-    val buf = Unpooled.compositeBuffer()
-    val out = new Encoder.ByteBufOutput(buf)
+  def writer(f: Encoder.Output => Any): Array[Byte] = {
+    val arr = new ByteArrayOutputStream()
+    val out = new Encoder.DefaultOutput(new DataOutputStream(arr))
     f(out)
-    out.flush()
-    buf
+    arr.toByteArray
   }
 
-  def encode[A](value: A)(implicit enc: Encoder[A]): ByteBuf =
+  def encode[A](value: A)(implicit enc: Encoder[A]): Array[Byte] =
     writer { enc.encode(value, _) }
 
-  def decode(bytes: Array[Byte]): Decoder.API =
-    decode(Unpooled.wrappedBuffer(bytes))
+  def reader(bytes: Array[Byte]): Decoder.Input = {
+    val in = new ByteArrayInputStream(bytes)
+    new Decoder.DefaultInput(new DataInputStream(in))
+  }
 
-  def decode(buf: ByteBuf): Decoder.API =
-    new Decoder.API(buf)
+  def decode(bytes: Array[Byte]): Decoder.API =
+    new Decoder.API(reader(bytes))
 }

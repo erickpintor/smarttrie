@@ -19,7 +19,7 @@ object Command {
       }
 
     def decode(input: Decoder.Input): Command =
-      input.readByte() match {
+      input.readByte match {
         case 0 => Get(input.read[Key])
         case 1 => Remove(input.read[Key])
         case 2 => Set(input.read[Key], input.read[Value])

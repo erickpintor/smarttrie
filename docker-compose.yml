@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  replica0:
+    build: .
+    image: smarttrie
+    ports:
+      - "11000:11000"
+      - "11001:11001"
+    command: smarttrie.app.server.Server 0
+
+  replica1:
+    image: smarttrie
+    depends_on:
+      - replica0
+    ports:
+      - "11010:11010"
+      - "11011:11011"
+    command: smarttrie.app.server.Server 1
+
+  replica2:
+    image: smarttrie
+    depends_on:
+      - replica0
+      - replica1
+    ports:
+      - "11020:11020"
+      - "11021:11021"
+    command: smarttrie.app.server.Server 2
+
+  client0:
+    depends_on:
+      - replica0
+      - replica1
+      - replica2
+    image: smarttrie
+    command: site.ycsb.Client -t -db smarttrie.app.client.Client -P config/workload
