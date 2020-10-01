@@ -27,10 +27,6 @@ services:
       - "11021:11021"
     command: smarttrie.app.server.Server 2
 
-  client0:
-    depends_on:
-      - replica0
-      - replica1
-      - replica2
+  client:
     image: smarttrie
-    command: site.ycsb.Client -t -db smarttrie.app.client.Client -P config/workload
+    command: site.ycsb.Client -t -s -threads 3 -db smarttrie.app.client.Client -P config/workload

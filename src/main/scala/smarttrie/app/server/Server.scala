@@ -1,8 +1,8 @@
 package smarttrie.app.server
 
-import bftsmart.tom.{MessageContext, ServiceReplica}
 import bftsmart.tom.server.defaultservices.DefaultSingleRecoverable
-import java.util.logging.{Level, Logger}
+import bftsmart.tom.{MessageContext, ServiceReplica}
+import org.slf4j.LoggerFactory
 import scala.util.control.NonFatal
 import smarttrie.atoms._
 import smarttrie.io._
@@ -16,7 +16,7 @@ final class Server(private[this] var state: State) extends DefaultSingleRecovera
   import Command._
   import Reply._
 
-  private[this] val logger = Logger.getLogger("server")
+  private[this] val logger = LoggerFactory.getLogger("server")
 
   def appExecuteUnordered(bytes: Array[Byte], ctx: MessageContext): Array[Byte] =
     appExecuteOrdered(bytes, ctx)
@@ -40,7 +40,7 @@ final class Server(private[this] var state: State) extends DefaultSingleRecovera
     try execute(bytes)
     catch {
       case NonFatal(err) =>
-        logger.log(Level.SEVERE, "Error while executing command", err)
+        logger.error("Error while executing command", err)
         Codec.encode(Error)
     }
   }
@@ -66,6 +66,6 @@ final class Server(private[this] var state: State) extends DefaultSingleRecovera
       }
     } catch {
       case NonFatal(err) =>
-        logger.log(Level.SEVERE, "Error while installing a snapshot", err)
+        logger.error("Error while installing a snapshot", err)
     }
 }

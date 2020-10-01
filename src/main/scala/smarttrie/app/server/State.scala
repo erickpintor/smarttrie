@@ -1,7 +1,7 @@
 package smarttrie.app.server
 
 import java.util.concurrent.ConcurrentHashMap
-import scala.collection.concurrent
+import scala.collection.concurrent.TrieMap
 import smarttrie.atoms._
 
 abstract class State(val allowConcurrentSnapshot: Boolean) {
@@ -14,10 +14,10 @@ abstract class State(val allowConcurrentSnapshot: Boolean) {
 
 object State {
 
-  def hashMap: State = new HashMap()
-  def trieMap: State = new TrieMap()
+  def hashMap: State = new HashMapState()
+  def trieMap: State = new TrieMapState()
 
-  private final class HashMap extends State(allowConcurrentSnapshot = false) {
+  private final class HashMapState extends State(allowConcurrentSnapshot = false) {
 
     private[this] val state =
       new ConcurrentHashMap[Key, Value]()
@@ -38,10 +38,10 @@ object State {
       state.clear()
   }
 
-  private final class TrieMap extends State(allowConcurrentSnapshot = true) {
+  private final class TrieMapState extends State(allowConcurrentSnapshot = true) {
 
     private[this] val state =
-      new concurrent.TrieMap[Key, Value]()
+      new TrieMap[Key, Value]()
 
     def get(key: Key): Option[Value] =
       state.get(key)

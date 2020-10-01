@@ -2,8 +2,8 @@ package smarttrie.app.client
 
 import bftsmart.tom.ServiceProxy
 import java.util.concurrent.atomic.AtomicInteger
-import java.util.logging.{Level, Logger}
 import java.util.{HashMap => JHashMap, Map => JMap, Set => JSet, Vector => JVector}
+import org.slf4j.LoggerFactory
 import scala.io.Source
 import scala.jdk.CollectionConverters._
 import scala.util.control.NonFatal
@@ -12,15 +12,15 @@ import smarttrie.atoms._
 import smarttrie.io._
 import smarttrie.lang._
 
-final class Client extends DB {
-  import Command._
-  import Reply._
+object Client {
 
-  private[this] val logger = Logger.getLogger("client")
-  private[this] val index = new AtomicInteger(0)
-  private[this] var proxies: Vector[ServiceProxy] = _
+  private val logger =
+    LoggerFactory.getLogger("client")
 
-  override def init(): Unit = {
+  private val index =
+    new AtomicInteger(0)
+
+  private lazy val proxies: Vector[ServiceProxy] = {
     val config = Source.fromFile("./config/hosts.config")
     val servers = Vector.newBuilder[ServiceProxy]
 
@@ -32,8 +32,14 @@ final class Client extends DB {
       }
     }
 
-    proxies = servers.result()
+    servers.result()
   }
+}
+
+final class Client extends DB {
+  import Client._
+  import Command._
+  import Reply._
 
   def insert(
       table: String,
@@ -102,12 +108,11 @@ final class Client extends DB {
     try {
       val proxy = proxies(index.getAndIncrement() % proxies.size)
       val msg = Codec.encode(cmd)
-      val res = proxy.invokeUnordered(msg)
+      val res = proxy.invokeOrdered(msg)
       Codec.decode(res).as[Reply]
     } catch {
       case NonFatal(err) =>
-        logger.log(Level.SEVERE, "Request failed", err)
+        logger.error("Request failed", err)
         Error
     }
-
 }
