@@ -1,6 +1,6 @@
 package smarttrie.app.server
 
-import java.util.concurrent.ConcurrentHashMap
+import java.util.{TreeMap => JTreeMap}
 import scala.collection.concurrent.TrieMap
 import smarttrie.atoms._
 
@@ -20,7 +20,7 @@ object State {
   private final class HashMapState extends State(allowConcurrentSnapshot = false) {
 
     private[this] val state =
-      new ConcurrentHashMap[Key, Value]()
+      new JTreeMap[Key, Value]()
 
     def get(key: Key): Option[Value] =
       Option(state.get(key))
@@ -41,7 +41,7 @@ object State {
   private final class TrieMapState extends State(allowConcurrentSnapshot = true) {
 
     private[this] val state =
-      new TrieMap[Key, Value]()
+      TrieMap.empty[Key, Value]
 
     def get(key: Key): Option[Value] =
       state.get(key)
