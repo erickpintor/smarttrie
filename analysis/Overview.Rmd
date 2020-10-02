@@ -1,0 +1,43 @@
+---
+title: "Bechmark Overview"
+output: html_notebook
+---
+
+```{r}
+library(stringr)
+library(dplyr)
+library(ggplot2)
+```
+
+
+```{r}
+log_path = "../log.txt"
+
+update_status = regex(
+  paste(
+    "\\[UPDATE:",
+    "Count=(\\d+),",
+    "Max=(\\d+),",
+    "Min=(\\d+),",
+    "Avg=(\\d+\\.\\d+),",
+    "90=(\\d+),",
+    "99=(\\d+),",
+    "99.9=(\\d+),",
+    "99.99=(\\d+)]"
+  )
+)
+
+status = str_match(readLines(log_path), update_status)
+status = status[!is.na(status[,1]),]
+status = status[,-1]
+colnames(status) = c("throughput", "max", "min", "avg", "p90", "p99", "p999", "p9999")
+
+status =
+  as_tibble(status) %>%
+  mutate_at(vars(avg), as.double) %>%
+  mutate_at(vars(throughput, max, min, p90, p99, p999, p9999), as.numeric)
+
+ggplot(status, aes(rownames(status))) +
+  geom_smooth(aes(y = throughput, group = 1)) +
+  labs(title = NULL, x = NULL, y = "Througput (requests/second)")
+```
