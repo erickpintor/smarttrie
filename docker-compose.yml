@@ -1,33 +1,30 @@
 version: "3.8"
 
 services:
-  replica0:
-    build: .
-    image: smarttrie
+  server:
+    image: openjdk:11
+    working_dir: /opt/smarttrie
+    volumes:
+      - ./target/scala-2.13/SmartTrie.jar/:/opt/smarttrie/lib/SmartTrie.jar
+      - ./config/system.config:/opt/smarttrie/config/system.config
+      - ./config/hosts.config:/opt/smarttrie/config/hosts.config
+      - ./logs/server/:/opt/smarttrie/logs/
+    command: |
+      /bin/bash -c "rm -rf files && mkdir files && java -server -Xms8G -Xmx8G -cp lib/SmartTrie.jar smarttrie.app.server.Server 0"
     ports:
       - "11000:11000"
       - "11001:11001"
-    command: smarttrie.app.server.Server 0
-
-  replica1:
-    image: smarttrie
-    depends_on:
-      - replica0
-    ports:
-      - "11010:11010"
-      - "11011:11011"
-    command: smarttrie.app.server.Server 1
-
-  replica2:
-    image: smarttrie
-    depends_on:
-      - replica0
-      - replica1
-    ports:
-      - "11020:11020"
-      - "11021:11021"
-    command: smarttrie.app.server.Server 2
 
   client:
-    image: smarttrie
-    command: site.ycsb.Client -t -s -threads 3 -db smarttrie.app.client.Client -P config/workload
+    image: openjdk:11
+    working_dir: /opt/smarttrie
+    depends_on:
+      - server
+    volumes:
+      - ./target/scala-2.13/SmartTrie.jar/:/opt/smarttrie/lib/SmartTrie.jar
+      - ./config/system.config:/opt/smarttrie/config/system.config
+      - ./config/hosts.config:/opt/smarttrie/config/hosts.config
+      - ./config/workload:/opt/smarttrie/config/workload
+      - ./logs/client/:/opt/smarttrie/logs/
+    command: |
+      /bin/bash -c "java -server -Xms1G -Xmx2G -cp lib/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/ycsb.log"

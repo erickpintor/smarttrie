@@ -1,0 +1,103 @@
+---
+title: "SmartTrie - Project Benchmarks"
+output: 
+  pdf_document: 
+    number_sections: yes
+    fig_crop: no
+    toc: yes
+  html_notebook: 
+    code_folding: none
+    number_sections: yes
+    toc: yes
+---
+
+```{r predef, warning=FALSE, include=FALSE}
+library(stringr)
+library(dplyr)
+library(ggplot2)
+
+load_ycsb_througput = function(log_file_path) {
+  ycsb_lines = regex(
+    paste(
+      "(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}:\\d{3}).*",
+      "\\[UPDATE:",
+      "Count=(\\d+),",
+      "Max=(\\d+),",
+      "Min=(\\d+),",
+      "Avg=(\\d+\\.\\d+),",
+      "90=(\\d+),",
+      "99=(\\d+),",
+      "99.9=(\\d+),",
+      "99.99=(\\d+)]"
+    )
+  )
+  
+  ycsb = str_match(readLines(log_file_path), ycsb_lines)
+  ycsb = ycsb[!is.na(ycsb[, 1]),]
+  ycsb = ycsb[,-1]
+  colnames(ycsb) = c("ts",
+                     "throughput",
+                     "max",
+                     "min",
+                     "avg",
+                     "p90",
+                     "p99",
+                     "p999",
+                     "p9999")
+  
+  ycsb =
+    as_tibble(ycsb) %>%
+    mutate(ts = sub("(\\d{2}):(\\d{3})", "\\1.\\2", ts)) %>%
+    mutate_at(vars(ts), as.POSIXct) %>%
+    mutate_at(vars(throughput, max, min, avg, p90, p99, p999, p9999),
+              as.numeric)
+}
+
+load_checkpoint_marks = function(server_log_path, start_ts, end_ts) {
+  checkpoint_start = "Starting replica checkpoint serialization"
+  checkpoint_stop = "Next command occurred after \\d+s since last checkpoint"
+  checkpoint_lines = regex(
+    paste0(
+      "(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}).*",
+      "(",
+      checkpoint_start,
+      "|",
+      checkpoint_stop,
+      ")"
+    )
+  )
+  
+  checkpoints = str_match(readLines(server_log_path), checkpoint_lines)
+  checkpoints = checkpoints[!is.na(checkpoints[, 1]),]
+  checkpoints = checkpoints[,-1]
+  colnames(checkpoints) = c("ts", "event")
+  
+  checkpoints =
+    as_tibble(checkpoints) %>%
+    mutate(event = sub(checkpoint_start, "start", event)) %>%
+    mutate(event = sub(checkpoint_stop, "stop", event)) %>%
+    mutate_at(vars(ts), as.POSIXct) %>%
+    mutate_at(vars(event), as.factor) %>%
+    filter(ts >= start_ts & ts <= end_ts)
+}
+
+plot_througput_vs_checkpoints = function(ycsb_log, server_log) {
+  ycsb = load_ycsb_througput(ycsb_log)
+  checkpoints = load_checkpoint_marks(server_log, head(ycsb$ts), last(ycsb$ts))
+  
+  ggplot() +
+    geom_line(data = ycsb, aes(ts, throughput)) +
+    geom_vline(data = checkpoints,
+               aes(xintercept = ts, color = event),
+               linetype = "dashed") +
+    labs(x = "Time",
+         y = "Througput (requests/second)") +
+    scale_color_discrete(name = "Checkpoints")
+}
+```
+
+# Local Test
+
+```{r local-test, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints("../logs/client/ycsb.log", "../logs/server/app.log")
+```

@@ -1,4 +1,4 @@
-package smarttrie.lang
+package smarttrie.lang.syntax
 
 import java.nio.charset.Charset
 

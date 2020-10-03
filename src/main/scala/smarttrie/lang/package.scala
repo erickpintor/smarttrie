@@ -1,3 +1,5 @@
 package smarttrie
 
-package object lang extends StringSyntax
+import smarttrie.lang.syntax._
+
+package object lang extends StringSyntax with ByteArraySyntax

@@ -15,12 +15,12 @@ import smarttrie.lang._
 object Client {
 
   private val logger =
-    LoggerFactory.getLogger("client")
+    LoggerFactory.getLogger(getClass)
 
-  private val index =
+  private[this] val index =
     new AtomicInteger(0)
 
-  private lazy val proxies: Vector[ServiceProxy] = {
+  private[this] lazy val proxies: Vector[ServiceProxy] = {
     val config = Source.fromFile("./config/hosts.config")
     val servers = Vector.newBuilder[ServiceProxy]
 
@@ -34,6 +34,13 @@ object Client {
 
     servers.result()
   }
+
+  def nextProxy: ServiceProxy =
+    if (proxies.size == 1) {
+      proxies.head // fast path
+    } else {
+      proxies(index.getAndIncrement() % proxies.length)
+    }
 }
 
 final class Client extends DB {
@@ -106,9 +113,8 @@ final class Client extends DB {
 
   private def execute(cmd: Command): Reply =
     try {
-      val proxy = proxies(index.getAndIncrement() % proxies.size)
       val msg = Codec.encode(cmd)
-      val res = proxy.invokeOrdered(msg)
+      val res = nextProxy.invokeOrdered(msg)
       Codec.decode(res).as[Reply]
     } catch {
       case NonFatal(err) =>
