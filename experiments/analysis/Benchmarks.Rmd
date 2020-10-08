@@ -1,13 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output: 
-  pdf_document: 
-    number_sections: yes
-    fig_crop: no
-    toc: yes
   html_notebook: 
     code_folding: none
     number_sections: yes
+    toc: yes
+  pdf_document: 
+    number_sections: yes
+    fig_crop: no
     toc: yes
 ---
 
@@ -98,6 +98,20 @@ plot_througput_vs_checkpoints = function(ycsb_log, server_log) {
 
 # Local Test
 
-```{r local-test, echo=FALSE, warning=FALSE}
-plot_througput_vs_checkpoints("../logs/client/ycsb.log", "../logs/server/app.log")
+## G1
+
+```{r local-test-parallelGC, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints("../../logs/client/benchmark.log", "../../logs/server/app.log")
+```
+
+## Parallel GC
+
+```{r local-test-parallelGC, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints("../../logs/client/benchmark.log", "../../logs/server/app.log")
+```
+
+## ZGC
+
+```{r local-test-ZGC, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints("../../logs/client/benchmark.log", "../../logs/server/app.log")
 ```

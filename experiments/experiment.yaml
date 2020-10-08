@@ -1,0 +1,214 @@
+---
+- name: Gather general facts
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: gather custom facts
+      set_fact:
+        experiment_path: "/tmp/SmartTrie"
+        run_cmd: "java -Xmx64G -server -cp dist/SmartTrie.jar"
+      tags:
+        - deploy
+        - run
+        - server
+        - load
+        - benchmark
+        - cleanup
+
+- name: Deploy SmartTrie
+  hosts: all
+  gather_facts: false
+  any_errors_fatal: true
+  tasks:
+    - name: ensure experiment path
+      file:
+        path: "{{ experiment_path }}"
+        state: directory
+      tags:
+        - deploy
+    - name: deploy config
+      copy:
+        src: ./config/
+        dest: "{{ experiment_path }}/config/"
+      when: not ansible_check_mode
+      tags:
+        - deploy
+    - name: ensure no currentView file
+      file:
+        path: "{{ experiment_path }}/config/currentView"
+        state: absent
+      tags:
+        - deploy
+    - name: ensure dist path
+      file:
+        path: "{{ experiment_path }}/dist"
+        state: directory
+      tags:
+        - deploy
+    - name: deploy jar
+      copy:
+        src: ../dist/SmartTrie.jar
+        dest: "{{ experiment_path }}/dist/SmartTrie.jar"
+      when: not ansible_check_mode
+      tags:
+        - deploy
+
+- name: Run server
+  hosts: node91
+  gather_facts: false
+  any_errors_fatal: true
+  vars:
+  tasks:
+    - name: ensure no old files
+      file:
+        path: "{{ experiment_path }}/{{ item }}"
+        state: absent
+      when: keep_files is not defined
+      with_items:
+        - files
+        - logs
+      tags:
+        - run
+        - server
+    - name: ensure required folders
+      file:
+        path: "{{ experiment_path }}/{{ item }}"
+        state: directory
+      with_items:
+        - files
+        - logs
+      tags:
+        - run
+        - server
+    - name: run server
+      shell:
+        chdir: "{{ experiment_path }}"
+        cmd: "{{ run_cmd }} smarttrie.app.server.Server 0"
+      async: 3600 # 1h
+      poll: 0
+      when: not ansible_check_mode
+      tags:
+        - run
+        - server
+
+- name: Gather client facts
+  hosts: node92
+  any_errors_fatal: true
+  vars:
+    - experiment_name: "{{ ansible_date_time.iso8601_basic_short }}"
+  tasks:
+    - name: gather custom facts
+      set_fact:
+        experiment_result_path: "./results/{{ experiment_name }}"
+      tags:
+        - run
+        - load
+        - benchmark
+
+- name: Run client
+  hosts: node92
+  gather_facts: false
+  any_errors_fatal: true
+  tasks:
+    - name: clean up old benchmark results
+      run_once: true
+      local_action:
+        module: file
+        path: "{{ experiment_result_path }}"
+        state: absent
+      tags:
+        - run
+        - load
+        - benchmark
+    - name: ensure results folder
+      run_once: true
+      local_action:
+        module: file
+        path: "{{ experiment_result_path }}"
+        state: directory
+      tags:
+        - run
+        - load
+        - benchmark
+    - name: load data
+      shell:
+        chdir: "{{ experiment_path }}"
+        cmd: "{{ run_cmd }} site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+      register: load_result
+      async: 1800 # 30m
+      poll: 10
+      when: not ansible_check_mode
+      tags:
+        - run
+        - load
+    - name: save load result
+      copy:
+        content: "{{ load_result.stderr }}"
+        dest: "{{ experiment_result_path }}/load.log"
+      delegate_to: localhost
+      when: not ansible_check_mode
+      tags:
+        - run
+        - load
+    - name: run benchmark
+      shell:
+        chdir: "{{ experiment_path }}"
+        cmd: "{{ run_cmd }} site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
+      register: benchmark_result
+      async: 1800 # 30m
+      poll: 10
+      when: not ansible_check_mode
+      tags:
+        - run
+        - benchmark
+    - name: save benchmark result
+      copy:
+        content: "{{ benchmark_result.stderr }}"
+        dest: "{{ experiment_result_path }}/benchmark.log"
+      delegate_to: localhost
+      when: not ansible_check_mode
+      tags:
+        - run
+        - benchmark
+    - name: fetch server logs
+      fetch:
+        src: "{{ experiment_path }}/logs/app.log"
+        dest: "{{ experiment_result_path }}"
+      tags:
+        - run
+        - load
+        - benchmark
+
+- name: Stop running processes
+  hosts: all
+  gather_facts: false
+  any_errors_fatal: true
+  tasks:
+    - name: get java pids
+      shell:
+        cmd: "jps -lm | grep 'smarttrie' | awk '{print $1}'"
+      register: java_pids
+      when: not ansible_check_mode
+      tags:
+        - stop
+    - name: kill running processes
+      shell:
+        cmd: "kill -9 {{ item }}"
+      with_items: "{{ java_pids.stdout_lines }}"
+      when: not ansible_check_mode
+      register: kill_result
+      failed_when: "kill_result.rc != 0 and 'No such process' not in kill_result.stderr"
+      tags:
+        - stop
+
+- name: Cleanup hosts
+  hosts: all
+  gather_facts: false
+  any_errors_fatal: true
+  tasks:
+    - name: clean up {{ experiment_path }}
+      file:
+        path: "{{ experiment_path }}"
+        state: absent
+      tags:
+        - cleanup

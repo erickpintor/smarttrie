@@ -5,26 +5,40 @@ services:
     image: openjdk:11
     working_dir: /opt/smarttrie
     volumes:
-      - ./target/scala-2.13/SmartTrie.jar/:/opt/smarttrie/lib/SmartTrie.jar
+      - ./dist/SmartTrie.jar/:/opt/smarttrie/dist/SmartTrie.jar
       - ./config/system.config:/opt/smarttrie/config/system.config
       - ./config/hosts.config:/opt/smarttrie/config/hosts.config
       - ./logs/server/:/opt/smarttrie/logs/
     command: |
-      /bin/bash -c "rm -rf files && mkdir files && java -server -Xms8G -Xmx8G -cp lib/SmartTrie.jar smarttrie.app.server.Server 0"
+      /bin/bash -c "rm -rf files && mkdir files && java -Xmx8G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0"
     ports:
       - "11000:11000"
       - "11001:11001"
 
-  client:
+  load:
     image: openjdk:11
     working_dir: /opt/smarttrie
     depends_on:
       - server
     volumes:
-      - ./target/scala-2.13/SmartTrie.jar/:/opt/smarttrie/lib/SmartTrie.jar
+      - ./dist/SmartTrie.jar/:/opt/smarttrie/dist/SmartTrie.jar
       - ./config/system.config:/opt/smarttrie/config/system.config
       - ./config/hosts.config:/opt/smarttrie/config/hosts.config
       - ./config/workload:/opt/smarttrie/config/workload
       - ./logs/client/:/opt/smarttrie/logs/
     command: |
-      /bin/bash -c "java -server -Xms1G -Xmx2G -cp lib/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/ycsb.log"
+      /bin/bash -c "java -Xmx2G -server -cp dist/SmartTrie.jar site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+
+  benchmark:
+    image: openjdk:11
+    working_dir: /opt/smarttrie
+    depends_on:
+      - server
+    volumes:
+      - ./dist/SmartTrie.jar/:/opt/smarttrie/dist/SmartTrie.jar
+      - ./config/system.config:/opt/smarttrie/config/system.config
+      - ./config/hosts.config:/opt/smarttrie/config/hosts.config
+      - ./config/workload:/opt/smarttrie/config/workload
+      - ./logs/client/:/opt/smarttrie/logs/
+    command: |
+      /bin/bash -c "java -Xmx2G -server -cp dist/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"

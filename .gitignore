@@ -1,5 +1,9 @@
 target/
 logs/
 config/currentView
-analysis/*.nb.html
-analysis/*.pdf
+dist/
+experiments/venv
+experiments/tmp
+experiments/SmartTrie.zip
+experiments/analysis/*.nb.html
+experiments/analysis/*.pdf

@@ -21,6 +21,6 @@ scalacOptions in assembly ++= Seq(
   "-opt-inline-from:**,!java.**,!javax.**,!jdk.**,!sun.**"
 )
 
-assemblyJarName in assembly := "SmartTrie.jar"
+assemblyOutputPath in assembly := file("dist/SmartTrie.jar")
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0" % "test"
