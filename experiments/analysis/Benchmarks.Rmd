@@ -1,11 +1,11 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output: 
-  html_notebook: 
-    code_folding: none
-    toc: yes
   pdf_document: 
     fig_crop: no
+    toc: yes
+  html_notebook: 
+    code_folding: none
     toc: yes
 ---
 
@@ -103,7 +103,7 @@ Criação da baseline com aplicação tradicional. Configurações relevantes:
 
 | Configuração | Valor | Observação |
 |---|---|---|
-| Commit | bdd1044 | |
+| Commit | 26544ab | |
 | Servidores vs Clientes | 1/1 | Node 91-92 |
 | Escrita vs Leitura | 100/0 | |
 | Chaves | 500000 | |
