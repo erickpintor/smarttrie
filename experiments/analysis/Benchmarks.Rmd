@@ -3,10 +3,8 @@ title: "SmartTrie - Project Benchmarks"
 output: 
   html_notebook: 
     code_folding: none
-    number_sections: yes
     toc: yes
   pdf_document: 
-    number_sections: yes
     fig_crop: no
     toc: yes
 ---
@@ -21,14 +19,14 @@ load_ycsb_througput = function(log_file_path) {
     paste(
       "(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}:\\d{3}).*",
       "\\[UPDATE:",
-      "Count=(\\d+),",
-      "Max=(\\d+),",
-      "Min=(\\d+),",
-      "Avg=(\\d+\\.\\d+),",
-      "90=(\\d+),",
-      "99=(\\d+),",
-      "99.9=(\\d+),",
-      "99.99=(\\d+)]"
+      "Count=(.*),",
+      "Max=(.*),",
+      "Min=(.*),",
+      "Avg=(.*),",
+      "90=(.*),",
+      "99=(.*),",
+      "99.9=(.*),",
+      "99.99=(.*)]"
     )
   )
   
@@ -81,7 +79,7 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts) {
     filter(ts >= start_ts & ts <= end_ts)
 }
 
-plot_througput_vs_checkpoints = function(ycsb_log, server_log) {
+plot_througput_vs_checkpoints = function(title, ycsb_log, server_log) {
   ycsb = load_ycsb_througput(ycsb_log)
   checkpoints = load_checkpoint_marks(server_log, head(ycsb$ts), last(ycsb$ts))
   
@@ -90,28 +88,51 @@ plot_througput_vs_checkpoints = function(ycsb_log, server_log) {
     geom_vline(data = checkpoints,
                aes(xintercept = ts, color = event),
                linetype = "dashed") +
-    labs(x = "Time",
+    labs(title = title, 
+         x = "Time",
          y = "Througput (requests/second)") +
     scale_color_discrete(name = "Checkpoints")
 }
 ```
 
-# Local Test
+# Experimentos
 
-## G1
+## 2020-10-09 - Baseline
 
-```{r local-test-parallelGC, echo=FALSE, warning=FALSE}
-plot_througput_vs_checkpoints("../../logs/client/benchmark.log", "../../logs/server/app.log")
+Criação da baseline com aplicação tradicional. Configurações relevantes:
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Commit | bdd1044 | |
+| Servidores vs Clientes | 1/1 | Node 91-92 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 500000 | |
+| Requests | 500000 | |
+| Bytes/Registro | 4kb | |
+| Periodo de Checkpoints | 100000 | |
+
+Após a carga de dados, o estado em memória atingiu 1967MB (1.92G). Checkpoints levaram entre 30-40 segundos. A vazão da baseline parece irregular nos períodos entre checkpoints, o que motivou a execução com outros tipos de garbage collector. Por padrão a JVM 11 utiliza o algoritmo G1, porém, ZGC aparenta ser o algoritmo mais estável para esta aplicação. Dois bugs foram encontrados: 1) ao tentar executar a aplicação com 1M de chaves, a carga de dados é completada mas, o benchmark tem timeouts em praticamente todas as requisições; 2) ao reiniciar o servidor mantendo os dados persistidos, praticamente todas as requisições resultam em timeout (similar ao problema 1).
+
+```{r experiment-2020-10-09-baseline, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Baseline",
+  "../results/20201009T132837/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201009T132837/node91/tmp/SmartTrie/logs/app.log"
+)
 ```
 
-## Parallel GC
-
-```{r local-test-parallelGC, echo=FALSE, warning=FALSE}
-plot_througput_vs_checkpoints("../../logs/client/benchmark.log", "../../logs/server/app.log")
+```{r experiment-2020-10-09-parallel-gc, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Baseline + ParallelGC",
+  "../results/20201009T140936/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201009T140936/node91/tmp/SmartTrie/logs/app.log"
+)
 ```
 
-## ZGC
-
-```{r local-test-ZGC, echo=FALSE, warning=FALSE}
-plot_througput_vs_checkpoints("../../logs/client/benchmark.log", "../../logs/server/app.log")
+```{r experiment-2020-10-09-parallel-zgc, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Baseline + ZGC",
+  "../results/20201009T143012/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201009T143012/node91/tmp/SmartTrie/logs/app.log"
+)
 ```

@@ -1,12 +1,15 @@
 ---
 - name: Gather general facts
   hosts: all
-  gather_facts: false
+  any_errors_fatal: true
+  vars:
+    - experiment_name: "{{ ansible_date_time.iso8601_basic_short }}"
   tasks:
     - name: gather custom facts
       set_fact:
         experiment_path: "/tmp/SmartTrie"
-        run_cmd: "java -Xmx64G -server -cp dist/SmartTrie.jar"
+        run_cmd: "java -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -Xmx64G -server -cp dist/SmartTrie.jar"
+        experiment_result_path: "./results/{{ experiment_name }}"
       tags:
         - deploy
         - run
@@ -14,6 +17,7 @@
         - load
         - benchmark
         - cleanup
+        - fetch
 
 - name: Deploy SmartTrie
   hosts: all
@@ -91,22 +95,42 @@
         - run
         - server
 
-- name: Gather client facts
+- name: Run client
   hosts: node92
+  gather_facts: false
   any_errors_fatal: true
-  vars:
-    - experiment_name: "{{ ansible_date_time.iso8601_basic_short }}"
   tasks:
-    - name: gather custom facts
-      set_fact:
-        experiment_result_path: "./results/{{ experiment_name }}"
+    - name: ensure logs folder
+      file:
+        path: "{{ experiment_path }}/logs"
+        state: directory
       tags:
         - run
         - load
         - benchmark
+    - name: load data
+      shell:
+        chdir: "{{ experiment_path }}"
+        cmd: "{{ run_cmd }} site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+      async: 1800 # 30m
+      poll: 10
+      when: not ansible_check_mode
+      tags:
+        - run
+        - load
+    - name: run benchmark
+      shell:
+        chdir: "{{ experiment_path }}"
+        cmd: "{{ run_cmd }} site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
+      async: 1800 # 30m
+      poll: 10
+      when: not ansible_check_mode
+      tags:
+        - run
+        - benchmark
 
-- name: Run client
-  hosts: node92
+- name: Fetch logs
+  hosts: all
   gather_facts: false
   any_errors_fatal: true
   tasks:
@@ -120,6 +144,7 @@
         - run
         - load
         - benchmark
+        - fetch
     - name: ensure results folder
       run_once: true
       local_action:
@@ -130,54 +155,30 @@
         - run
         - load
         - benchmark
-    - name: load data
-      shell:
-        chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
-      register: load_result
-      async: 1800 # 30m
-      poll: 10
-      when: not ansible_check_mode
+        - fetch
+    - name: fetch client results
+      fetch:
+        src: "{{ experiment_path }}/logs/{{ item }}"
+        dest: "{{ experiment_result_path }}"
+        fail_on_missing: no
+      with_items:
+        - load.log
+        - benchmark.log
       tags:
         - run
         - load
-    - name: save load result
-      copy:
-        content: "{{ load_result.stderr }}"
-        dest: "{{ experiment_result_path }}/load.log"
-      delegate_to: localhost
-      when: not ansible_check_mode
-      tags:
-        - run
-        - load
-    - name: run benchmark
-      shell:
-        chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
-      register: benchmark_result
-      async: 1800 # 30m
-      poll: 10
-      when: not ansible_check_mode
-      tags:
-        - run
         - benchmark
-    - name: save benchmark result
-      copy:
-        content: "{{ benchmark_result.stderr }}"
-        dest: "{{ experiment_result_path }}/benchmark.log"
-      delegate_to: localhost
-      when: not ansible_check_mode
-      tags:
-        - run
-        - benchmark
+        - fetch
     - name: fetch server logs
       fetch:
         src: "{{ experiment_path }}/logs/app.log"
         dest: "{{ experiment_result_path }}"
+        fail_on_missing: no
       tags:
         - run
         - load
         - benchmark
+        - fetch
 
 - name: Stop running processes
   hosts: all
