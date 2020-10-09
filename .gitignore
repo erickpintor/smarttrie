@@ -1,9 +1,9 @@
+.idea/
 target/
-logs/
+dist/**
+logs/**
 config/currentView
-dist/
 experiments/venv
 experiments/tmp
-experiments/SmartTrie.zip
 experiments/analysis/*.nb.html
 experiments/analysis/*.pdf

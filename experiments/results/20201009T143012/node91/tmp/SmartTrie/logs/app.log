@@ -1,0 +1,47 @@
+2020-10-09 14:30:50.473 [main] INFO  b.r.ServerViewController - Using view stored on disk
+2020-10-09 14:30:50.938 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2020-10-09 14:30:50.939 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2020-10-09 14:30:50.939 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2020-10-09 14:30:50.939 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2020-10-09 14:30:50.939 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2020-10-09 14:30:50.939 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2020-10-09 14:30:50.939 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.91
+2020-10-09 14:30:50.939 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.91:11000),
+2020-10-09 14:30:50.977 [main] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:30:50.984 [main] INFO  smarttrie.app.server.Server - Serialized checkpoint with 0MB
+2020-10-09 14:30:50.987 [main] INFO  b.t.s.defaultservices.DiskStateLog - log last consensus id: 0
+2020-10-09 14:30:50.993 [Server CS] INFO  b.s.strategy.StandardStateManager - Replica state is up to date
+2020-10-09 14:31:05.030 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-09 14:31:05.135 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 14s since last checkpoint
+2020-10-09 14:31:58.963 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:32:00.892 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 393MB
+2020-10-09 14:32:06.218 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 7s since last checkpoint
+2020-10-09 14:32:53.906 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:32:57.065 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 787MB
+2020-10-09 14:33:07.601 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 13s since last checkpoint
+2020-10-09 14:33:50.702 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:33:58.209 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1180MB
+2020-10-09 14:34:15.798 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 25s since last checkpoint
+2020-10-09 14:34:59.232 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:35:06.286 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1574MB
+2020-10-09 14:35:29.659 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 30s since last checkpoint
+2020-10-09 14:36:19.042 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-10-09 14:36:19.042 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2020-10-09 14:36:42.868 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-09 14:36:42.931 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:36:50.065 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1967MB
+2020-10-09 14:37:16.417 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 33s since last checkpoint
+2020-10-09 14:38:13.488 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:38:19.272 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1967MB
+2020-10-09 14:38:44.546 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 31s since last checkpoint
+2020-10-09 14:39:41.616 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:39:46.781 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1967MB
+2020-10-09 14:40:12.417 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 30s since last checkpoint
+2020-10-09 14:41:09.444 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:41:14.680 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1967MB
+2020-10-09 14:41:43.281 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 33s since last checkpoint
+2020-10-09 14:42:37.160 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint serialization
+2020-10-09 14:42:42.834 [Delivery Thread] INFO  smarttrie.app.server.Server - Serialized checkpoint with 1967MB
+2020-10-09 14:43:09.984 [Delivery Thread] INFO  smarttrie.app.server.Server - Next command occurred after 32s since last checkpoint
+2020-10-09 14:44:02.278 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-10-09 14:44:02.278 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
