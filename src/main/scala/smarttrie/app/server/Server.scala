@@ -9,7 +9,7 @@ import smarttrie.io._
 import smarttrie.lang._
 
 object Server extends App {
-  val server = new Server(State.hashMap)
+  val server = new Server(State.treeMap)
   val replica = new ServiceReplica(args(0).toInt, server, server)
   Runtime.getRuntime.addShutdownHook(new Thread(() => {
     replica.kill()

@@ -10,7 +10,7 @@ class ServerSpec extends Spec {
   import Command._
   import Reply._
 
-  check("State.hashMap", State.hashMap)
+  check("State.hashMap", State.treeMap)
   check("State.trieMap", State.trieMap)
 
   def check(name: String, newState: => State): Unit = {

@@ -14,10 +14,10 @@ abstract class State(val allowConcurrentSnapshot: Boolean) {
 
 object State {
 
-  def hashMap: State = new HashMapState()
+  def treeMap: State = new TreeMapState()
   def trieMap: State = new TrieMapState()
 
-  private final class HashMapState extends State(allowConcurrentSnapshot = false) {
+  private final class TreeMapState extends State(allowConcurrentSnapshot = false) {
 
     private[this] val state =
       new JTreeMap[Key, Value]()
