@@ -1,3 +1,5 @@
+enablePlugins(JmhPlugin)
+
 name := "SmartTrie"
 
 version := "0.1"

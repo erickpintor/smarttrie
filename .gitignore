@@ -2,6 +2,7 @@
 target/
 dist/**
 logs/**
+files/
 config/currentView
 experiments/venv
 experiments/tmp
