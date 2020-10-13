@@ -24,7 +24,7 @@ object LogWriteBench {
 
     @Setup
     def setup(): Unit = {
-      IO.cleanDirectory(logDir)
+      IO.cleanDirectory(logDir, removeDir = false)
       log = newLog
     }
   }
@@ -92,7 +92,7 @@ object LogWriteBench {
 
     @Setup
     def setup(): Unit = {
-      IO.cleanDirectory(logDir)
+      IO.cleanDirectory(logDir, removeDir = false)
       log = Log(logDir, sync = sync)
     }
   }

@@ -16,7 +16,7 @@ object LogReadBench {
     var log: Log = _
     @Setup
     def setup(): Unit = {
-      IO.cleanDirectory(logDir)
+      IO.cleanDirectory(logDir, removeDir = false)
       log = Log(logDir)
       for (cid <- 0 until LogEntriesToAdd) {
         log.append(LogEntry(CID(cid), newBatch()))

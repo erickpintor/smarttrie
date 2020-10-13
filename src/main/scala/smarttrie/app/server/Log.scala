@@ -65,7 +65,7 @@ object LogEntry {
 object Log {
 
   val LogExtension = ".log"
-  val TempExtension = ".tmp"
+  val TempExtension = ".log.tmp"
 
   private val logger = LoggerFactory.getLogger(getClass)
 

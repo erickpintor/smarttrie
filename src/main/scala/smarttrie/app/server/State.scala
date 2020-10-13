@@ -19,7 +19,7 @@ object State {
 
   private final class TreeMapState extends State(allowConcurrentSnapshot = false) {
 
-    private[this] val state =
+    private val state =
       new JTreeMap[Key, Value]()
 
     def get(key: Key): Option[Value] =
@@ -36,11 +36,19 @@ object State {
 
     def clear(): Unit =
       state.clear()
+
+    override def hashCode(): Int = 13 * state.hashCode()
+
+    override def equals(obj: Any): Boolean =
+      obj match {
+        case other: TreeMapState => state == other.state
+        case _                   => false
+      }
   }
 
   private final class TrieMapState extends State(allowConcurrentSnapshot = true) {
 
-    private[this] val state =
+    private val state =
       TrieMap.empty[Key, Value]
 
     def get(key: Key): Option[Value] =
@@ -57,5 +65,13 @@ object State {
 
     def clear(): Unit =
       state.clear()
+
+    override def hashCode(): Int = 31 * state.hashCode()
+
+    override def equals(obj: Any): Boolean =
+      obj match {
+        case other: TrieMapState => state == other.state
+        case _                   => false
+      }
   }
 }

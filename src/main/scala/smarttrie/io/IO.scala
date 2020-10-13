@@ -26,7 +26,7 @@ object IO {
   def listFiles(dir: Path, extension: String): List[Path] =
     listFiles(dir, _.toString.endsWith(extension))
 
-  def cleanDirectory(dir: Path): Unit =
+  def cleanDirectory(dir: Path, removeDir: Boolean = true): Unit =
     Files.walkFileTree(
       dir,
       new SimpleFileVisitor[Path] {
@@ -42,7 +42,7 @@ object IO {
             dir: Path,
             exc: IOException
         ): FileVisitResult = {
-          Files.delete(dir)
+          if (removeDir) Files.delete(dir)
           FileVisitResult.CONTINUE
         }
       }
