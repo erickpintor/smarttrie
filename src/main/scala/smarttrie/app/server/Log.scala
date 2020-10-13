@@ -2,7 +2,6 @@ package smarttrie.app.server
 
 import java.nio.channels.FileChannel
 import java.nio.file._
-import java.nio.file.attribute.BasicFileAttributes
 import java.nio.{BufferUnderflowException, ByteBuffer}
 import java.util
 import org.slf4j.LoggerFactory
@@ -72,27 +71,6 @@ object Log {
 
   def apply(logDir: Path, sync: Boolean = false, logFileSizeMB: Int = 512): Log =
     new Log(logDir.toAbsolutePath, sync, logFileSizeMB)
-
-  private def listFiles(logDir: Path, extension: String): List[Path] = {
-    val res = List.newBuilder[Path]
-
-    Files.walkFileTree(
-      logDir,
-      new SimpleFileVisitor[Path] {
-        override def visitFile(
-            file: Path,
-            attrs: BasicFileAttributes
-        ): FileVisitResult = {
-          if (file.toString.endsWith(extension)) {
-            res += file
-          }
-          FileVisitResult.CONTINUE
-        }
-      }
-    )
-
-    res.result()
-  }
 }
 
 final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
@@ -129,7 +107,7 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
   def truncate(to: CID): Unit = {
     logger.info(s"Truncating log files up to cid $CID")
     flush()
-    listFiles(logDir, LogExtension).view
+    IO.listFiles(logDir, LogExtension).view
       .map(LogReader(_))
       .dropWhile(_.end <= to)
       .foreach(_.delete())
@@ -176,7 +154,7 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
     private[this] var iterator: Iterator[LogEntry] = _
 
     private[this] var filesToRead =
-      listFiles(logDir, LogExtension).view
+      IO.listFiles(logDir, LogExtension).view
         .map(LogReader(_))
         .sortBy(_.start)
         .dropWhile(_.end < from)

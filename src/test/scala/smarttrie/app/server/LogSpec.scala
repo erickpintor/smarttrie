@@ -1,10 +1,9 @@
 package smarttrie.app.server
 
-import java.io.IOException
-import java.nio.file.attribute.BasicFileAttributes
-import java.nio.file.{FileVisitResult, Files, Path, SimpleFileVisitor}
+import java.nio.file.{Files, Path}
 import scala.util.Random
 import smarttrie.test._
+import smarttrie.io._
 
 abstract class LogSpec(name: String, sync: Boolean) extends Spec {
 
@@ -20,28 +19,8 @@ abstract class LogSpec(name: String, sync: Boolean) extends Spec {
     if (log ne null) {
       log.close()
     }
-
     if (logDir ne null) {
-      Files.walkFileTree(
-        logDir,
-        new SimpleFileVisitor[Path] {
-          override def visitFile(
-              file: Path,
-              attrs: BasicFileAttributes
-          ): FileVisitResult = {
-            Files.delete(file)
-            FileVisitResult.CONTINUE
-          }
-
-          override def postVisitDirectory(
-              dir: Path,
-              exc: IOException
-          ): FileVisitResult = {
-            Files.delete(dir)
-            FileVisitResult.CONTINUE
-          }
-        }
-      )
+      IO.cleanDirectory(logDir)
     }
   }
 

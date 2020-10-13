@@ -3,10 +3,10 @@ package benchmarks
 import bftsmart.tom.server.defaultservices.durability.DurableStateLog
 import bftsmart.tom.server.defaultservices.{DiskStateLog, StateLog}
 import java.nio.file._
-import java.nio.file.attribute.BasicFileAttributes
 import java.util.concurrent.ThreadLocalRandom
 import org.openjdk.jmh.annotations.{Benchmark, Scope, Setup, State, Threads}
 import smarttrie.app.server._
+import smarttrie.io._
 
 object LogWriteBench {
 
@@ -24,7 +24,7 @@ object LogWriteBench {
 
     @Setup
     def setup(): Unit = {
-      cleanupLogDir()
+      IO.cleanDirectory(logDir)
       log = newLog
     }
   }
@@ -92,7 +92,7 @@ object LogWriteBench {
 
     @Setup
     def setup(): Unit = {
-      cleanupLogDir()
+      IO.cleanDirectory(logDir)
       log = Log(logDir, sync = sync)
     }
   }
@@ -102,20 +102,6 @@ object LogWriteBench {
 
   @State(Scope.Benchmark)
   class AsyncSmartTrieLog extends AbstractSmartTrieLog(sync = false)
-
-  def cleanupLogDir(): Unit =
-    Files.walkFileTree(
-      logDir,
-      new SimpleFileVisitor[Path] {
-        override def visitFile(
-            file: Path,
-            attrs: BasicFileAttributes
-        ): FileVisitResult = {
-          Files.delete(file)
-          FileVisitResult.CONTINUE
-        }
-      }
-    )
 
   private def newBatch(): Batch = {
     val random = ThreadLocalRandom.current()

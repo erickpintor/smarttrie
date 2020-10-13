@@ -1,10 +1,10 @@
 package benchmarks
 
 import java.nio.file._
-import java.nio.file.attribute.BasicFileAttributes
 import java.util.concurrent.ThreadLocalRandom
 import org.openjdk.jmh.annotations.{Benchmark, Scope, Setup, State, Threads}
 import smarttrie.app.server._
+import smarttrie.io._
 
 object LogReadBench {
 
@@ -16,27 +16,13 @@ object LogReadBench {
     var log: Log = _
     @Setup
     def setup(): Unit = {
-      cleanupLogDir()
+      IO.cleanDirectory(logDir)
       log = Log(logDir)
       for (cid <- 0 until LogEntriesToAdd) {
         log.append(LogEntry(CID(cid), newBatch()))
       }
     }
   }
-
-  def cleanupLogDir(): Unit =
-    Files.walkFileTree(
-      logDir,
-      new SimpleFileVisitor[Path] {
-        override def visitFile(
-            file: Path,
-            attrs: BasicFileAttributes
-        ): FileVisitResult = {
-          Files.delete(file)
-          FileVisitResult.CONTINUE
-        }
-      }
-    )
 
   private def newBatch(): Batch = {
     val random = ThreadLocalRandom.current()
