@@ -31,9 +31,9 @@ object CheckpointWriteBench {
 }
 
 // [info] Benchmark                                           Mode  Cnt  Score   Error  Units
-// [info] CheckpointWriteBench.bftDiskStateLogCheckpoint     thrpt    5  2.948 ± 0.477  ops/s
-// [info] CheckpointWriteBench.bftDurableStateLogCheckpoint  thrpt    5  2.829 ± 0.643  ops/s
-// [info] CheckpointWriteBench.smartTrieWriteCheckpoint      thrpt    5  3.231 ± 0.330  ops/s
+// [info] CheckpointWriteBench.bftDiskStateLogCheckpoint     thrpt   25  2.988 ± 0.092  ops/s
+// [info] CheckpointWriteBench.bftDurableStateLogCheckpoint  thrpt   25  2.973 ± 0.044  ops/s
+// [info] CheckpointWriteBench.smartTrieWriteCheckpoint      thrpt   25  3.231 ± 0.077  ops/s
 class CheckpointWriteBench {
   import CheckpointWriteBench._
 

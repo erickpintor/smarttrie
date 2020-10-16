@@ -3,7 +3,6 @@ package smarttrie.atoms
 import java.nio.ByteBuffer
 import java.util
 import smarttrie.io._
-import smarttrie.lang._
 
 object Key {
 
@@ -37,7 +36,7 @@ final case class Key(data: Array[Byte]) extends Ordered[Key] {
     }
 
   override def toString: String =
-    s"Key(${new String(data, UTF8)})"
+    s"Key(${data.map("%02X".format(_)).mkString})"
 }
 
 object Value {
@@ -66,5 +65,5 @@ final case class Value(data: Array[Byte]) {
     }
 
   override def toString: String =
-    s"Value(${new String(data, UTF8)})"
+    s"Value(${data.map("%02X".format(_)).mkString})"
 }

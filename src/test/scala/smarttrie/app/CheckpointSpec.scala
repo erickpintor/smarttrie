@@ -31,7 +31,7 @@ class CheckpointSpec extends Spec {
     Checkpoint.write(ckpDir, oldState, CID(9_999), blockSizeMB = 1)
 
     val newState = State.trieMap
-    val reader = Checkpoint.read(ckpDir)
+    val reader = Checkpoint.read(ckpDir).get
     reader.lastCID shouldBe CID(9_999)
 
     reader.entries() foreach {

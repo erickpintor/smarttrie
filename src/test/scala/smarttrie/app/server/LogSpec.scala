@@ -2,8 +2,9 @@ package smarttrie.app.server
 
 import java.nio.file.{Files, Path}
 import scala.util.Random
-import smarttrie.test._
+import smarttrie.atoms._
 import smarttrie.io._
+import smarttrie.test._
 
 abstract class LogSpec(name: String, sync: Boolean) extends Spec {
 

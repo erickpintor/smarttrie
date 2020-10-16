@@ -4,6 +4,7 @@ import java.nio.channels.FileChannel
 import java.nio.file.{Files, Path, StandardOpenOption}
 import java.nio.{BufferUnderflowException, ByteBuffer, MappedByteBuffer}
 import org.slf4j.LoggerFactory
+import scala.annotation.tailrec
 import smarttrie.atoms._
 import smarttrie.io._
 
@@ -18,10 +19,10 @@ object Checkpoint {
     writer.write(cid, state)
   }
 
-  def read(ckpPath: Path): CheckpointReader = {
+  def read(ckpPath: Path): Option[CheckpointReader] = {
     val checkpoints = IO.listFiles(ckpPath, CheckpointExtension)
-    require(checkpoints.size == 1, "Multiple checkpoints found")
-    new CheckpointReader(checkpoints.head)
+    require(checkpoints.size <= 1, "Multiple checkpoints found")
+    checkpoints.headOption map { new CheckpointReader(_) }
   }
 }
 
@@ -30,7 +31,7 @@ final class CheckpointAsyncWriter(ckpPath: Path, blockSize: Long) {
   import FileChannel.MapMode._
   import StandardOpenOption._
 
-  private[this] val logger = LoggerFactory.getLogger(getClass())
+  private[this] val logger = LoggerFactory.getLogger(getClass)
   private[this] var tempFile: Path = _
   private[this] var finalFile: Path = _
   private[this] var channel: FileChannel = _
@@ -81,14 +82,14 @@ final class CheckpointAsyncWriter(ckpPath: Path, blockSize: Long) {
 
     val oldCheckpoints = IO.listFiles(ckpPath, CheckpointExtension)
     Files.move(tempFile, finalFile)
-    oldCheckpoints foreach (Files.delete(_))
+    oldCheckpoints foreach Files.delete
   }
 }
 
 final class CheckpointReader(filePath: Path) {
   import StandardOpenOption._
 
-  private[this] val logger = LoggerFactory.getLogger(getClass())
+  private[this] val logger = LoggerFactory.getLogger(getClass)
   private[this] var channel: FileChannel = FileChannel.open(filePath, READ)
   private[this] var buffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 1024) // 4KB
 
@@ -104,7 +105,7 @@ final class CheckpointReader(filePath: Path) {
     var pos = 0
 
     new Iterator[(Key, Value)] {
-      def hasNext: Boolean =
+      @tailrec def hasNext: Boolean =
         if (_next ne null) {
           true
         } else {

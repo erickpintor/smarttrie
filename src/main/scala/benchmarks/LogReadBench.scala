@@ -4,6 +4,7 @@ import java.nio.file._
 import java.util.concurrent.ThreadLocalRandom
 import org.openjdk.jmh.annotations.{Benchmark, Scope, Setup, State, Threads}
 import smarttrie.app.server._
+import smarttrie.atoms._
 import smarttrie.io._
 
 object LogReadBench {

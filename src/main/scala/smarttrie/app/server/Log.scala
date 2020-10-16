@@ -1,12 +1,14 @@
 package smarttrie.app.server
 
+import java.io.Closeable
 import java.nio.channels.FileChannel
 import java.nio.file._
-import java.nio.{BufferUnderflowException, ByteBuffer}
+import java.nio.{BufferUnderflowException, ByteBuffer, MappedByteBuffer}
 import java.util
 import org.slf4j.LoggerFactory
 import scala.annotation.tailrec
 import scala.util.Random
+import smarttrie.atoms._
 import smarttrie.io._
 
 final case class LogEntry(cid: CID, batch: Batch) {
@@ -105,27 +107,30 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
     }
 
   def truncate(to: CID): Unit = {
-    logger.info(s"Truncating log files up to cid $CID")
+    logger.info(s"Truncating log files up to $to")
     flush()
-    IO.listFiles(logDir, LogExtension).view
+    IO.listFiles(logDir, LogExtension)
+      .view
       .map(LogReader(_))
-      .dropWhile(_.end <= to)
+      .sortBy(_.end)
+      .takeWhile(_.end <= to)
       .foreach(_.delete())
-
   }
 
   def close(): Unit =
     flush()
 
-  def entries(from: CID): Iterator[LogEntry] = {
+  def entries(from: CID): Iterator[LogEntry] with Closeable = {
     flush()
     new MergeIterator(from)
   }
 
-  private final class MergeIterator(from: CID) extends Iterator[LogEntry] {
+  private final class MergeIterator(from: CID)
+      extends Iterator[LogEntry]
+      with Closeable {
 
     private[this] var lastSeenCID = Option.empty[CID]
-    private[this] var iterator: Iterator[LogEntry] =
+    private[this] var iterator: Iterator[LogEntry] with Closeable =
       new LogFilesIterator(from)
 
     @tailrec
@@ -134,11 +139,14 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
         true
       } else {
         lastSeenCID match {
-          case None => false
           case Some(cid) =>
             iterator = entries(cid.next)
             lastSeenCID = None
             hasNext
+
+          case None =>
+            close()
+            false
         }
       }
 
@@ -147,14 +155,20 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
       lastSeenCID = Some(res.cid)
       res
     }
+
+    def close(): Unit =
+      iterator.close()
   }
 
-  private final class LogFilesIterator(from: CID) extends Iterator[LogEntry] {
+  private final class LogFilesIterator(from: CID)
+      extends Iterator[LogEntry]
+      with Closeable {
 
     private[this] var iterator: Iterator[LogEntry] = _
 
     private[this] var filesToRead =
-      IO.listFiles(logDir, LogExtension).view
+      IO.listFiles(logDir, LogExtension)
+        .view
         .map(LogReader(_))
         .sortBy(_.start)
         .dropWhile(_.end < from)
@@ -171,6 +185,7 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
           if (iterator.hasNext) {
             true
           } else {
+            filesToRead.head.close()
             filesToRead = filesToRead.tail
             iterator = null
             hasNext
@@ -180,6 +195,9 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
 
     def next(): LogEntry =
       iterator.next()
+
+    def close(): Unit =
+      filesToRead foreach (_.close())
   }
 }
 
@@ -285,8 +303,8 @@ final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
 }
 
 final class AsyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
-  import LogFileMetadata._
   import FileChannel.MapMode._
+  import LogFileMetadata._
   import StandardOpenOption._
 
   private[this] val channel = FileChannel.open(filePath, CREATE_NEW, WRITE, READ)
@@ -356,12 +374,14 @@ final case class LogReader private (
   import FileChannel.MapMode._
   import LogFileMetadata._
 
+  private[this] var mBuffer: MappedByteBuffer = _
+
   def start: CID = meta.start
   def end: CID = meta.end
   def size: Long = meta.maxSizeBytes
 
   def entries(from: CID): Iterator[LogEntry] = {
-    var mBuffer = channel.map(READ_ONLY, MetadataByteSize, size)
+    mBuffer = channel.map(READ_ONLY, MetadataByteSize, size)
 
     new Iterator[LogEntry] {
 
@@ -376,7 +396,7 @@ final case class LogReader private (
             true
           } catch {
             case _: BufferUnderflowException =>
-              mBuffer = null // help GC
+              close()
               false
           }
         } else {
@@ -391,8 +411,10 @@ final case class LogReader private (
     }
   }
 
-  def close(): Unit =
+  def close(): Unit = {
+    mBuffer = null
     channel.close()
+  }
 
   def delete(): Unit = {
     close()

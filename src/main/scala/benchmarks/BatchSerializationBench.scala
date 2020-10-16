@@ -6,7 +6,8 @@ import java.nio.ByteBuffer
 import java.util.concurrent.ThreadLocalRandom
 import org.openjdk.jmh.annotations.{Benchmark, Scope, State}
 import smarttrie.app.server._
-import smarttrie.io.Codec
+import smarttrie.atoms._
+import smarttrie.io._
 
 object BatchSerializationBench {
   @State(Scope.Thread)

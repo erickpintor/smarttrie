@@ -51,9 +51,15 @@ load_ycsb_througput = function(log_file_path) {
               as.numeric)
 }
 
-load_checkpoint_marks = function(server_log_path, start_ts, end_ts) {
-  checkpoint_start = "Starting replica checkpoint serialization"
-  checkpoint_stop = "Next command occurred after \\d+s since last checkpoint"
+load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
+  if (version == 0) {
+    checkpoint_start = "Starting replica checkpoint serialization"
+    checkpoint_stop = "Next command occurred after \\d+s since last checkpoint"
+  } else {
+    checkpoint_start = "Starting replica checkpoint"
+    checkpoint_stop = "Checkpoint created after \\d+s"
+  }
+  
   checkpoint_lines = regex(
     paste0(
       "(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}).*",
@@ -79,9 +85,9 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts) {
     filter(ts >= start_ts & ts <= end_ts)
 }
 
-plot_througput_vs_checkpoints = function(title, ycsb_log, server_log) {
+plot_througput_vs_checkpoints = function(title, ycsb_log, server_log, version=1) {
   ycsb = load_ycsb_througput(ycsb_log)
-  checkpoints = load_checkpoint_marks(server_log, head(ycsb$ts), last(ycsb$ts))
+  checkpoints = load_checkpoint_marks(server_log, head(ycsb$ts), last(ycsb$ts), version)
   
   ggplot() +
     geom_line(data = ycsb, aes(ts, throughput)) +
@@ -119,7 +125,8 @@ Após a carga de dados, o estado em memória atingiu 1967MB (1.92G). Checkpoints
 plot_througput_vs_checkpoints(
   "Baseline",
   "../results/20201009T132837/node92/tmp/SmartTrie/logs/benchmark.log",
-  "../results/20201009T132837/node91/tmp/SmartTrie/logs/app.log"
+  "../results/20201009T132837/node91/tmp/SmartTrie/logs/app.log",
+  version=0
 )
 ```
 
@@ -127,7 +134,8 @@ plot_througput_vs_checkpoints(
 plot_througput_vs_checkpoints(
   "Baseline + ParallelGC",
   "../results/20201009T140936/node92/tmp/SmartTrie/logs/benchmark.log",
-  "../results/20201009T140936/node91/tmp/SmartTrie/logs/app.log"
+  "../results/20201009T140936/node91/tmp/SmartTrie/logs/app.log",
+  version=0
 )
 ```
 
@@ -135,6 +143,31 @@ plot_througput_vs_checkpoints(
 plot_througput_vs_checkpoints(
   "Baseline + ZGC",
   "../results/20201009T143012/node92/tmp/SmartTrie/logs/benchmark.log",
-  "../results/20201009T143012/node91/tmp/SmartTrie/logs/app.log"
+  "../results/20201009T143012/node91/tmp/SmartTrie/logs/app.log",
+  version=0
+)
+```
+
+```{r local, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Tree-Map",
+  "../../logs/tree-map-benchmark.log",
+  "../../logs/tree-map-app.log"
+)
+```
+
+```{r local, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Hash-Map",
+  "../../logs/hash-map-benchmark.log",
+  "../../logs/hash-map-app.log"
+)
+```
+
+```{r local, echo=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie-Map",
+  "../../logs/trie-map-benchmark.log",
+  "../../logs/trie-map-app.log"
 )
 ```
