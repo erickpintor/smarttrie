@@ -8,7 +8,7 @@
     - name: gather custom facts
       set_fact:
         experiment_path: "/tmp/SmartTrie"
-        run_cmd: "java -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -Xmx64G -server -cp dist/SmartTrie.jar"
+        run_cmd: "java -server -cp dist/SmartTrie.jar"
         experiment_result_path: "./results/{{ experiment_name }}"
       tags:
         - deploy
@@ -62,6 +62,7 @@
   gather_facts: false
   any_errors_fatal: true
   vars:
+    - state: "tree-map"
   tasks:
     - name: ensure no old files
       file:
@@ -87,7 +88,7 @@
     - name: run server
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} smarttrie.app.server.Server 0"
+        cmd: "{{ run_cmd }} -Xmx64G -XX:+UnlockExperimentalVMOptions -XX:+UseZGC  smarttrie.app.server.Server 0 {{ state }}"
       async: 3600 # 1h
       poll: 0
       when: not ansible_check_mode
@@ -111,7 +112,7 @@
     - name: load data
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+        cmd: "{{ run_cmd }} -Xmx2G site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
       async: 1800 # 30m
       poll: 10
       when: not ansible_check_mode
@@ -121,7 +122,7 @@
     - name: run benchmark
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
+        cmd: "{{ run_cmd }} -Xmx2G site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
       async: 1800 # 30m
       poll: 10
       when: not ansible_check_mode
