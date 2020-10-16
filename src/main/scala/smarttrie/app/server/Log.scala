@@ -3,7 +3,12 @@ package smarttrie.app.server
 import java.io.Closeable
 import java.nio.channels.FileChannel
 import java.nio.file._
-import java.nio.{BufferUnderflowException, ByteBuffer, MappedByteBuffer}
+import java.nio.{
+  BufferOverflowException,
+  BufferUnderflowException,
+  ByteBuffer,
+  MappedByteBuffer
+}
 import java.util
 import org.slf4j.LoggerFactory
 import scala.annotation.tailrec
@@ -251,7 +256,7 @@ final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
   import StandardOpenOption._
 
   private[this] val channel = FileChannel.open(filePath, CREATE_NEW, WRITE, DSYNC)
-  private[this] val buffer = ByteBuffer.allocateDirect(4 * 1024) // 4KB
+  private[this] var buffer = ByteBuffer.allocateDirect(4 * 1024) // 4KB
   private[this] val meta = LogFileMetadata(0, CID.Null, CID.Null)
   private[this] var _size = 0L
 
@@ -264,7 +269,15 @@ final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
   def size: Long = _size
 
   def append(entry: LogEntry): Boolean = {
-    Codec.encode(buffer, entry)
+    try {
+      Codec.encode(buffer, entry)
+    } catch {
+      case _: BufferOverflowException => // buffer too small
+        buffer.clear()
+        buffer = ByteBuffer.allocateDirect(Codec.sizeOf(entry).toInt)
+        Codec.encode(buffer, entry)
+    }
+
     val entrySize = buffer.flip().limit()
 
     if (_size + entrySize > maxSize) {

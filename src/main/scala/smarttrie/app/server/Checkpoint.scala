@@ -90,8 +90,8 @@ final class CheckpointReader(filePath: Path) {
   import StandardOpenOption._
 
   private[this] val logger = LoggerFactory.getLogger(getClass)
-  private[this] var channel: FileChannel = FileChannel.open(filePath, READ)
-  private[this] var buffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 1024) // 4KB
+  private[this] var channel = FileChannel.open(filePath, READ)
+  private[this] var buffer = ByteBuffer.allocateDirect(4 * 1024) // 4KB
 
   val lastCID: CID = {
     channel.read(buffer)

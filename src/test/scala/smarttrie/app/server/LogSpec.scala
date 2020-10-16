@@ -72,6 +72,19 @@ abstract class LogSpec(name: String, sync: Boolean) extends Spec {
     val entries = log.entries(from = CID(0)).toSeq
     all(entries map (_.cid.toInt)) should be > 5
   }
+
+  it should "write large batches" in {
+    val batch = Array.newBuilder[Request]
+    for (_ <- 0 until 10) {
+      val key = Key(Random.nextBytes(4 * 1024))
+      val value = Value(Random.nextBytes(8 * 1024))
+      batch += Codec.encode(Command.Set(key, value))
+    }
+
+    val entry = LogEntry(CID(0), batch.result())
+    log.append(entry)
+    log.entries(CID(0)).toSeq should contain only entry
+  }
 }
 
 class SyncLog extends LogSpec("SyncLog", sync = true)
