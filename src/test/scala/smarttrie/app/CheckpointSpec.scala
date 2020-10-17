@@ -22,17 +22,17 @@ class CheckpointSpec extends Spec {
 
   "Checkpoint" should "write/read checkpoints" in {
     val oldState = State.trieMap
-    for (_ <- 0 until 10_000) {
+    for (_ <- 0 until 100_000) {
       val key = Key(Random.nextBytes(32))
       val value = Value(Random.nextBytes(128))
       oldState.put(key, value)
     }
 
-    Checkpoint.write(ckpDir, oldState, CID(9_999), blockSizeMB = 1)
+    Checkpoint.write(ckpDir, oldState, CID(100_000), blockSizeMB = 1)
 
     val newState = State.trieMap
     val reader = Checkpoint.read(ckpDir).get
-    reader.lastCID shouldBe CID(9_999)
+    reader.lastCID shouldBe CID(100_000)
 
     reader.entries() foreach {
       case (key, value) =>

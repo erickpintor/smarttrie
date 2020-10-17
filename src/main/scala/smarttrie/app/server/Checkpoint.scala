@@ -2,7 +2,7 @@ package smarttrie.app.server
 
 import java.nio.channels.FileChannel
 import java.nio.file.{Files, Path, StandardOpenOption}
-import java.nio.{BufferUnderflowException, ByteBuffer, MappedByteBuffer}
+import java.nio.{BufferUnderflowException, MappedByteBuffer}
 import org.slf4j.LoggerFactory
 import scala.annotation.tailrec
 import smarttrie.atoms._
@@ -19,10 +19,11 @@ object Checkpoint {
     writer.write(cid, state)
   }
 
-  def read(ckpPath: Path): Option[CheckpointReader] = {
+  def read(ckpPath: Path, blockSizeMB: Int = 512): Option[CheckpointReader] = {
+    val blockSize = blockSizeMB * 1024 * 1024
     val checkpoints = IO.listFiles(ckpPath, CheckpointExtension)
     require(checkpoints.size <= 1, "Multiple checkpoints found")
-    checkpoints.headOption map { new CheckpointReader(_) }
+    checkpoints.headOption map { new CheckpointReader(_, blockSize) }
   }
 }
 
@@ -66,7 +67,7 @@ final class CheckpointAsyncWriter(ckpPath: Path, blockSize: Long) {
   private def append(key: Key, value: Value): Unit = {
     val size = Codec.sizeOf(key) + Codec.sizeOf(value)
     if (buffer.remaining() < size) {
-      buffer = channel.map(READ_WRITE, buffer.position(), blockSize)
+      buffer = channel.map(READ_WRITE, bytesWritten, blockSize)
     }
     Codec.encode(buffer, key)
     Codec.encode(buffer, value)
@@ -86,18 +87,17 @@ final class CheckpointAsyncWriter(ckpPath: Path, blockSize: Long) {
   }
 }
 
-final class CheckpointReader(filePath: Path) {
+final class CheckpointReader(filePath: Path, blockSize: Int) {
+  import FileChannel.MapMode._
   import StandardOpenOption._
 
   private[this] val logger = LoggerFactory.getLogger(getClass)
   private[this] var channel = FileChannel.open(filePath, READ)
-  private[this] var buffer = ByteBuffer.allocateDirect(4 * 1024) // 4KB
+  private[this] var buffer =
+    channel.map(READ_ONLY, 0, math.min(channel.size(), blockSize))
 
-  val lastCID: CID = {
-    channel.read(buffer)
-    buffer.flip()
+  val lastCID: CID =
     Codec.decode(buffer).as[CID]
-  }
 
   def entries(): Iterator[(Key, Value)] = {
     logger.info(s"Loading a checkpoint of ${channel.size() / 1024 / 1024}MB")
@@ -119,9 +119,9 @@ final class CheckpointReader(filePath: Path) {
             case _: BufferUnderflowException =>
               buffer.reset()
               pos += buffer.position()
-              buffer.clear()
-              if (channel.read(buffer, pos) > 0) {
-                buffer.flip()
+              val nextChunk = math.min(channel.size() - pos, blockSize)
+              buffer = channel.map(READ_ONLY, pos, nextChunk)
+              if (buffer.hasRemaining) {
                 hasNext
               } else {
                 close()
