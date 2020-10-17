@@ -113,7 +113,6 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
 
   def truncate(to: CID): Unit = {
     logger.info(s"Truncating log files up to $to")
-    flush()
     IO.listFiles(logDir, LogExtension)
       .view
       .map(LogReader(_))
