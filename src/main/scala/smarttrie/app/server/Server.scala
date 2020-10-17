@@ -42,7 +42,8 @@ final class Server(
   private[this] val log = Log(dataPath)
 
   if (state.allowConcurrentSnapshot) {
-    checkpointThread = Executors.newSingleThreadExecutor()
+    checkpointThread =
+      Executors.newSingleThreadExecutor(r => new Thread(r, "Checkpoint"))
     isCheckpointing = new AtomicBoolean(false)
   }
   loadReplicaState()
