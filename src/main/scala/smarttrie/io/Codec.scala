@@ -1,5 +1,6 @@
 package smarttrie.io
 
+import io.netty.util.Recycler
 import java.io.{
   ByteArrayInputStream,
   ByteArrayOutputStream,
@@ -164,12 +165,12 @@ object Codec {
   def encode[A](value: A)(implicit enc: Encoder[A]): Array[Byte] =
     writer { enc.encode(value, _) }
 
-  def writer(f: Encoder.Output => Any): Array[Byte] = {
-    val arr = new ByteArrayOutputStream()
-    val out = new Encoder.DefaultOutput(new DataOutputStream(arr))
-    f(out)
-    arr.toByteArray
-  }
+  def writer(f: Encoder.Output => Any): Array[Byte] =
+    PooledByteArrayOutputStream.withPooled { arr =>
+      val out = new Encoder.DefaultOutput(new DataOutputStream(arr))
+      f(out)
+      arr.toByteArray
+    }
 
   def encode[A](buf: ByteBuffer, value: A)(implicit
       enc: Encoder[A]
@@ -195,4 +196,36 @@ object Codec {
 
   def reader(buf: ByteBuffer): Decoder.Input =
     new Decoder.ByteBufferInput(buf)
+}
+
+private object PooledByteArrayOutputStream {
+  val AllocSize = 4 * 1024 // 4kb
+
+  private[this] val pool =
+    new Recycler[PooledByteArrayOutputStream]() {
+      def newObject(
+          handle: Recycler.Handle[PooledByteArrayOutputStream]
+      ): PooledByteArrayOutputStream =
+        new PooledByteArrayOutputStream(handle)
+    }
+
+  def withPooled[A](fn: ByteArrayOutputStream => A): A = {
+    val holder = pool.get()
+    try fn(holder.byteArrayOutputStream)
+    finally holder.recycle()
+  }
+}
+
+private final class PooledByteArrayOutputStream private (
+    private[this] val handler: Recycler.Handle[PooledByteArrayOutputStream]
+) {
+  import PooledByteArrayOutputStream._
+
+  val byteArrayOutputStream =
+    new ByteArrayOutputStream(AllocSize)
+
+  def recycle(): Unit = {
+    byteArrayOutputStream.reset()
+    handler.recycle(this)
+  }
 }
