@@ -11,7 +11,7 @@ services:
       - ./logs/server/:/opt/smarttrie/logs/
       - ./files/:/opt/smarttrie/files/
     command: |
-      /bin/bash -c "java -XX:+UseParallelGC -Xmx4G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0 trie-map"
+      /bin/bash -c "java -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -Xms4G -Xmx4G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0 trie-map"
     ports:
       - "11000:11000"
       - "11001:11001"
@@ -28,7 +28,7 @@ services:
       - ./config/workload:/opt/smarttrie/config/workload
       - ./logs/client/:/opt/smarttrie/logs/
     command: |
-      /bin/bash -c "java -XX:+UseParallelGC -Xmx2G -server -cp dist/SmartTrie.jar site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+      /bin/bash -c "java -server -cp dist/SmartTrie.jar site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
 
   benchmark:
     image: openjdk:11
@@ -42,4 +42,4 @@ services:
       - ./config/workload:/opt/smarttrie/config/workload
       - ./logs/client/:/opt/smarttrie/logs/
     command: |
-      /bin/bash -c "java -XX:+UseParallelGC -Xmx2G -server -cp dist/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
+      /bin/bash -c "java -server -cp dist/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
