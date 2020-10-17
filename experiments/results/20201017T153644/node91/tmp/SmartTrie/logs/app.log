@@ -1,0 +1,64 @@
+2020-10-17 15:37:32.355 [main] INFO  smarttrie.app.server.Server - No previews checkpoints to restore
+2020-10-17 15:37:32.357 [main] INFO  smarttrie.app.server.Server - Re-executing remaining commands from log
+2020-10-17 15:37:32.384 [main] INFO  smarttrie.app.server.Server - Replica state has been restored with last id CID(-1)
+2020-10-17 15:37:32.438 [main] INFO  b.r.ServerViewController - Using view stored on disk
+2020-10-17 15:37:32.908 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2020-10-17 15:37:32.908 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2020-10-17 15:37:32.909 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2020-10-17 15:37:32.909 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2020-10-17 15:37:32.909 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2020-10-17 15:37:32.909 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2020-10-17 15:37:32.909 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.91
+2020-10-17 15:37:32.909 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.91:11000),
+2020-10-17 15:37:33.011 [Server CS] INFO  s.a.s.Server$InternalStateManager - Replica state is up to date
+2020-10-17 15:37:52.126 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-17 15:38:39.157 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(100000)
+2020-10-17 15:38:42.234 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 393MB
+2020-10-17 15:38:42.234 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 3s
+2020-10-17 15:38:42.234 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(100000)
+2020-10-17 15:38:42.247 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000000000-0000107043.log
+2020-10-17 15:39:20.338 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(200000)
+2020-10-17 15:39:23.159 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 787MB
+2020-10-17 15:39:23.159 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 2s
+2020-10-17 15:39:23.159 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(200000)
+2020-10-17 15:39:23.160 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000107044-0000206253.log
+2020-10-17 15:40:01.091 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(300000)
+2020-10-17 15:40:05.220 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1180MB
+2020-10-17 15:40:05.221 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 4s
+2020-10-17 15:40:05.221 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(300000)
+2020-10-17 15:40:05.223 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000206254-0000310000.log
+2020-10-17 15:40:43.554 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(400000)
+2020-10-17 15:40:48.714 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1574MB
+2020-10-17 15:40:48.714 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 5s
+2020-10-17 15:40:48.714 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(400000)
+2020-10-17 15:40:48.716 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000310001-0000412754.log
+2020-10-17 15:41:24.622 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-10-17 15:41:24.622 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2020-10-17 15:41:54.135 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-17 15:41:54.207 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(500000)
+2020-10-17 15:42:01.024 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-17 15:42:01.024 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 6s
+2020-10-17 15:42:01.024 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(500000)
+2020-10-17 15:42:01.025 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000412755-0000508158.log
+2020-10-17 15:42:44.492 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(600000)
+2020-10-17 15:42:50.646 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-17 15:42:50.646 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 6s
+2020-10-17 15:42:50.646 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(600000)
+2020-10-17 15:42:50.647 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000508159-0000611769.log
+2020-10-17 15:43:35.383 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(700000)
+2020-10-17 15:43:40.688 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-17 15:43:40.688 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 5s
+2020-10-17 15:43:40.688 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(700000)
+2020-10-17 15:43:40.689 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000611770-0000710356.log
+2020-10-17 15:44:24.118 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(800000)
+2020-10-17 15:44:31.208 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-17 15:44:31.208 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 7s
+2020-10-17 15:44:31.208 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(800000)
+2020-10-17 15:44:31.209 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000710357-0000813628.log
+2020-10-17 15:45:16.400 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(900000)
+2020-10-17 15:45:22.487 [pool-1-thread-1] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-17 15:45:22.487 [pool-1-thread-1] INFO  smarttrie.app.server.Server - Checkpoint created after 6s
+2020-10-17 15:45:22.487 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(900000)
+2020-10-17 15:45:22.488 [pool-1-thread-1] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000813629-0000911081.log
+2020-10-17 15:46:06.009 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-10-17 15:46:06.009 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0

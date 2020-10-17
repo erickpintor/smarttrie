@@ -1,10 +1,10 @@
 ---
 title: "SmartTrie - Project Benchmarks"
-output: 
-  html_notebook: 
+output:
+  html_notebook:
     code_folding: none
     toc: yes
-  pdf_document: 
+  pdf_document:
     fig_crop: no
     toc: yes
 ---
@@ -13,6 +13,7 @@ output:
 library(stringr)
 library(dplyr)
 library(ggplot2)
+library(scales)
 
 load_ycsb_througput = function(log_file_path) {
   ycsb_lines = regex(
@@ -29,7 +30,7 @@ load_ycsb_througput = function(log_file_path) {
       "99.99=(.*)]"
     )
   )
-  
+
   ycsb = str_match(readLines(log_file_path), ycsb_lines)
   ycsb = ycsb[!is.na(ycsb[, 1]),]
   ycsb = ycsb[,-1]
@@ -42,7 +43,7 @@ load_ycsb_througput = function(log_file_path) {
                      "p99",
                      "p999",
                      "p9999")
-  
+
   ycsb =
     as_tibble(ycsb) %>%
     mutate(ts = sub("(\\d{2}):(\\d{3})", "\\1.\\2", ts)) %>%
@@ -59,7 +60,7 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
     checkpoint_start = "Starting replica checkpoint"
     checkpoint_stop = "Checkpoint created after \\d+s"
   }
-  
+
   checkpoint_lines = regex(
     paste0(
       "(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}.\\d{3}).*",
@@ -70,12 +71,12 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
       ")"
     )
   )
-  
+
   checkpoints = str_match(readLines(server_log_path), checkpoint_lines)
   checkpoints = checkpoints[!is.na(checkpoints[, 1]),]
   checkpoints = checkpoints[,-1]
   colnames(checkpoints) = c("ts", "event")
-  
+
   checkpoints =
     as_tibble(checkpoints) %>%
     mutate(event = sub(checkpoint_start, "start", event)) %>%
@@ -88,16 +89,17 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
 plot_througput_vs_checkpoints = function(title, ycsb_log, server_log, version=1) {
   ycsb = load_ycsb_througput(ycsb_log)
   checkpoints = load_checkpoint_marks(server_log, head(ycsb$ts), last(ycsb$ts), version)
-  
+
   ggplot() +
     geom_line(data = ycsb, aes(ts, throughput)) +
     geom_vline(data = checkpoints,
                aes(xintercept = ts, color = event),
                linetype = "dashed") +
-    labs(title = title, 
+    labs(title = title,
          x = "Time",
          y = "Througput (requests/second)") +
-    scale_color_discrete(name = "Checkpoints")
+    scale_color_discrete(name = "Checkpoints") +
+    scale_y_continuous(breaks = pretty_breaks(15))
 }
 ```
 
@@ -114,8 +116,9 @@ Criação da baseline com aplicação tradicional. Configurações relevantes:
 | Chaves | 500000 | |
 | Requests | 500000 | |
 | Bytes/Registro | 4kb | |
-| Periodo de Checkpoints | 100000 | |
-| Periodo de Asyncronos | Não | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Não | |
+| Log assíncrono | Sim |
 | Estrutura de dados | java.util.TreeMap | |
 | Commit | 26544ab | |
 
@@ -148,26 +151,66 @@ plot_througput_vs_checkpoints(
 )
 ```
 
-```{r local, echo=FALSE, warning=FALSE}
+## 2020-10-17 - Reescrita dos Mecanismos de Checkpoint e Log
+
+Nesta iteração, assumimos controle dos mecanismos de checkpoint e log. Para avaliar o impacto de tais componentes, reexecutamos a baseline. A seguir estão as configuração relevantes:
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Servidores vs Clientes | 1/1 | Node 91-92 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 500000 | |
+| Requests | 500000 | |
+| Bytes/Registro | 4kb | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Sim/Não | |
+| Log assíncrono | Sim |
+| Estrutura de dados | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap | |
+| Commit | 3d47d90 | |
+
+Iniciamos com a reexecução da baseline, utilizando uma estrutura de dados do tipo Tree-Map, e o algoritmo de GC paralelo. É visível que o tempo de execução do checkpoint diminuiu se comparado com a versão anterior do dia 09, que utiliza os algoritmos do BFT-Smart. No entanto, o comportamento é o mesmo: durante a execução do checkpoint nenhum comando é executado.
+
+```{r experiment-2020-10-17-tree-map, echo=FALSE, message=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
-  "Tree-Map",
-  "../../logs/tree-map-benchmark.log",
-  "../../logs/tree-map-app.log"
+  "Baseline",
+  "../results/20201017T144634/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201017T144634/node91/tmp/SmartTrie/logs/app.log"
 )
 ```
 
-```{r local, echo=FALSE, warning=FALSE}
+A titulo de cuiosidade, reexecutamos também a baseline com o algoritmo de ZGC de garbage collector. O resultado foi semelhante ao obtido anteriormente: maior estabilidade apensar de menor vazão. A escolha do algoritmo correto de GC ainda não é clara. Os demais experimentos foram executados com o algoritmo paralelo de GC.
+
+```{r experiment-2020-10-17-tree-map-zgc, echo=FALSE, message=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
-  "Hash-Map",
-  "../../logs/hash-map-benchmark.log",
-  "../../logs/hash-map-app.log"
+  "Baseline + ZGC",
+  "../results/20201017T142212/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201017T142212/node91/tmp/SmartTrie/logs/app.log"
 )
 ```
 
-```{r local, echo=FALSE, warning=FALSE}
+A seguir, executamos um experimento similar, apenas variando o tipo da estrutura de um TreeMap (não thread-safe) para um ConcurrentHashMap (thread-safe). A hipótese é que a vazão de uma estrutura não thread-safe pode ser maior que a de uma estrutura thread-safe e, portanto, não seria uma comparação justa com a estrutura thread-safe CTrie. Albas estruturas variam na mesma faixa de ~1800 a ~2200 RPS, sendo que a TreeMap se mantém mais próximo ao limite superior. Apesar disto, a instabilidade na vazão do serviço em ambos os casos torna difícil chegar a qualquer conclusão.
+
+```{r experiment-2020-10-17-hash-map-parallel-gc, echo=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
-  "Trie-Map",
-  "../../logs/trie-map-benchmark.log",
-  "../../logs/trie-map-app.log"
+  "ConcurrentHashMap",
+  "../results/20201017T151954/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201017T151954/node91/tmp/SmartTrie/logs/app.log"
 )
 ```
+
+Finalmente, executamos o mesmo experimento com uma estrutura do tipo CTrie, ou TrieMap em scala. Apesar da vazão ainda instável, é possível notar que não há a interrupção total do serviço durante o checkpoint. É interessante observar que ao final dos checkpoints, geralmente ocorre uma grande queda na vazão. Acreditamos que a queda esteja relacionada rotina sincronizada que "trunca" os logs ao final do checkpoint.
+
+```{r experiment-2020-10-17-trie-map-parallel-gc, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie",
+  "../results/20201017T153644/node92/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201017T153644/node91/tmp/SmartTrie/logs/app.log"
+)
+```
+
+O experimento com a CTrie se mostra promissor. No entanto, a instabilidade na vazão do serviço dificulta a sua análise. Próximos passos:
+
+* Depurar o código afim de estabilizar a vazão do serviço;
+* Reexecutar os experimentos.
+
+<!-- Coleta de dados para depuração: ../results/20201017T121311 -->

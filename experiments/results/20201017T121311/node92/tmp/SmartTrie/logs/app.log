@@ -1,0 +1,41 @@
+2020-10-17 14:22:36.967 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 14:22:36.988 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 14:30:50.132 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 14:30:50.154 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 14:43:47.178 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 14:43:47.200 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 14:47:42.131 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 14:47:42.154 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 14:51:56.217 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 14:51:56.239 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 15:21:00.855 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 15:21:00.877 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 15:25:10.184 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 15:25:10.206 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 15:37:52.081 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 15:37:52.103 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 15:41:54.110 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 15:41:54.133 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 16:38:41.232 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 16:38:41.255 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 16:42:44.005 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 16:42:44.027 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 16:56:20.491 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 16:56:20.512 [Thread-2] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2020-10-17 16:56:20.518 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:117)
+	at smarttrie.app.client.Client.update(Client.scala:64)
+	at smarttrie.app.client.Client.insert(Client.scala:55)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-10-17 17:01:31.914 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 17:01:31.936 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-10-17 17:07:21.591 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.91:11000
+2020-10-17 17:07:21.613 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
