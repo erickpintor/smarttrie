@@ -309,6 +309,7 @@ final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
       channel.position(0)
       channel.write(buffer.flip())
       buffer.clear()
+      buffer = null // help GC
     }
     channel.close()
   }
@@ -320,7 +321,7 @@ final class AsyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
   import StandardOpenOption._
 
   private[this] val channel = FileChannel.open(filePath, CREATE_NEW, WRITE, READ)
-  private[this] val buffer = channel.map(READ_WRITE, 0, MetadataByteSize + maxSize)
+  private[this] var buffer = channel.map(READ_WRITE, 0, MetadataByteSize + maxSize)
   private[this] val meta = LogFileMetadata(0, CID.Null, CID.Null)
   private[this] var _size = 0L
   buffer.position(MetadataByteSize)
@@ -358,6 +359,7 @@ final class AsyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
     if (channel.isOpen) {
       Codec.encode(buffer.rewind(), meta)
       buffer.force()
+      buffer = null // help GC
     }
     channel.close()
   }
@@ -424,7 +426,7 @@ final case class LogReader private (
   }
 
   def close(): Unit = {
-    mBuffer = null
+    mBuffer = null // help GC
     channel.close()
   }
 
