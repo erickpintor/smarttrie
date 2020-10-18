@@ -118,6 +118,8 @@
   hosts: client
   gather_facts: false
   any_errors_fatal: true
+  vars:
+    - threads: 32
   tasks:
     - name: ensure logs folder
       file:
@@ -130,7 +132,7 @@
     - name: load data
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xmx2G site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx2G site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
       async: 1800 # 30m
       poll: 10
       when: not ansible_check_mode
@@ -140,7 +142,7 @@
     - name: run benchmark
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xmx2G site.ycsb.Client -t -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/benchmark.log"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx2G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/benchmark.log"
       async: 1800 # 30m
       poll: 10
       when: not ansible_check_mode
