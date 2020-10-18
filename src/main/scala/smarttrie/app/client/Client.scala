@@ -4,7 +4,6 @@ import bftsmart.tom.ServiceProxy
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.{HashMap => JHashMap, Map => JMap, Set => JSet, Vector => JVector}
 import org.slf4j.LoggerFactory
-import scala.io.Source
 import scala.jdk.CollectionConverters._
 import scala.util.control.NonFatal
 import site.ycsb.{ByteArrayByteIterator, ByteIterator, DB, Status}
@@ -17,21 +16,20 @@ object Client {
   private val logger =
     LoggerFactory.getLogger(getClass)
 
-  private[this] val index =
+  private[this] val proxyID =
     new AtomicInteger(0)
 
-  private[this] lazy val proxies: Vector[ServiceProxy] = {
-    val config = Source.fromFile("./config/hosts.config")
-    val nServers = config.getLines().count(!_.startsWith("#"))
-    Vector.tabulate(nServers)(n => new ServiceProxy(n))
-  }
+  private[this] val threadLocalProxy =
+    new ThreadLocal[ServiceProxy]()
 
-  def nextProxy: ServiceProxy =
-    if (proxies.size == 1) {
-      proxies.head // fast path
-    } else {
-      proxies(index.getAndIncrement() % proxies.length)
+  private def serviceProxy: ServiceProxy = {
+    var service = threadLocalProxy.get()
+    if (service eq null) {
+      service = new ServiceProxy(proxyID.getAndIncrement())
+      threadLocalProxy.set(service)
     }
+    service
+  }
 }
 
 final class Client extends DB {
@@ -105,7 +103,7 @@ final class Client extends DB {
   private def execute(cmd: Command): Reply =
     try {
       val msg = Codec.encode(cmd)
-      val res = nextProxy.invokeOrdered(msg)
+      val res = serviceProxy.invokeOrdered(msg)
       Codec.decode(res).as[Reply]
     } catch {
       case NonFatal(err) =>
