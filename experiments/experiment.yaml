@@ -76,7 +76,7 @@
         - deploy
 
 - name: Run server
-  hosts: node91
+  hosts: server
   gather_facts: false
   any_errors_fatal: true
   vars:
@@ -115,7 +115,7 @@
         - server
 
 - name: Run client
-  hosts: node92
+  hosts: client
   gather_facts: false
   any_errors_fatal: true
   tasks:
