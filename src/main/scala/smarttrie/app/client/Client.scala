@@ -22,17 +22,8 @@ object Client {
 
   private[this] lazy val proxies: Vector[ServiceProxy] = {
     val config = Source.fromFile("./config/hosts.config")
-    val servers = Vector.newBuilder[ServiceProxy]
-
-    config.getLines() foreach { line =>
-      if (!line.startsWith("#")) {
-        val parts = line.split(' ')
-        val id = parts.head.trim
-        servers += new ServiceProxy(id.toInt)
-      }
-    }
-
-    servers.result()
+    val nServers = config.getLines().count(!_.startsWith("#"))
+    Vector.tabulate(nServers)(n => new ServiceProxy(n))
   }
 
   def nextProxy: ServiceProxy =
