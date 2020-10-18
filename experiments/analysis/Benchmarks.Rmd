@@ -1,11 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output:
+  pdf_document: 
+    fig_crop: no
+    fig_height: 4
+    fig_width: 7
+    toc: yes
   html_notebook:
     code_folding: none
-    toc: yes
-  pdf_document:
-    fig_crop: no
     toc: yes
 ---
 
