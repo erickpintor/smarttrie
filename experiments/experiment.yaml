@@ -106,7 +106,7 @@
     - name: run server
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xmx64G -XX:+UseParallelGC smarttrie.app.server.Server 0 {{ state }}"
+        cmd: "{{ run_cmd }} -Xms6G -Xmx6G -XX:+UseZGC -XX+UseCompressedOops smarttrie.app.server.Server 0 {{ state }}"
       async: 3600 # 1h
       poll: 0
       when: not ansible_check_mode
