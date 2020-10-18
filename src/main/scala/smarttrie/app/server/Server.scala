@@ -43,7 +43,7 @@ final class Server(
 
   if (state.allowConcurrentSnapshot) {
     checkpointThread =
-      Executors.newSingleThreadExecutor(r => new Thread(r, "Checkpoint"))
+      Executors.newSingleThreadExecutor(r => new Thread(r, "Checkpoint Thread"))
     isCheckpointing = new AtomicBoolean(false)
   }
   loadReplicaState()
