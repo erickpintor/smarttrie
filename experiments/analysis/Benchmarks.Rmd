@@ -165,7 +165,7 @@ Nesta iteração, assumimos controle dos mecanismos de checkpoint e log. Para av
 | Requests | 500000 | |
 | Bytes/Registro | 4kb | |
 | Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim/Não | |
+| Checkpoints assíncrono | Sim/Não | TrieMap é assíncrono, demais são síncronos |
 | Log assíncrono | Sim |
 | Estrutura de dados | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap | |
 | Commit | 3d47d90 | |
@@ -180,7 +180,7 @@ plot_througput_vs_checkpoints(
 )
 ```
 
-A titulo de cuiosidade, reexecutamos também a baseline com o algoritmo de ZGC de garbage collector. O resultado foi semelhante ao obtido anteriormente: maior estabilidade apensar de menor vazão. A escolha do algoritmo correto de GC ainda não é clara. Os demais experimentos foram executados com o algoritmo paralelo de GC.
+A título de curiosidade, reexecutamos também a baseline com o algoritmo de ZGC de garbage collector. O resultado foi semelhante ao obtido anteriormente: maior estabilidade apensar de menor vazão. A escolha do algoritmo correto de GC ainda não é clara. Os demais experimentos foram executados com o algoritmo paralelo de GC.
 
 ```{r experiment-2020-10-17-tree-map-zgc, echo=FALSE, message=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
@@ -190,7 +190,7 @@ plot_througput_vs_checkpoints(
 )
 ```
 
-A seguir, executamos um experimento similar, apenas variando o tipo da estrutura de um TreeMap (não thread-safe) para um ConcurrentHashMap (thread-safe). A hipótese é que a vazão de uma estrutura não thread-safe pode ser maior que a de uma estrutura thread-safe e, portanto, não seria uma comparação justa com a estrutura thread-safe CTrie. Albas estruturas variam na mesma faixa de ~1800 a ~2200 RPS, sendo que a TreeMap se mantém mais próximo ao limite superior. Apesar disto, a instabilidade na vazão do serviço em ambos os casos torna difícil chegar a qualquer conclusão.
+A seguir, executamos um experimento similar, apenas variando o tipo da estrutura de um TreeMap (não thread-safe) para um ConcurrentHashMap (thread-safe). A hipótese é que a vazão de uma estrutura não thread-safe pode ser maior que a de uma estrutura thread-safe e, portanto, não seria uma comparação justa com a estrutura thread-safe CTrie. Ambas estruturas variam na mesma faixa de ~1800 a ~2200 RPS, sendo que a TreeMap se mantém mais próximo ao limite superior. Apesar disto, a instabilidade na vazão do serviço em ambos os casos torna difícil chegar a qualquer conclusão.
 
 ```{r experiment-2020-10-17-hash-map-parallel-gc, echo=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
@@ -200,7 +200,7 @@ plot_througput_vs_checkpoints(
 )
 ```
 
-Finalmente, executamos o mesmo experimento com uma estrutura do tipo CTrie, ou TrieMap em scala. Apesar da vazão ainda instável, é possível notar que não há a interrupção total do serviço durante o checkpoint. É interessante observar que ao final dos checkpoints, geralmente ocorre uma grande queda na vazão. Acreditamos que a queda esteja relacionada rotina sincronizada que "trunca" os logs ao final do checkpoint.
+Finalmente, executamos o mesmo experimento com uma estrutura do tipo CTrie, ou TrieMap em scala. Apesar da vazão ainda instável, é possível notar que não há a interrupção total do serviço durante o checkpoint. É interessante observar que ao final dos checkpoints, geralmente ocorre uma grande queda na vazão. Acreditamos que a queda esteja relacionada a uma rotina sincronizada que "trunca" os logs ao final do checkpoint.
 
 ```{r experiment-2020-10-17-trie-map-parallel-gc, echo=FALSE, message=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
