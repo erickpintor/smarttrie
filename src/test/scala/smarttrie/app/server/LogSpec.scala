@@ -62,11 +62,11 @@ abstract class LogSpec(name: String, sync: Boolean) extends Spec {
 
   it should "truncate" in {
     (0 to 5) foreach (id => log.append(LogEntry(CID(id), new Batch(0))))
-    log.close() // force flush
+    log.flush()
 
     log = Log(logDir, sync)
     (6 to 10) foreach (id => log.append(LogEntry(CID(id), new Batch(0))))
-    log.close() // force flush
+    log.flush()
 
     log.truncate(to = CID(5))
     val entries = log.entries(from = CID(0)).toSeq
@@ -83,6 +83,9 @@ abstract class LogSpec(name: String, sync: Boolean) extends Spec {
 
     val entry = LogEntry(CID(0), batch.result())
     log.append(entry)
+    log.flush()
+    log.close()
+
     log.entries(CID(0)).toSeq should contain only entry
   }
 }

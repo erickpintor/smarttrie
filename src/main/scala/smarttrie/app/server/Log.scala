@@ -10,6 +10,7 @@ import java.nio.{
   MappedByteBuffer
 }
 import java.util
+import java.util.concurrent.{ExecutorService, Executors, TimeUnit}
 import org.slf4j.LoggerFactory
 import scala.annotation.tailrec
 import scala.util.Random
@@ -83,14 +84,21 @@ object Log {
 final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
   import Log._
 
-  private[this] var log = newLogFile
+  private[this] var executor =
+    if (sync) null
+    else {
+      Executors.newSingleThreadExecutor(r => new Thread(r, "Log Thread"))
+    }
 
-  private def newLogFile: LogWriter =
-    LogWriter(
-      logDir.resolve(s"${Random.nextLong().abs}$TempExtension"),
-      logFileSizeMB,
-      sync
-    )
+  private[this] var log = newLogFile
+  private[this] var closed = false
+
+  private def newLogFile: LogWriter = {
+    val maxSize = logFileSizeMB * 1024 * 1024L
+    val filePath = logDir.resolve(s"${Random.nextLong().abs}$TempExtension")
+    if (sync) new SyncLogWriter(filePath, maxSize)
+    else new AsyncLogWriter(filePath, maxSize, executor)
+  }
 
   def append(entry: LogEntry): Unit =
     synchronized {
@@ -99,16 +107,22 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
       }
     }
 
-  private def flush(): Unit =
+  def flush(): Unit =
     synchronized {
-      if (log.size > 0) {
-        val name = f"${log.start.toInt}%010d-${log.end.toInt}%010d$LogExtension"
-        val path = logDir.resolve(name)
-        logger.info(s"Flushing log file $path")
-        log.close()
-        log.rename(path)
+      if (flush0()) {
         log = newLogFile
       }
+    }
+
+  private def flush0(): Boolean =
+    if (log.size > 0) {
+      val name = f"${log.start.toInt}%010d-${log.end.toInt}%010d$LogExtension"
+      val path = logDir.resolve(name)
+      logger.info(s"Flushing log file $path")
+      log.flushTo(path)
+      true
+    } else {
+      false
     }
 
   def truncate(to: CID): Unit = {
@@ -121,8 +135,27 @@ final class Log private (logDir: Path, sync: Boolean, logFileSizeMB: Int) {
       .foreach(_.delete())
   }
 
-  def close(): Unit =
-    flush()
+  def close(): Unit = {
+    val _executor =
+      synchronized {
+        if (!closed) {
+          closed = true
+          flush0()
+        }
+        if (executor ne null) {
+          val _executor = executor
+          executor = null
+          _executor
+        } else {
+          null
+        }
+      }
+    if (_executor ne null) {
+      _executor.shutdown()
+      _executor.awaitTermination(1, TimeUnit.MINUTES)
+      _executor.shutdownNow()
+    }
+  }
 
   def entries(from: CID): Iterator[LogEntry] with Closeable = {
     flush()
@@ -234,20 +267,12 @@ object LogFileMetadata {
 }
 
 trait LogWriter {
-  def append(entry: LogEntry): Boolean
-  def rename(newFilePath: Path): Unit
   def start: CID
   def end: CID
   def size: Long
+  def append(entry: LogEntry): Boolean
+  def flushTo(newFilePath: Path): Unit
   def close(): Unit
-}
-
-object LogWriter {
-  def apply(filePath: Path, maxSizeMB: Int, sync: Boolean): LogWriter = {
-    val maxSize = maxSizeMB * 1024 * 1024L
-    if (sync) new SyncLogWriter(filePath, maxSize)
-    else new AsyncLogWriter(filePath, maxSize)
-  }
 }
 
 final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
@@ -298,7 +323,7 @@ final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
     }
   }
 
-  def rename(newFilePath: Path): Unit = {
+  def flushTo(newFilePath: Path): Unit = {
     close()
     Files.move(filePath, newFilePath)
   }
@@ -315,7 +340,8 @@ final class SyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
   }
 }
 
-final class AsyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
+final class AsyncLogWriter(filePath: Path, maxSize: Long, executor: ExecutorService)
+    extends LogWriter {
   import FileChannel.MapMode._
   import LogFileMetadata._
   import StandardOpenOption._
@@ -350,10 +376,11 @@ final class AsyncLogWriter(filePath: Path, maxSize: Long) extends LogWriter {
     }
   }
 
-  def rename(newFilePath: Path): Unit = {
-    close()
-    Files.move(filePath, newFilePath)
-  }
+  def flushTo(newFilePath: Path): Unit =
+    executor.execute(() => {
+      close()
+      Files.move(filePath, newFilePath)
+    })
 
   def close(): Unit = {
     if (channel.isOpen) {
