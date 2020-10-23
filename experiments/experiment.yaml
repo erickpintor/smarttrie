@@ -84,12 +84,16 @@
   tasks:
     - name: ensure no old files
       file:
-        path: "{{ experiment_path }}/{{ item }}"
+        path: "{{ experiment_path }}/files"
         state: absent
       when: keep_files is not defined
-      with_items:
-        - files
-        - logs
+      tags:
+        - run
+        - server
+    - name: ensure no old logs
+      file:
+        path: "{{ experiment_path }}/logs"
+        state: absent
       tags:
         - run
         - server
