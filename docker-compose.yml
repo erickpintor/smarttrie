@@ -11,7 +11,7 @@ services:
       - ./logs/server/:/opt/smarttrie/logs/
       - ./files/:/opt/smarttrie/files/
     command: |
-      /bin/bash -c "java -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -Xms6G -Xmx6G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0 trie-map"
+      /bin/bash -c "java -XX:+UseParallelGC -XX:+UseCompressedOops -Xms6G -Xmx6G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0 trie-map"
     ports:
       - "11000:11000"
       - "11001:11001"
