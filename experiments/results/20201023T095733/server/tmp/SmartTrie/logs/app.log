@@ -1,0 +1,200 @@
+2020-10-23 15:00:00.336 [main] INFO  smarttrie.app.server.Server - No previews checkpoints to restore
+2020-10-23 15:00:00.339 [main] INFO  smarttrie.app.server.Server - Re-executing remaining commands from log
+2020-10-23 15:00:00.381 [main] INFO  smarttrie.app.server.Server - Replica state has been restored with last id CID(-1)
+2020-10-23 15:00:00.417 [main] INFO  b.r.ServerViewController - Creating current view from configuration file
+2020-10-23 15:00:00.928 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2020-10-23 15:00:00.928 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2020-10-23 15:00:00.928 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2020-10-23 15:00:00.928 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2020-10-23 15:00:00.928 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2020-10-23 15:00:00.928 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2020-10-23 15:00:00.929 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.41
+2020-10-23 15:00:00.929 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.41:11000),
+2020-10-23 15:00:00.985 [Server CS] INFO  s.a.s.Server$InternalStateManager - Replica state is up to date
+2020-10-23 15:00:00.985 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Retrieving State
+2020-10-23 15:00:00.986 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Ready to process operations
+2020-10-23 15:00:25.802 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:01:29.672 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(100000)
+2020-10-23 15:01:33.768 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 393MB
+2020-10-23 15:01:33.768 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 4s
+2020-10-23 15:01:33.768 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(100000)
+2020-10-23 15:01:51.307 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000000000-0000129681.log
+2020-10-23 15:02:32.797 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(200000)
+2020-10-23 15:02:37.741 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 787MB
+2020-10-23 15:02:37.741 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 4s
+2020-10-23 15:02:37.741 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(200000)
+2020-10-23 15:03:10.590 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000129682-0000259363.log
+2020-10-23 15:03:32.790 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(300000)
+2020-10-23 15:03:37.524 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1180MB
+2020-10-23 15:03:37.525 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 4s
+2020-10-23 15:03:37.525 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(300000)
+2020-10-23 15:04:25.937 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000259364-0000389045.log
+2020-10-23 15:04:31.803 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(400000)
+2020-10-23 15:04:37.406 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1574MB
+2020-10-23 15:04:37.406 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 5s
+2020-10-23 15:04:37.407 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(400000)
+2020-10-23 15:05:33.050 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-10-23 15:05:33.050 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2020-10-23 15:05:57.980 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:57.996 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:57.996 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.005 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.005 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.008 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.009 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.010 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.009 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.013 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.014 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.014 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.015 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.019 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.026 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.026 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.028 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.028 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.028 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.029 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.030 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.030 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.031 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.032 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-10-23 15:05:58.488 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(500000)
+2020-10-23 15:06:09.757 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:06:09.758 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-10-23 15:06:09.759 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(500000)
+2020-10-23 15:06:16.732 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000389046-0000511190.log
+2020-10-23 15:06:32.593 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000511191-0000535647.log
+2020-10-23 15:06:46.876 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000535648-0000551382.log
+2020-10-23 15:07:00.265 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000551383-0000567720.log
+2020-10-23 15:07:14.883 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000567721-0000583216.log
+2020-10-23 15:07:28.459 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000583217-0000598737.log
+2020-10-23 15:07:29.763 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(600000)
+2020-10-23 15:07:41.372 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:07:41.372 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-10-23 15:07:41.372 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(600000)
+2020-10-23 15:07:54.747 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000598738-0000613856.log
+2020-10-23 15:08:10.612 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000613857-0000629565.log
+2020-10-23 15:08:23.922 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000629566-0000643565.log
+2020-10-23 15:08:37.700 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000643566-0000657902.log
+2020-10-23 15:08:51.468 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000657903-0000672790.log
+2020-10-23 15:09:05.126 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000672791-0000687963.log
+2020-10-23 15:09:16.254 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(700000)
+2020-10-23 15:09:28.228 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:09:28.229 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-10-23 15:09:28.229 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(700000)
+2020-10-23 15:09:31.469 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000687964-0000703352.log
+2020-10-23 15:09:46.904 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000703353-0000719003.log
+2020-10-23 15:10:00.167 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000719004-0000734301.log
+2020-10-23 15:10:13.800 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000734302-0000749887.log
+2020-10-23 15:10:27.401 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000749888-0000765622.log
+2020-10-23 15:10:41.362 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000765623-0000780467.log
+2020-10-23 15:10:55.164 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000780468-0000794925.log
+2020-10-23 15:10:59.885 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(800000)
+2020-10-23 15:11:11.137 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:11:11.137 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-10-23 15:11:11.137 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(800000)
+2020-10-23 15:11:20.553 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000794926-0000810300.log
+2020-10-23 15:11:35.745 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000810301-0000826428.log
+2020-10-23 15:11:49.253 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000826429-0000841486.log
+2020-10-23 15:12:03.356 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000841487-0000856429.log
+2020-10-23 15:12:16.883 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000856430-0000871648.log
+2020-10-23 15:12:30.553 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000871649-0000886455.log
+2020-10-23 15:12:42.424 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(900000)
+2020-10-23 15:12:54.640 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:12:54.640 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 12s
+2020-10-23 15:12:54.640 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(900000)
+2020-10-23 15:12:56.455 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000886456-0000901827.log
+2020-10-23 15:13:10.749 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000901828-0000917424.log
+2020-10-23 15:13:26.520 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000917425-0000932465.log
+2020-10-23 15:13:39.444 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000932466-0000947942.log
+2020-10-23 15:13:52.537 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000947943-0000963121.log
+2020-10-23 15:14:05.982 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000963122-0000978784.log
+2020-10-23 15:14:19.578 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000978785-0000994465.log
+2020-10-23 15:14:24.801 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(1000000)
+2020-10-23 15:14:36.788 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:14:36.789 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-10-23 15:14:36.789 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(1000000)
+2020-10-23 15:14:46.509 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000994466-0001009631.log
+2020-10-23 15:14:59.563 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0001009632-0001024910.log
+2020-10-23 15:15:14.553 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0001024911-0001039564.log
+2020-10-23 15:15:27.566 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0001039565-0001054989.log
+2020-10-23 15:15:41.093 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0001054990-0001070578.log
+2020-10-23 15:15:54.530 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0001070579-0001087591.log
+2020-10-23 15:16:02.015 [Delivery Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(1100000)
+2020-10-23 15:16:14.163 [Delivery Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-10-23 15:16:14.163 [Delivery Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 12s
+2020-10-23 15:16:14.163 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Truncating log files up to CID(1100000)
+2020-10-23 15:16:21.518 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0001087592-0001109918.log
+2020-10-23 15:16:28.564 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 15
+2020-10-23 15:16:28.688 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=31
+2020-10-23 15:16:28.688 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=30
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 25
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=29
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 22
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=28
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 18
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=27
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 9
+2020-10-23 15:16:28.689 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=26
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 13
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=25
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 17
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=24
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 11
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=23
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 16
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=22
+2020-10-23 15:16:28.690 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 10
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=21
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 24
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=20
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 6
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=19
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=18
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 23
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=17
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 12
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=16
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 26
+2020-10-23 15:16:28.691 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=15
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 14
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=14
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 20
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=13
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 28
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=12
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 21
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=11
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 2
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=10
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 4
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=9
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 29
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=8
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 19
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=7
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 27
+2020-10-23 15:16:28.692 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=6
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 31
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=5
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 8
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=4
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 30
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=3
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 5
+2020-10-23 15:16:28.693 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=2
+2020-10-23 15:16:28.695 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 3
+2020-10-23 15:16:28.695 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2020-10-23 15:16:28.695 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 7
+2020-10-23 15:16:28.695 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0

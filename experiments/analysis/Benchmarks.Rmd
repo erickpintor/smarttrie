@@ -1,13 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output:
+  html_notebook:
+    code_folding: none
+    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
-    toc: yes
-  html_notebook:
-    code_folding: none
     toc: yes
 ---
 
@@ -216,3 +216,46 @@ O experimento com a CTrie se mostra promissor. No entanto, a instabilidade na va
 * Reexecutar os experimentos.
 
 <!-- Coleta de dados para depuração: ../results/20201017T121311 -->
+
+## 2020-10-23 - Otimizações de memória e carga de dados
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Servidores vs Clientes | 1/1 | Node 41-42 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 500000 | |
+| Requests | 500000 | |
+| Bytes/Registro | 4kb | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Sim/Não | TrieMap é assíncrono, demais são síncronos |
+| Log assíncrono | Sim |
+| Estrutura de dados | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap | |
+| Commit | c4cafdc | |
+
+Neste experimento buscamos avaliar as otimizações feitas para reduzir as pausas de GC durante a execução dos sistema. Além disso, verificamos que os servidores 91 e 92 possuem um número grande de processos parallelos a execução do experimento (aproximadamente 700). Utilizamos, então, os servidores 41 e 42 que possuem memos processos em execução (~130). Aumentamos também o número de theads do benchmark afim de evitar períodos de lock no servidor devido a falta de trabalho a ser executado.
+
+```{r experiment-2020-10-23-tree-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Baseline",
+  "../results/20201023T095733/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201023T095733/server/tmp/SmartTrie/logs/app.log"
+)
+```
+
+```{r experiment-2020-10-23-hash-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "ConcurrentHashMap",
+  "../results/20201023T102244/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201023T102244/server/tmp/SmartTrie/logs/app.log"
+)
+```
+
+```{r experiment-2020-10-23-trie-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie",
+  "../results/20201023T104449/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201023T104449/server/tmp/SmartTrie/logs/app.log"
+)
+```
+
+Apesar do aumento na vazão, a tempo de serviço continua instável. A variação aumentou em realção aos experimentos ateriores, o que dificulta ainda mais as análises.
