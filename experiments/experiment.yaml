@@ -9,6 +9,7 @@
       register: localtime
       tags:
         - deploy
+        - config
         - run
         - server
         - load
@@ -30,6 +31,7 @@
         experiment_result_path: "./results/{{ experiment_name }}"
       tags:
         - deploy
+        - config
         - run
         - server
         - load
@@ -48,6 +50,7 @@
         state: directory
       tags:
         - deploy
+        - config
     - name: deploy config
       copy:
         src: ./config/
@@ -55,6 +58,7 @@
       when: not ansible_check_mode
       tags:
         - deploy
+        - config
     - name: ensure no currentView file
       file:
         path: "{{ experiment_path }}/config/currentView"
@@ -123,7 +127,7 @@
   gather_facts: false
   any_errors_fatal: true
   vars:
-    - threads: 32
+    - threads: 1
   tasks:
     - name: ensure logs folder
       file:
