@@ -1,13 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output:
-  html_notebook:
-    code_folding: none
-    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
+    toc: yes
+  html_notebook:
+    code_folding: none
     toc: yes
 ---
 
@@ -117,8 +117,9 @@ Criação da baseline com aplicação tradicional. Configurações relevantes:
 | Escrita vs Leitura | 100/0 | |
 | Chaves | 500000 | |
 | Requests | 500000 | |
+| Threads no cliente | 1 | |
 | Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
+| Período de checkpoints | 100000 | |
 | Checkpoints assíncrono | Não | |
 | Log assíncrono | Sim |
 | Estrutura de dados | java.util.TreeMap | |
@@ -163,6 +164,7 @@ Nesta iteração, assumimos controle dos mecanismos de checkpoint e log. Para av
 | Escrita vs Leitura | 100/0 | |
 | Chaves | 500000 | |
 | Requests | 500000 | |
+| Threads no cliente | 1 | |
 | Bytes/Registro | 4kb | |
 | Período de Checkpoints | 100000 | |
 | Checkpoints assíncrono | Sim/Não | TrieMap é assíncrono, demais são síncronos |
@@ -224,7 +226,8 @@ O experimento com a CTrie se mostra promissor. No entanto, a instabilidade na va
 | Servidores vs Clientes | 1/1 | Node 41-42 |
 | Escrita vs Leitura | 100/0 | |
 | Chaves | 500000 | |
-| Requests | 500000 | |
+| Requests | 5000000 | |
+| Threads no cliente | 32 | |
 | Bytes/Registro | 4kb | |
 | Período de Checkpoints | 100000 | |
 | Checkpoints assíncrono | Sim/Não | TrieMap é assíncrono, demais são síncronos |
@@ -259,3 +262,47 @@ plot_througput_vs_checkpoints(
 ```
 
 Apesar do aumento na vazão, a tempo de serviço continua instável. A variação aumentou em realção aos experimentos ateriores, o que dificulta ainda mais as análises.
+
+## 2020-11-05 - Experimentos sem checkpoint e sem log
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Servidores vs Clientes | 1/1 | Node 41-42 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 500000 | |
+| Requests | 500000 | |
+| Threads no cliente | 1 | |
+| Bytes/Registro | 4kb | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Sim | |
+| Log assíncrono | Sim |
+| Estrutura de dados | scala.collection.concurrent.TrieMap | |
+| Commit | 686eb73 | Alterações foram feitas no código de maneira experimental (não há commits para cada experimento). |
+
+Para avaliar o impacto dos mecanismos de checkpoint e log na vazão e aparente instabilidade do serviço. Os seguintes experimentos foram executados removendo as rotinas de log e checkpoint.
+
+```{r experiment-2020-11-05-trie-no-ckp-no-log, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - Sem Checkpoint - Sem Log",
+  "../results/20201105T091931/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201105T091931/server/tmp/SmartTrie/logs/app.log"
+)
+```
+
+```{r experiment-2020-11-05-trie-ckp-no-log, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - Com Checkpoint - Sem Log",
+  "../results/20201105T093940/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201105T093940/server/tmp/SmartTrie/logs/app.log"
+)
+```
+
+```{r experiment-2020-11-05-trie-no-ckp-log, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - Sem Checkpoint - Com Log",
+  "../results/20201105T095706/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201105T095706/server/tmp/SmartTrie/logs/app.log"
+)
+```
+
+É interessante perceber que mesmo sem checkpoints e logs, ainda ocorreu um período em que a vazão caiu a zero. O mesmo período não se repetiu nos experimentos seguintes, o que pode indicar que este seja um fator do ambiente, como pausas para GC ou perca de prioridade do SO. No entando, períodos de menor vazão parecem coinsidir com o término de checkpoints. Uma hipótese seria que o snapshot da CTrie criada em memória durante o checkpoint é descartado neste momento, liberando um espaço de memória significativo, o que pode disparar uma pausa de GC. Acredito que podemos remover o log a fim de reduzir as variáveis que podem impactar a vazão. Seria interessnate executar experimentos maiores, coletando uma média de vazão por alguns segundos, reduzindo assim a variação e focando as análises no seu valor médio ao longo do tempo.

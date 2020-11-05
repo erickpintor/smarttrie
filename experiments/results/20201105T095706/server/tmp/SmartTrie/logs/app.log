@@ -1,0 +1,25 @@
+2020-11-05 13:58:49.845 [main] INFO  b.r.ServerViewController - Creating current view from configuration file
+2020-11-05 13:58:50.366 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2020-11-05 13:58:50.366 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2020-11-05 13:58:50.366 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2020-11-05 13:58:50.366 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2020-11-05 13:58:50.367 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2020-11-05 13:58:50.367 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2020-11-05 13:58:50.367 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.41
+2020-11-05 13:58:50.367 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.41:11000),
+2020-11-05 13:58:50.423 [Server CS] INFO  s.a.s.Server$InternalStateManager - Replica state is up to date
+2020-11-05 13:58:50.424 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Retrieving State
+2020-11-05 13:58:50.424 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Ready to process operations
+2020-11-05 13:59:03.361 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-11-05 14:00:21.768 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000000000-0000129681.log
+2020-11-05 14:01:32.833 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000129682-0000259363.log
+2020-11-05 14:02:41.814 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000259364-0000389045.log
+2020-11-05 14:03:40.387 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-11-05 14:03:40.387 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2020-11-05 14:04:03.419 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-11-05 14:04:18.085 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000389046-0000518727.log
+2020-11-05 14:05:41.030 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000518728-0000648409.log
+2020-11-05 14:07:04.537 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000648410-0000778091.log
+2020-11-05 14:08:27.015 [Delivery Thread] INFO  smarttrie.app.server.Log$ - Flushing log file /tmp/SmartTrie/files/0000778092-0000907773.log
+2020-11-05 14:09:26.145 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-11-05 14:09:26.145 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0

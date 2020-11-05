@@ -1,0 +1,47 @@
+2020-11-05 13:40:27.267 [main] INFO  smarttrie.app.server.Server - No previews checkpoints to restore
+2020-11-05 13:40:27.272 [main] INFO  smarttrie.app.server.Server - Replica state has been restored with last id CID(-1)
+2020-11-05 13:40:27.346 [main] INFO  b.r.ServerViewController - Using view stored on disk
+2020-11-05 13:40:27.826 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2020-11-05 13:40:27.826 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2020-11-05 13:40:27.826 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2020-11-05 13:40:27.826 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2020-11-05 13:40:27.826 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2020-11-05 13:40:27.826 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2020-11-05 13:40:27.827 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.41
+2020-11-05 13:40:27.827 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.41:11000),
+2020-11-05 13:40:27.886 [Server CS] INFO  s.a.s.Server$InternalStateManager - Replica state is up to date
+2020-11-05 13:40:27.887 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Retrieving State
+2020-11-05 13:40:27.888 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Ready to process operations
+2020-11-05 13:40:49.017 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-11-05 13:41:50.099 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(100000)
+2020-11-05 13:41:54.382 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 393MB
+2020-11-05 13:41:54.382 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 4s
+2020-11-05 13:42:46.076 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(200000)
+2020-11-05 13:42:51.171 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 787MB
+2020-11-05 13:42:51.172 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 5s
+2020-11-05 13:43:40.179 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(300000)
+2020-11-05 13:43:45.086 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1180MB
+2020-11-05 13:43:45.086 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 4s
+2020-11-05 13:44:33.066 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(400000)
+2020-11-05 13:44:39.231 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1574MB
+2020-11-05 13:44:39.232 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 6s
+2020-11-05 13:45:26.744 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-11-05 13:45:26.745 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2020-11-05 13:45:55.767 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2020-11-05 13:45:55.869 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(500000)
+2020-11-05 13:46:07.306 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-11-05 13:46:07.306 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-11-05 13:47:03.136 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(600000)
+2020-11-05 13:47:14.591 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-11-05 13:47:14.591 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-11-05 13:48:08.104 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(700000)
+2020-11-05 13:48:19.015 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-11-05 13:48:19.015 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 10s
+2020-11-05 13:49:11.498 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(800000)
+2020-11-05 13:49:23.451 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-11-05 13:49:23.452 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 11s
+2020-11-05 13:50:14.720 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Starting replica checkpoint at CID(900000)
+2020-11-05 13:50:24.969 [Checkpoint Thread] INFO  s.app.server.CheckpointAsyncWriter - Saved a checkpoint of 1967MB
+2020-11-05 13:50:24.969 [Checkpoint Thread] INFO  smarttrie.app.server.Server - Checkpoint created after 10s
+2020-11-05 13:51:18.026 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2020-11-05 13:51:18.026 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
