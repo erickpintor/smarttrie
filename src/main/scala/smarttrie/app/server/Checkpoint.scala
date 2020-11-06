@@ -2,7 +2,7 @@ package smarttrie.app.server
 
 import java.nio.channels.FileChannel
 import java.nio.file.{Files, Path, StandardOpenOption}
-import java.nio.{BufferUnderflowException, MappedByteBuffer}
+import java.nio.{BufferOverflowException, BufferUnderflowException, MappedByteBuffer}
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.{Executors, TimeUnit}
 import org.slf4j.{Logger, LoggerFactory}
@@ -139,15 +139,18 @@ final class CheckpointAsyncWriter(ckpPath: Path, blockSize: Long) {
     buffer = channel.map(READ_WRITE, 0, blockSize)
   }
 
-  private def append(key: Key, value: Value): Unit = {
-    val size = Codec.sizeOf(key) + Codec.sizeOf(value)
-    if (buffer.remaining() < size) {
-      buffer = channel.map(READ_WRITE, bytesWritten, blockSize)
+  @tailrec
+  private def append(key: Key, value: Value): Unit =
+    try {
+      val pos = buffer.position()
+      Codec.encode(buffer, key)
+      Codec.encode(buffer, value)
+      bytesWritten += buffer.position() - pos
+    } catch {
+      case _: BufferOverflowException =>
+        buffer = channel.map(READ_WRITE, bytesWritten, blockSize)
+        append(key, value)
     }
-    Codec.encode(buffer, key)
-    Codec.encode(buffer, value)
-    bytesWritten += size
-  }
 
   private def close(): Unit = {
     buffer.force()
