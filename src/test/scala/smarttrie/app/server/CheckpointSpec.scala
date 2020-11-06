@@ -1,10 +1,10 @@
 package smarttrie.app.server
 
-import smarttrie.test._
-import smarttrie.atoms._
-import scala.util.Random
 import java.nio.file.{Files, Path}
+import scala.util.Random
+import smarttrie.atoms._
 import smarttrie.io.IO
+import smarttrie.test._
 
 class CheckpointSpec extends Spec {
 
@@ -28,7 +28,7 @@ class CheckpointSpec extends Spec {
       oldState.put(key, value)
     }
 
-    Checkpoint.write(ckpDir, oldState, CID(100_000), blockSizeMB = 1)
+    Checkpoint.write(ckpDir, CID(100_000), oldState, blockSizeMB = 1)
 
     val newState = State.trieMap
     val reader = Checkpoint.read(ckpDir).get

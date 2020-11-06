@@ -92,6 +92,6 @@ class CheckpointWriteBench {
   @Benchmark
   @Threads(1)
   def smartTrieWriteCheckpoint(state: FixedSizeState): Unit = {
-    Checkpoint.write(ckpDir, state.state, CID(999))
+    Checkpoint.write(ckpDir, CID(999), state.state)
   }
 }

@@ -108,7 +108,7 @@ object State {
       state.put(key, value)
 
     def foreach(f: (Key, Value) => Any): Unit =
-      state foreach { case (k, v) => f(k, v) }
+      state.readOnlySnapshot() foreach { case (k, v) => f(k, v) }
 
     def clear(): Unit =
       state.clear()

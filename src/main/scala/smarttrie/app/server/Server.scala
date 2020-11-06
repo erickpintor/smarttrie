@@ -5,8 +5,6 @@ import bftsmart.statemanagement.{ApplicationState, StateManager}
 import bftsmart.tom.server.{BatchExecutable, Recoverable}
 import bftsmart.tom.{MessageContext, ReplicaContext, ServiceReplica}
 import java.nio.file.{Path, Paths}
-import java.util.concurrent.atomic.AtomicBoolean
-import java.util.concurrent.{ExecutorService, Executors, TimeUnit}
 import org.slf4j.LoggerFactory
 import scala.util.control.NonFatal
 import smarttrie.atoms._
@@ -35,24 +33,21 @@ final class Server(
   import Command._
   import Reply._
 
+  private[this] var lastCID = CID.Null
   private[this] val logger = LoggerFactory.getLogger(getClass)
-  private[this] var checkpointThread: ExecutorService = _
-  private[this] var isCheckpointing: AtomicBoolean = _
-  private[this] var firstCID = CID.Null
-  private[this] val log = Log(dataPath)
+  private[this] val ckpController =
+    CheckpointController(
+      ckpPath = dataPath,
+      async = state.allowConcurrentSnapshot
+    )
 
-  if (state.allowConcurrentSnapshot) {
-    checkpointThread =
-      Executors.newSingleThreadExecutor(r => new Thread(r, "Checkpoint Thread"))
-    isCheckpointing = new AtomicBoolean(false)
-  }
   loadReplicaState()
 
   def executeUnordered(request: Request, ctx: MessageContext): Array[Byte] =
     execute(request)
 
   def executeBatch(batch: Batch, ctxs: Array[MessageContext]): Array[Array[Byte]] = {
-    var lastBatchCID = CID(ctxs(0).getConsensusId)
+    lastCID = CID(ctxs(0).getConsensusId)
     val pending = Array.newBuilder[Request]
     val replies = Array.newBuilder[Array[Byte]]
     replies.sizeHint(batch.length)
@@ -60,9 +55,8 @@ final class Server(
     def executePending(): Unit = {
       val entries = pending.result()
       if (entries.nonEmpty) {
-        log.append(LogEntry(lastBatchCID, entries))
         entries foreach { replies += execute(_) }
-        maybeCheckpoint(lastBatchCID)
+        maybeCheckpoint()
         pending.clear()
       }
     }
@@ -71,9 +65,9 @@ final class Server(
       val ctx = ctxs(i)
       val request = batch(i)
       val currentCID = CID(ctx.getConsensusId)
-      if (currentCID > lastBatchCID) {
+      if (currentCID > lastCID) {
         executePending()
-        lastBatchCID = currentCID
+        lastCID = currentCID
       }
       pending += request
     }
@@ -107,7 +101,7 @@ final class Server(
   }
 
   private def loadReplicaState(): Unit = {
-    firstCID = Checkpoint.read(dataPath) match {
+    lastCID = ckpController.read() match {
       case Some(ckp) =>
         logger.info("Recovering replica checkpoint until {}", ckp.lastCID)
         state.clear()
@@ -122,50 +116,17 @@ final class Server(
         CID.Null
     }
 
-    logger.info("Re-executing remaining commands from log")
-    log.entries(from = firstCID) foreach { entry =>
-      entry.batch.foreach(execute)
-      firstCID = entry.cid
-    }
-
-    logger.info("Replica state has been restored with last id {}", firstCID)
+    logger.info("Replica state has been restored with last id {}", lastCID)
   }
 
-  private def maybeCheckpoint(lastCID: CID): Unit = {
-    def checkpoint0(): Unit = {
-      val start = System.currentTimeMillis()
-      logger.info("Starting replica checkpoint at {}", lastCID)
-      Checkpoint.write(dataPath, state, lastCID)
-
-      val delta = System.currentTimeMillis() - start
-      logger.info("Checkpoint created after {}s", delta / 1000)
-
-      log.truncate(lastCID)
-      if (state.allowConcurrentSnapshot) {
-        isCheckpointing.set(false)
-      }
-    }
-
+  private def maybeCheckpoint(): Unit =
     if (lastCID.toInt > 0 && lastCID.toInt % checkpointPeriod == 0) {
-      if (state.allowConcurrentSnapshot) {
-        if (isCheckpointing.compareAndSet(false, true)) {
-          checkpointThread.execute(() => checkpoint0())
-        } else {
-          logger.warn("Skipping a checkpoint at {}", lastCID)
-        }
-      } else {
-        checkpoint0()
-      }
+      ckpController.write(lastCID, state)
     }
-  }
 
   def shutdown(): Unit = {
-    log.close()
-    if (state.allowConcurrentSnapshot) {
-      checkpointThread.shutdown()
-      checkpointThread.awaitTermination(5, TimeUnit.MINUTES)
-      checkpointThread.shutdownNow()
-    }
+    ckpController.shutdown()
+    Checkpoint.write(dataPath, lastCID, state) // ensure latest state is written
   }
 
   // Satisfy recoverable interface ------------------------------------------------
@@ -183,8 +144,8 @@ final class Server(
   def setReplicaContext(replicaContext: ReplicaContext): Unit = {
     // Trick BFT into thinking this replica is up to date and can start processing
     // requests starting at this CID. Only works on single replica environments.
-    internalStateManager.tom.setLastExec(firstCID.toInt)
-    internalStateManager.setLastCID(firstCID.toInt)
+    internalStateManager.tom.setLastExec(lastCID.toInt)
+    internalStateManager.setLastCID(lastCID.toInt)
     getStateManager.askCurrentConsensusId()
   }
 

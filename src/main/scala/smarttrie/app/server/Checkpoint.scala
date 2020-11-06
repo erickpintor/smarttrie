@@ -3,17 +3,92 @@ package smarttrie.app.server
 import java.nio.channels.FileChannel
 import java.nio.file.{Files, Path, StandardOpenOption}
 import java.nio.{BufferUnderflowException, MappedByteBuffer}
-import org.slf4j.LoggerFactory
+import java.util.concurrent.atomic.AtomicBoolean
+import java.util.concurrent.{Executors, TimeUnit}
+import org.slf4j.{Logger, LoggerFactory}
 import scala.annotation.tailrec
 import smarttrie.atoms._
 import smarttrie.io._
 
+trait CheckpointController {
+  val ckpPath: Path
+  val blockSizeMB: Int
+
+  def write(cid: CID, state: State): Unit
+
+  def shutdown(): Unit
+
+  final def read(): Option[CheckpointReader] =
+    Checkpoint.read(ckpPath, blockSizeMB)
+}
+
+object CheckpointController {
+
+  def apply(
+      ckpPath: Path,
+      async: Boolean,
+      blockSizeMB: Int = Checkpoint.DefaultBlockSizeMB
+  ): CheckpointController =
+    if (async) new Async(ckpPath, blockSizeMB)
+    else new Sync(ckpPath, blockSizeMB)
+
+  final class Async(val ckpPath: Path, val blockSizeMB: Int)
+      extends CheckpointController {
+
+    private[this] val logger = LoggerFactory.getLogger(getClass)
+    private[this] val isCheckpointing = new AtomicBoolean(false)
+    private[this] val ckpThread =
+      Executors.newSingleThreadExecutor(r => new Thread(r, "Checkpoint-Thread"))
+
+    def write(cid: CID, state: State): Unit =
+      if (isCheckpointing.compareAndSet(false, true)) {
+        ckpThread.execute(() => {
+          withLogging(logger, cid) {
+            Checkpoint.write(ckpPath, cid, state, blockSizeMB)
+          }
+          isCheckpointing.set(false)
+        })
+      } else {
+        logger.warn("Skipping a checkpoint at {}", cid)
+      }
+
+    def shutdown(): Unit = {
+      ckpThread.shutdown()
+      ckpThread.awaitTermination(1, TimeUnit.HOURS) // long enough.
+    }
+  }
+
+  final class Sync(val ckpPath: Path, val blockSizeMB: Int)
+      extends CheckpointController {
+
+    private[this] val logger = LoggerFactory.getLogger(getClass)
+
+    def write(cid: CID, state: State): Unit =
+      withLogging(logger, cid) {
+        Checkpoint.write(ckpPath, cid, state, blockSizeMB)
+      }
+
+    def shutdown(): Unit = ()
+  }
+
+  @inline
+  private def withLogging(logger: Logger, cid: CID)(fn: => Any): Unit = {
+    val start = System.currentTimeMillis()
+    logger.info("Starting replica checkpoint at {}", cid)
+    fn
+
+    val delta = System.currentTimeMillis() - start
+    logger.info("Checkpoint created after {}s", delta / 1000)
+  }
+}
+
 object Checkpoint {
 
+  val DefaultBlockSizeMB = 512
   val CheckpointExtension = ".ckp"
   val TempExtension = ".ckp.tmp"
 
-  def write(ckpPath: Path, state: State, cid: CID, blockSizeMB: Int = 512): Unit = {
+  def write(ckpPath: Path, cid: CID, state: State, blockSizeMB: Int = 512): Unit = {
     val blockSize = blockSizeMB * 1024 * 1024
     val writer = new CheckpointAsyncWriter(ckpPath, blockSize)
     writer.write(cid, state)

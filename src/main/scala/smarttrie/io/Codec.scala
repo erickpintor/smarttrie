@@ -25,17 +25,17 @@ object Encoder {
 
   object ByteArrayOutput {
 
-    private[this] val pool = new Recycler[ByteArrayOutput]() {
-      def newObject(handle: Recycler.Handle[ByteArrayOutput]): ByteArrayOutput =
-        new ByteArrayOutput(handle)
-    }
+    private[this] val pool =
+      new Recycler[ByteArrayOutput]() {
+        def newObject(handle: Recycler.Handle[ByteArrayOutput]): ByteArrayOutput =
+          new ByteArrayOutput(handle)
+      }
 
     def pooled[A](fn: ByteArrayOutput => Any): Array[Byte] = {
       val out = pool.get()
       fn(out)
       val res = out.arr.toByteArray
-      out.arr.reset()
-      out.out = new DataOutputStream(out.arr)
+      out.arr.reset() // clean up the array so it can be re-used.
       out.handle.recycle(out)
       res
     }
@@ -46,7 +46,7 @@ object Encoder {
   ) extends Output {
 
     private val arr = new ByteArrayOutputStream(4 * 1024) // 4kb
-    private var out = new DataOutputStream(arr)
+    private val out = new DataOutputStream(arr)
 
     def write[A](value: A)(implicit enc: Encoder[A]): Output = {
       enc.encode(value, this)
@@ -74,28 +74,7 @@ object Encoder {
     }
   }
 
-  object ByteBufferOutput {
-
-    private[this] val pool = new Recycler[ByteBufferOutput]() {
-      def newObject(handle: Recycler.Handle[ByteBufferOutput]): ByteBufferOutput =
-        new ByteBufferOutput(handle)
-    }
-
-    def pooled(buf: ByteBuffer)(f: ByteBufferOutput => Any): ByteBuffer = {
-      val out = pool.get()
-      out.out = buf
-      f(out)
-      out.out = null
-      out.handle.recycle(out)
-      buf
-    }
-  }
-
-  final class ByteBufferOutput private (
-      private val handle: Recycler.Handle[ByteBufferOutput]
-  ) extends Output {
-
-    private var out: ByteBuffer = _
+  final class ByteBufferOutput(out: ByteBuffer) extends Output {
 
     def write[A](value: A)(implicit enc: Encoder[A]): Output = {
       enc.encode(value, this)
@@ -123,27 +102,7 @@ object Encoder {
     }
   }
 
-  object SizeCountOutput {
-
-    private[this] val pool = new Recycler[SizeCountOutput]() {
-      def newObject(handle: Recycler.Handle[SizeCountOutput]): SizeCountOutput =
-        new SizeCountOutput(handle)
-    }
-
-    def pooled(fn: SizeCountOutput => Any): Long = {
-      val out = pool.get()
-      fn(out)
-      val res = out.count
-      out.count = 0
-      out.handle.recycle(out)
-      res
-    }
-  }
-
-  final class SizeCountOutput(private val handle: Recycler.Handle[SizeCountOutput])
-      extends Output {
-
-    private var count = 0L
+  final class SizeCountOutput(var count: Long = 0) extends Output {
 
     def write[A](value: A)(implicit enc: Encoder[A]): Output = {
       enc.encode(value, this)
@@ -219,8 +178,11 @@ trait Codec[A] extends Encoder[A] with Decoder[A]
 
 object Codec {
 
-  def sizeOf[A](value: A)(implicit enc: Encoder[A]): Long =
-    Encoder.SizeCountOutput.pooled(enc.encode(value, _))
+  def sizeOf[A](value: A)(implicit enc: Encoder[A]): Long = {
+    val out = new Encoder.SizeCountOutput()
+    enc.encode(value, out)
+    out.count
+  }
 
   def encode[A](value: A)(implicit enc: Encoder[A]): Array[Byte] =
     writer { enc.encode(value, _) }
@@ -228,13 +190,14 @@ object Codec {
   def writer(f: Encoder.Output => Any): Array[Byte] =
     Encoder.ByteArrayOutput.pooled(f)
 
-  def encode[A](buf: ByteBuffer, value: A)(implicit
-      enc: Encoder[A]
-  ): ByteBuffer =
+  def encode[A](buf: ByteBuffer, value: A)(implicit enc: Encoder[A]): ByteBuffer =
     writer(buf) { enc.encode(value, _) }
 
-  def writer(buf: ByteBuffer)(f: Encoder.Output => Any): ByteBuffer =
-    Encoder.ByteBufferOutput.pooled(buf)(f)
+  def writer(buf: ByteBuffer)(f: Encoder.Output => Any): ByteBuffer = {
+    val out = new Encoder.ByteBufferOutput(buf)
+    f(out)
+    buf
+  }
 
   def decode(bytes: Array[Byte]): Decoder.API =
     new Decoder.API(reader(bytes))
