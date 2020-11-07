@@ -101,13 +101,17 @@ load_gc_marks = function(gc_log_path, start_ts, end_ts) {
     filter(ts >= start_ts & ts <= end_ts)
 }
 
-plot_througput_vs_checkpoints = function(title, ycsb_log, server_log, gc_log=NA, version=1) {
+plot_througput_vs_checkpoints = function(title,
+                                         ycsb_log,
+                                         server_log,
+                                         gc_log = NA,
+                                         version = 1) {
   ycsb = load_ycsb_througput(ycsb_log)
   start = head(ycsb$ts)
   end = last(ycsb$ts)
   
   checkpoints = load_checkpoint_marks(server_log, start, end, version)
-
+  
   plot = ggplot() +
     geom_line(data = ycsb, aes(ts, throughput)) +
     geom_vline(data = checkpoints,

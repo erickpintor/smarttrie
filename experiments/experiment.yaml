@@ -114,7 +114,7 @@
     - name: run server
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms6G -Xmx6G -XX:+UseParallelGC -XX:+UseCompressedOops -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
+        cmd: "{{ run_cmd }} -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -XX:+UseStringDeduplication -XX:InitialHeapSize=2G -XX:MaxHeapSize=6G -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
       async: 3600 # 1h
       poll: 0
       when: not ansible_check_mode
@@ -127,7 +127,7 @@
   gather_facts: false
   any_errors_fatal: true
   vars:
-    - threads: 256
+    - threads: 64
   tasks:
     - name: ensure logs folder
       file:
@@ -140,14 +140,24 @@
     - name: load data
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms2G -Xmx2G site.ycsb.Client -load -s -db smarttrie.app.client.Client -P config/workload 2>&1 | tee logs/load.log"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx2G site.ycsb.Client -load -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/load.log"
       async: 1800 # 30m
       poll: 10
       when: not ansible_check_mode
       tags:
         - run
         - load
-    - name: run benchmark
+    - name: warm-up run
+      shell:
+        chdir: "{{ experiment_path }}"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx2G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount=100000 2>&1 | tee logs/warmup.log"
+      async: 1800 # 30m
+      poll: 10
+      when: not ansible_check_mode
+      tags:
+        - run
+        - benchmark
+    - name: benchmark run
       shell:
         chdir: "{{ experiment_path }}"
         cmd: "{{ run_cmd }} -Xms2G -Xmx2G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/benchmark.log"
@@ -192,6 +202,7 @@
         fail_on_missing: no
       with_items:
         - load.log
+        - warmup.log
         - benchmark.log
       tags:
         - run
