@@ -10,7 +10,7 @@ abstract class State(val allowConcurrentSnapshot: Boolean) {
   def get(key: Key): Option[Value]
   def remove(key: Key): Option[Value]
   def put(key: Key, value: Value): Option[Value]
-  def foreach(f: (Key, Value) => Any): Unit
+  def foreach(fn: (Key, Value) => Any): Unit
   def clear(): Unit
 }
 
@@ -43,8 +43,13 @@ object State {
     def put(key: Key, value: Value): Option[Value] =
       Option(state.put(key, value))
 
-    def foreach(f: (Key, Value) => Any): Unit =
-      state.forEach((k, v) => f(k, v))
+    def foreach(fn: (Key, Value) => Any): Unit = {
+      val it = state.entrySet().iterator()
+      while (it.hasNext) {
+        val next = it.next()
+        fn(next.getKey, next.getValue)
+      }
+    }
 
     def clear(): Unit =
       state.clear()
@@ -75,8 +80,13 @@ object State {
     def put(key: Key, value: Value): Option[Value] =
       Option(state.put(key, value))
 
-    def foreach(f: (Key, Value) => Any): Unit =
-      state.forEach((key, value) => f(key, value))
+    def foreach(fn: (Key, Value) => Any): Unit = {
+      val it = state.entrySet().iterator()
+      while (it.hasNext) {
+        val next = it.next()
+        fn(next.getKey, next.getValue)
+      }
+    }
 
     def clear(): Unit =
       state.clear()
@@ -107,8 +117,13 @@ object State {
     def put(key: Key, value: Value): Option[Value] =
       state.put(key, value)
 
-    def foreach(f: (Key, Value) => Any): Unit =
-      state.readOnlySnapshot() foreach { case (k, v) => f(k, v) }
+    def foreach(fn: (Key, Value) => Any): Unit = {
+      val it = state.readOnlySnapshot().iterator
+      while (it.hasNext) {
+        val (key, value) = it.next()
+        fn(key, value)
+      }
+    }
 
     def clear(): Unit =
       state.clear()
