@@ -127,7 +127,7 @@
   gather_facts: false
   any_errors_fatal: true
   vars:
-    - threads: 1
+    - threads: 256
   tasks:
     - name: ensure logs folder
       file:

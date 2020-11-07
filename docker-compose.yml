@@ -11,7 +11,7 @@ services:
       - ./logs/server/:/opt/smarttrie/logs/
       - ./files/:/opt/smarttrie/files/
     command: |
-      /bin/bash -c "java -Xlog:gc=debug:file=/opt/smarttrie/logs/gc.txt:time -XX:+UseParallelGC -XX:+UseCompressedOops -Xms6G -Xmx6G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0 trie-map"
+      /bin/bash -c "java -Xlog:gc=debug:file=/opt/smarttrie/logs/gc.log:time -XX:+UseParallelGC -XX:+UseCompressedOops -Xms6G -Xmx6G -server -cp dist/SmartTrie.jar smarttrie.app.server.Server 0 trie-map"
     ports:
       - "11000:11000"
       - "11001:11001"
@@ -42,4 +42,4 @@ services:
       - ./config/workload:/opt/smarttrie/config/workload
       - ./logs/client/:/opt/smarttrie/logs/
     command: |
-      /bin/bash -c "java -Xmx2G -Xmx2G -server -cp dist/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads 8 -P config/workload 2>&1 | tee logs/benchmark.log"
+      /bin/bash -c "java -Xmx2G -Xmx2G -server -cp dist/SmartTrie.jar site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads 128 -P config/workload 2>&1 | tee logs/benchmark.log"
