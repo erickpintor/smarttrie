@@ -114,7 +114,7 @@
     - name: run server
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms6G -Xmx6G -XX:+UseParallelGC -XX:+UseCompressedOops smarttrie.app.server.Server 0 {{ state }}"
+        cmd: "{{ run_cmd }} -Xms6G -Xmx6G -XX:+UseParallelGC -XX:+UseCompressedOops -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
       async: 3600 # 1h
       poll: 0
       when: not ansible_check_mode
@@ -200,9 +200,12 @@
         - fetch
     - name: fetch server logs
       fetch:
-        src: "{{ experiment_path }}/logs/app.log"
+        src: "{{ experiment_path }}/logs/{{ item }}"
         dest: "{{ experiment_result_path }}"
         fail_on_missing: no
+      with_items:
+        - app.log
+        - gc.log
       tags:
         - run
         - load

@@ -75,12 +75,10 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
   )
 
   checkpoints = str_match(readLines(server_log_path), checkpoint_lines)
-  checkpoints = checkpoints[!is.na(checkpoints[, 1]),]
-  checkpoints = checkpoints[,-1]
+  checkpoints = checkpoints[!is.na(checkpoints[,1]),-1]
   colnames(checkpoints) = c("ts", "event")
 
-  checkpoints =
-    as_tibble(checkpoints) %>%
+  as_tibble(checkpoints) %>%
     mutate(event = sub(checkpoint_start, "start", event)) %>%
     mutate(event = sub(checkpoint_stop, "stop", event)) %>%
     mutate_at(vars(ts), as.POSIXct) %>%
@@ -88,11 +86,29 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
     filter(ts >= start_ts & ts <= end_ts)
 }
 
-plot_througput_vs_checkpoints = function(title, ycsb_log, server_log, version=1) {
-  ycsb = load_ycsb_througput(ycsb_log)
-  checkpoints = load_checkpoint_marks(server_log, head(ycsb$ts), last(ycsb$ts), version)
+load_gc_marks = function(gc_log_path, start_ts, end_ts) {
+  gc_lines = regex("\\[(.*)\\+\\d+\\] GC\\(\\d+\\) (\\w+ \\w+).*")
+  
+  pauses = str_match(readLines(gc_log_path), gc_lines)
+  pauses = pauses[!is.na(pauses[, 1]), -1]
+  colnames(pauses) = c("ts", "type")
+  
+  as_tibble(pauses) %>%
+    mutate(ts = str_replace(ts, "T", " "),
+           type = paste("GC", type)) %>%
+    mutate_at(vars(ts), as.POSIXct) %>%
+    mutate_at(vars(type), as.factor) %>%
+    filter(ts >= start_ts & ts <= end_ts)
+}
 
-  ggplot() +
+plot_througput_vs_checkpoints = function(title, ycsb_log, server_log, gc_log=NA, version=1) {
+  ycsb = load_ycsb_througput(ycsb_log)
+  start = head(ycsb$ts)
+  end = last(ycsb$ts)
+  
+  checkpoints = load_checkpoint_marks(server_log, start, end, version)
+
+  plot = ggplot() +
     geom_line(data = ycsb, aes(ts, throughput)) +
     geom_vline(data = checkpoints,
                aes(xintercept = ts, color = event),
@@ -102,6 +118,16 @@ plot_througput_vs_checkpoints = function(title, ycsb_log, server_log, version=1)
          y = "Througput (requests/second)") +
     scale_color_discrete(name = "Checkpoints") +
     scale_y_continuous(breaks = pretty_breaks(15))
+  
+  if (!is.na(gc_log)) {
+    gc_pauses = load_gc_marks(gc_log, start, end)
+    plot = plot +
+      geom_vline(data = gc_pauses,
+                 aes(xintercept = ts, color = type),
+                 linetype = "dotted")
+  }
+  
+  plot
 }
 ```
 

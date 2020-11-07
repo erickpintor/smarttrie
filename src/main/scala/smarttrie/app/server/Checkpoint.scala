@@ -168,7 +168,7 @@ object Checkpoint {
 
       val oldCheckpoints = IO.listFiles(ckpPath, CheckpointExtension)
       Files.move(tempFile, finalFile)
-      oldCheckpoints foreach Files.delete
+      oldCheckpoints.foreach(Files.delete)
     }
   }
 
