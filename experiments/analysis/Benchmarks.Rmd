@@ -1,13 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output:
+  html_notebook:
+    code_folding: none
+    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
-    toc: yes
-  html_notebook:
-    code_folding: none
     toc: yes
 ---
 
@@ -79,15 +79,15 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
   colnames(checkpoints) = c("ts", "event")
 
   as_tibble(checkpoints) %>%
-    mutate(event = sub(checkpoint_start, "start", event)) %>%
-    mutate(event = sub(checkpoint_stop, "stop", event)) %>%
+    mutate(event = sub(checkpoint_start, "Checkpoint Start", event)) %>%
+    mutate(event = sub(checkpoint_stop, "Checkpoint Stop", event)) %>%
     mutate_at(vars(ts), as.POSIXct) %>%
     mutate_at(vars(event), as.factor) %>%
     filter(ts >= start_ts & ts <= end_ts)
 }
 
 load_gc_marks = function(gc_log_path, start_ts, end_ts) {
-  gc_lines = regex("\\[(.*)\\+\\d+\\] GC\\(\\d+\\) (\\w+ \\w+).*")
+  gc_lines = regex("\\[(.*)\\+\\d+\\] GC\\(\\d+\\) (.*) \\d+\\w.*->\\d+\\w.*")
   
   pauses = str_match(readLines(gc_log_path), gc_lines)
   pauses = pauses[!is.na(pauses[, 1]), -1]
@@ -120,8 +120,9 @@ plot_througput_vs_checkpoints = function(title,
     labs(title = title,
          x = "Time",
          y = "Througput (requests/second)") +
-    scale_color_discrete(name = "Checkpoints") +
-    scale_y_continuous(breaks = pretty_breaks(15))
+    scale_color_discrete(name = "Markers:") +
+    scale_y_continuous(breaks = pretty_breaks(15)) +
+    theme(legend.position = "bottom")
   
   if (!is.na(gc_log)) {
     gc_pauses = load_gc_marks(gc_log, start, end)
@@ -133,6 +134,13 @@ plot_througput_vs_checkpoints = function(title,
   
   plot
 }
+
+plot_througput_vs_checkpoints(
+  "Trie - G1",
+  "../results/20201112T101439/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201112T101439/server/tmp/SmartTrie/logs/app.log",
+  "../results/20201112T101439/server/tmp/SmartTrie/logs/gc.log"
+)
 ```
 
 # Experimentos
@@ -336,3 +344,52 @@ plot_througput_vs_checkpoints(
 ```
 
 É interessante perceber que mesmo sem checkpoints e logs, ainda ocorreu um período em que a vazão caiu a zero. O mesmo período não se repetiu nos experimentos seguintes, o que pode indicar que este seja um fator do ambiente, como pausas para GC ou perca de prioridade do SO. No entando, períodos de menor vazão parecem coinsidir com o término de checkpoints. Uma hipótese seria que o snapshot da CTrie criada em memória durante o checkpoint é descartado neste momento, liberando um espaço de memória significativo, o que pode disparar uma pausa de GC. Acredito que podemos remover o log a fim de reduzir as variáveis que podem impactar a vazão. Seria interessnate executar experimentos maiores, coletando uma média de vazão por alguns segundos, reduzindo assim a variação e focando as análises no seu valor médio ao longo do tempo.
+
+## 2020-11-12 - Análize do impacto dos coletores de lixo
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Servidores vs Clientes | 1/1 | Node 41-42 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 500000 | |
+| Requests | 5000000 | |
+| Threads no cliente | 64 | |
+| Bytes/Registro | 4kb | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Sim | |
+| Log assíncrono | Sim |
+| Estrutura de dados | scala.collection.concurrent.TrieMap | |
+| Commit | 20110f9 | |
+
+Neste experimento, removemos a rotina de log a fim de minimizar o número de variáveis que possam alterar a vazão. Comparamos em detalhe a execução do sistema com diferentes algoritmos de coleção. O primeiro experimento foi executado com o algoritmo ParallelGC, onde é possível observar quedas expressivas na vasão do serviço. Ao cruzar a vazão com as pausas de GC, é possível perceber que grandes quedas estão relacionadas a pausas longas do tipo "GC Pause Full".
+
+```{r experiment-2020-11-12-trie-parallel-gc, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - ParallelGC",
+  "../results/20201112T094313/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201112T094313/server/tmp/SmartTrie/logs/app.log",
+  "../results/20201112T094313/server/tmp/SmartTrie/logs/gc.log"
+) + guides(colour = guide_legend(nrow = 2))
+```
+
+No experimento seguinte, avaliamos o desempenho ao escolher o algoritmo G1. É possível notar que este algoritmo passa por ciclos compostos de pequenas pausas que se tornam cada vez mais frequetes até um determinado limite onde pausas mais expressivas de GC são executadas o que resulta em períodos de menor vazão, ao contrário dos picos de baixa vazão encontrados no algoritmo ParallelGC.
+
+```{r experiment-2020-11-12-trie-g1-gc, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - G1",
+  "../results/20201112T101439/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201112T101439/server/tmp/SmartTrie/logs/app.log",
+  "../results/20201112T101439/server/tmp/SmartTrie/logs/gc.log"
+) + guides(colour = guide_legend(nrow = 4))
+```
+
+Finalmente, re-executamos o mesmo experimento com o algoritmo ZGC. Este algoritmo apresenta pausas frequentes, o que resulta em uma maior desvio padrão, porém não há momentos de queda expressiva na vazão se comparado com os algoritmos anteriores.
+
+```{r experiment-2020-11-12-trie-g1-zgc, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - ZGC",
+  "../results/20201112T114719/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201112T114719/server/tmp/SmartTrie/logs/app.log",
+  "../results/20201112T114719/server/tmp/SmartTrie/logs/gc.log"
+)
+```
