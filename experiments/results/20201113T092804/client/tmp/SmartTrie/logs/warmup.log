@@ -1,0 +1,246 @@
+Command line: -t -s -db smarttrie.app.client.Client -threads 64 -P config/workload -p operationcount=100000
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-11-13 13:28:30:192 0 sec: 0 operations; est completion in 0 second 
+2020-11-13 13:28:31:026 1 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-13 13:28:32:050 2 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-13 13:28:33:146 3 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-13 13:28:33.707 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.706 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.711 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.713 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.716 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.716 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.718 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.720 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.726 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.727 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.728 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.732 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.733 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.735 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.736 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.738 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.740 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.744 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.748 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.750 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.750 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.753 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.763 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.763 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.765 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.767 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.780 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.782 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.784 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.785 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.786 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.788 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.791 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.792 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.793 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.797 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.799 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.801 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.801 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.803 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.803 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.804 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.804 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.805 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.806 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.806 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.808 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.808 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.812 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.812 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.812 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.814 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.815 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.816 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.816 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.817 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.817 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.818 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.820 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.820 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.821 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.822 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.823 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.861 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-13 13:28:33.882 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.883 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.882 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.886 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.888 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.888 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.887 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.893 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.898 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.900 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.915 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.917 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.920 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.924 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.929 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.931 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.934 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.936 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.936 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.953 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.960 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.961 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.962 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.963 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.964 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.964 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.965 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.965 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34:024 4 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-13 13:28:33.966 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.967 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.967 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.969 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.970 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.970 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.970 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.971 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.972 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.972 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.973 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:33.973 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.008 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.024 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.034 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.076 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.076 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.080 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.080 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.081 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.081 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.081 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.083 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.081 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.084 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.084 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.086 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.088 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.089 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.091 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.082 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.102 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.102 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.102 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.103 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:34.124 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-13 13:28:35:025 5 sec: 384 operations; 383.62 current ops/sec; est completion in 21 minutes [UPDATE: Count=520, Max=4743167, Min=4476, Avg=621258.76, 90=4681727, 99=4726783, 99.9=4739071, 99.99=4743167] 
+2020-11-13 13:28:36:024 6 sec: 2383 operations; 2001 current ops/sec; est completion in 4 minutes [UPDATE: Count=1864, Max=199807, Min=6296, Avg=29469.79, 90=42431, 99=68671, 99.9=80127, 99.99=199807] 
+2020-11-13 13:28:37:024 7 sec: 4682 operations; 2299 current ops/sec; est completion in 2 minutes [UPDATE: Count=2299, Max=195967, Min=2582, Avg=27628.34, 90=41215, 99=97087, 99.9=142463, 99.99=195967] 
+2020-11-13 13:28:38:024 8 sec: 7935 operations; 3253 current ops/sec; est completion in 1 minute [UPDATE: Count=3255, Max=222079, Min=2874, Avg=19712.82, 90=31023, 99=68991, 99.9=127103, 99.99=222079] 
+2020-11-13 13:28:39:025 9 sec: 11419 operations; 3484 current ops/sec; est completion in 1 minute [UPDATE: Count=3481, Max=47263, Min=2548, Avg=17314.02, 90=25791, 99=34207, 99.9=39519, 99.99=47263] 
+2020-11-13 13:28:40:024 10 sec: 16883 operations; 5458.54 current ops/sec; est completion in 50 seconds [UPDATE: Count=5472, Max=136959, Min=1798, Avg=12329.96, 90=14607, 99=113279, 99.9=129919, 99.99=136319] 
+2020-11-13 13:28:41:026 11 sec: 22092 operations; 5203.8 current ops/sec; est completion in 39 seconds [UPDATE: Count=5201, Max=32511, Min=2496, Avg=12196.29, 90=15951, 99=21215, 99.9=30799, 99.99=32447] 
+2020-11-13 13:28:42:024 12 sec: 27005 operations; 4917.92 current ops/sec; est completion in 33 seconds [UPDATE: Count=4913, Max=35103, Min=1997, Avg=12896.77, 90=16719, 99=23455, 99.9=33055, 99.99=35103] 
+2020-11-13 13:28:43:024 13 sec: 31829 operations; 4828.83 current ops/sec; est completion in 28 seconds [UPDATE: Count=4832, Max=32431, Min=3150, Avg=13175.15, 90=16639, 99=20831, 99.9=26927, 99.99=32431] 
+2020-11-13 13:28:44:024 14 sec: 37313 operations; 5484 current ops/sec; est completion in 24 seconds [UPDATE: Count=5476, Max=31215, Min=1186, Avg=11658.77, 90=15399, 99=20703, 99.9=30271, 99.99=30751] 
+2020-11-13 13:28:45:024 15 sec: 42994 operations; 5675.32 current ops/sec; est completion in 20 seconds [UPDATE: Count=5684, Max=24431, Min=2992, Avg=11007.58, 90=14391, 99=18943, 99.9=22287, 99.99=23759] 
+2020-11-13 13:28:46:024 16 sec: 48984 operations; 5990 current ops/sec; est completion in 17 seconds [UPDATE: Count=5987, Max=31343, Min=1382, Avg=10552.67, 90=13943, 99=19375, 99.9=23023, 99.99=29199] 
+2020-11-13 13:28:47:024 17 sec: 55469 operations; 6491.49 current ops/sec; est completion in 14 seconds [UPDATE: Count=6489, Max=27023, Min=1387, Avg=9844.06, 90=13655, 99=17887, 99.9=21631, 99.99=24863] 
+2020-11-13 13:28:48:024 18 sec: 62370 operations; 6901 current ops/sec; est completion in 11 seconds [UPDATE: Count=6897, Max=41247, Min=1408, Avg=9254.01, 90=12503, 99=19311, 99.9=34527, 99.99=39263] 
+2020-11-13 13:28:49:024 19 sec: 69323 operations; 6953 current ops/sec; est completion in 9 second [UPDATE: Count=6964, Max=26591, Min=1189, Avg=9089.65, 90=12527, 99=18367, 99.9=22239, 99.99=23535] 
+2020-11-13 13:28:50:024 20 sec: 76886 operations; 7563 current ops/sec; est completion in 7 second [UPDATE: Count=7555, Max=21487, Min=1877, Avg=8451, 90=10895, 99=14383, 99.9=18303, 99.99=20639] 
+2020-11-13 13:28:51:024 21 sec: 83422 operations; 6536 current ops/sec; est completion in 5 second [UPDATE: Count=6543, Max=30367, Min=1942, Avg=9778.52, 90=12383, 99=18543, 99.9=25807, 99.99=30079] 
+2020-11-13 13:28:52:024 22 sec: 90275 operations; 6846.15 current ops/sec; est completion in 3 second [UPDATE: Count=6850, Max=24463, Min=1388, Avg=9332.29, 90=12887, 99=18639, 99.9=22239, 99.99=23167] 
+2020-11-13 13:28:53:024 23 sec: 97621 operations; 7353.35 current ops/sec; est completion in 1 second [CLEANUP: Count=13, Max=7, Min=2, Avg=3.38, 90=4, 99=7, 99.9=7, 99.99=7] [UPDATE: Count=7362, Max=35999, Min=1479, Avg=8214.11, 90=10239, 99=17727, 99.9=32319, 99.99=35167] 
+2020-11-13 13:28:53:381 23 sec: 100000 operations; 6645.25 current ops/sec; [CLEANUP: Count=51, Max=8, Min=1, Avg=3.08, 90=4, 99=6, 99.9=8, 99.99=8] [UPDATE: Count=2356, Max=16431, Min=658, Avg=4860.32, 90=7831, 99=12711, 99.9=15623, 99.99=16431] 
+[OVERALL], RunTime(ms), 23356
+[OVERALL], Throughput(ops/sec), 4281.555060798082
+[TOTAL_GCS_G1_Young_Generation], Count, 10
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 147
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.629388593937318
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 10
+[TOTAL_GC_TIME], Time(ms), 147
+[TOTAL_GC_TIME_%], Time(%), 0.629388593937318
+[CLEANUP], Operations, 64
+[CLEANUP], AverageLatency(us), 3.140625
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 8
+[CLEANUP], 95thPercentileLatency(us), 6
+[CLEANUP], 99thPercentileLatency(us), 7
+[UPDATE], Operations, 100000
+[UPDATE], AverageLatency(us), 14681.35831
+[UPDATE], MinLatency(us), 658
+[UPDATE], MaxLatency(us), 4743167
+[UPDATE], 95thPercentileLatency(us), 22687
+[UPDATE], 99thPercentileLatency(us), 40479
+[UPDATE], Return=OK, 100000

@@ -1,13 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output:
-  html_notebook:
-    code_folding: none
-    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
+    toc: yes
+  html_notebook:
+    code_folding: none
     toc: yes
 ---
 
@@ -385,7 +385,7 @@ plot_througput_vs_checkpoints(
 
 Finalmente, re-executamos o mesmo experimento com o algoritmo ZGC. Este algoritmo apresenta pausas frequentes, o que resulta em uma maior desvio padrão, porém não há momentos de queda expressiva na vazão se comparado com os algoritmos anteriores.
 
-```{r experiment-2020-11-12-trie-g1-zgc, echo=FALSE, message=FALSE, warning=FALSE}
+```{r experiment-2020-11-12-trie-zgc, echo=FALSE, message=FALSE, warning=FALSE}
 plot_througput_vs_checkpoints(
   "Trie - ZGC",
   "../results/20201112T114719/client/tmp/SmartTrie/logs/benchmark.log",
@@ -393,3 +393,28 @@ plot_througput_vs_checkpoints(
   "../results/20201112T114719/server/tmp/SmartTrie/logs/gc.log"
 )
 ```
+
+Ao aumentar o tamanho máximo da memória de 6G para 8G, o ZGC preserva o desvio padrão, mas aumenta o periodo entre GCs.
+
+```{r experiment-2020-11-13-trie-zgc-8G, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie - ZGC",
+  "../results/20201113T090532/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201113T090532/server/tmp/SmartTrie/logs/app.log",
+  "../results/20201113T090532/server/tmp/SmartTrie/logs/gc.log"
+)
+```
+
+Java flight recorder aponta para arrays de bytes como maior fonte de alocação. BFT-Smart, ao adotar arrays de bytes como estrutura base para representação de dados acaba por colocar muita pressão nos coletores de lixo uma vez que esta estrutura não pode ser reutilizada. A re-engenharia do BFT para utilizaar byte buffers reutilizáveis (pooled) pode amenizar este problema.
+
+```{r experiment-2020-11-13-trie-zgc-8G-jfr, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Coleta de JFR em: ../results/20201113T092804/server/tmp/SmartTrie/recording.jfr
+plot_througput_vs_checkpoints(
+  "Trie - ZGC 8G",
+  "../results/20201113T092804/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201113T092804/server/tmp/SmartTrie/logs/app.log",
+  "../results/20201113T092804/server/tmp/SmartTrie/logs/gc.log"
+)
+```
+
+![](./img/Screen Shot 2020-11-13 at 10.02.40 AM.png)
