@@ -115,8 +115,8 @@
       shell:
         chdir: "{{ experiment_path }}"
           #cmd: "{{ run_cmd }} -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:StartFlightRecording=filename=recording.jfr,maxsize=1024m,maxage=1d,settings=profile,dumponexit=true -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -XX:+UseStringDeduplication -XX:InitialHeapSize=2G -XX:MaxHeapSize=8G -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
-        cmd: "{{ run_cmd }} -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -XX:+UseStringDeduplication -XX:InitialHeapSize=2G -XX:MaxHeapSize=8G -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
-      async: 3600 # 1h
+        cmd: "{{ run_cmd }} -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -XX:+UseStringDeduplication -XX:InitialHeapSize=2G -XX:MaxHeapSize=16G -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
+      async: 10800 # 3h
       poll: 0
       when: not ansible_check_mode
       tags:
@@ -142,7 +142,7 @@
       shell:
         chdir: "{{ experiment_path }}"
         cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -load -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/load.log"
-      async: 1800 # 30m
+      async: 10800 # 3h
       poll: 10
       when: not ansible_check_mode
       tags:
@@ -151,8 +151,8 @@
     - name: warm-up run
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount=100000 2>&1 | tee logs/warmup.log"
-      async: 1800 # 30m
+        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount=1000000 2>&1 | tee logs/warmup.log"
+      async: 10800 # 3h
       poll: 10
       when: not ansible_check_mode
       tags:
@@ -162,7 +162,7 @@
       shell:
         chdir: "{{ experiment_path }}"
         cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/benchmark.log"
-      async: 1800 # 30m
+      async: 10800 # 3h
       poll: 10
       when: not ansible_check_mode
       tags:
