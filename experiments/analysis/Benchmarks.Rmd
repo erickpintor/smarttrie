@@ -1,13 +1,13 @@
 ---
 title: "SmartTrie - Project Benchmarks"
 output:
+  html_notebook:
+    code_folding: none
+    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
-    toc: yes
-  html_notebook:
-    code_folding: none
     toc: yes
 ---
 
@@ -16,6 +16,7 @@ library(stringr)
 library(dplyr)
 library(ggplot2)
 library(scales)
+library(knitr)
 
 load_ycsb_througput = function(log_file_path) {
   ycsb_lines = regex(
@@ -134,13 +135,6 @@ plot_througput_vs_checkpoints = function(title,
   
   plot
 }
-
-plot_througput_vs_checkpoints(
-  "Trie - G1",
-  "../results/20201112T101439/client/tmp/SmartTrie/logs/benchmark.log",
-  "../results/20201112T101439/server/tmp/SmartTrie/logs/app.log",
-  "../results/20201112T101439/server/tmp/SmartTrie/logs/gc.log"
-)
 ```
 
 # Experimentos
@@ -357,7 +351,7 @@ plot_througput_vs_checkpoints(
 | Bytes/Registro | 4kb | |
 | Período de Checkpoints | 100000 | |
 | Checkpoints assíncrono | Sim | |
-| Log assíncrono | Sim |
+| Log assíncrono | - | Log desabilitado |
 | Estrutura de dados | scala.collection.concurrent.TrieMap | |
 | Commit | 20110f9 | |
 
@@ -417,4 +411,43 @@ plot_througput_vs_checkpoints(
 )
 ```
 
-![](./img/Screen Shot 2020-11-13 at 10.02.40 AM.png)
+```{r experiment-2020-11-13-trie-zgc-8G-img, echo=FALSE, message=FALSE, warning=FALSE}
+include_graphics("./img/Screen Shot 2020-11-13 at 10.02.40 AM.png")
+```
+
+
+## 2020-11-19 - Experimentos de longa duração
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Servidores vs Clientes | 1/1 | Node 41-42 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 1500000 | |
+| Requests | 20000000 | |
+| Threads no cliente | 64 | |
+| Bytes/Registro | 4kb | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Sim | |
+| Log assíncrono | - | Log desabilitado |
+| Estrutura de dados | java.util.TreeMap e scala.collection.concurrent.TrieMap | |
+| Commit | ce0d34d | |
+
+Re-executamos os experimentos anteriores por maior duração a fim de coletar dados suficientes para escolher recortes que demostrem a execução dos sitema com vários checkpoints sendo criados. Para tal fim, aumentamos o tamanho do dataset para 5G e executamos 20M de requests variando a estrutura de dados. Nestes experimentos utilizamos o coletor de lixo ZGC com uma heap de 16G.
+
+```{r experiment-2020-11-19-tree-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "TreeMap",
+  "../results/20201119T104524/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201119T104524/server/tmp/SmartTrie/logs/app.log",
+  # "../results/20201119T104524/server/tmp/SmartTrie/logs/gc.log"
+) + scale_x_datetime(breaks = pretty_breaks(10))
+```
+
+```{r experiment-2020-11-19-trie-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "Trie",
+  "../results/20201119T113910/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201119T113910/server/tmp/SmartTrie/logs/app.log",
+  # "../results/20201119T113910/server/tmp/SmartTrie/logs/gc.log"
+) + scale_x_datetime(breaks = pretty_breaks(10))
+```

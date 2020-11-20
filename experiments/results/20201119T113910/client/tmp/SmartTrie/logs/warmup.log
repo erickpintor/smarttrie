@@ -1,0 +1,358 @@
+Command line: -t -s -db smarttrie.app.client.Client -threads 64 -P config/workload -p operationcount=1000000
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-11-19 15:43:24:983 0 sec: 0 operations; est completion in 0 second 
+2020-11-19 15:43:25:815 1 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-19 15:43:26:814 2 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-19 15:43:27.504 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.510 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.515 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.518 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.519 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.531 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.536 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.540 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.544 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.544 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.547 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.549 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.553 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.553 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.556 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.558 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.560 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.562 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.564 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.566 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.567 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.569 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.570 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.572 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.573 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.575 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.578 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.580 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.580 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.584 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.585 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.588 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.592 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.594 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.596 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.598 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.601 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.602 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.604 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.606 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.608 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.612 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.614 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.616 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.618 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.628 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.628 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.630 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.630 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.632 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.636 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.637 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.637 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.638 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.639 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.640 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.665 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.667 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.670 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.681 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.683 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.686 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.700 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.705 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 15:43:27.716 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.720 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.718 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.720 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.725 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.728 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.728 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.728 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.725 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.730 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.732 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.736 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.738 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.739 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.739 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.750 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.751 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.751 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.752 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.752 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.752 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.753 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.753 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.754 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.754 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.755 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.755 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.755 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.755 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.756 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.757 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.758 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.758 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.759 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.760 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.761 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.762 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.764 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.764 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.765 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.765 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.766 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.767 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.768 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.768 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.769 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.769 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.770 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.771 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.773 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.773 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.781 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.781 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.782 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.782 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.783 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.784 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.784 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.785 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.785 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.787 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.787 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.788 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27.788 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 15:43:27:841 3 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-19 15:43:28:814 4 sec: 1353 operations; 1390.54 current ops/sec; est completion in 49 minutes [UPDATE: Count=1361, Max=3182591, Min=1769, Avg=181833.57, 90=89663, 99=3158015, 99.9=3182591, 99.99=3182591] 
+2020-11-19 15:43:30:896 6 sec: 5390 operations; 2013.47 current ops/sec; est completion in 18 minutes [UPDATE: Count=4178, Max=221951, Min=1291, Avg=31205.21, 90=44735, 99=130623, 99.9=200575, 99.99=221951] 
+2020-11-19 15:43:32:413 7 sec: 9145 operations; 2355.71 current ops/sec; est completion in 13 minutes [UPDATE: Count=3608, Max=322559, Min=1315, Avg=26236.38, 90=38975, 99=138495, 99.9=210303, 99.99=322559] 
+2020-11-19 15:43:33:849 9 sec: 12852 operations; 2581.48 current ops/sec; est completion in 11 minutes [UPDATE: Count=3708, Max=250495, Min=1247, Avg=24509.64, 90=32015, 99=62463, 99.9=165119, 99.99=250495] 
+2020-11-19 15:43:35:483 10 sec: 17384 operations; 2773.56 current ops/sec; est completion in 10 minutes [UPDATE: Count=4530, Max=198911, Min=1361, Avg=22498.67, 90=30495, 99=56031, 99.9=132479, 99.99=198911] 
+2020-11-19 15:43:36:561 11 sec: 20317 operations; 2728.37 current ops/sec; est completion in 9 minutes [UPDATE: Count=2935, Max=264703, Min=1120, Avg=22830.26, 90=33087, 99=79295, 99.9=247167, 99.99=264703] 
+2020-11-19 15:43:37:598 12 sec: 23082 operations; 2658.65 current ops/sec; est completion in 9 minutes [UPDATE: Count=2765, Max=170367, Min=1425, Avg=22800.98, 90=39103, 99=101887, 99.9=137215, 99.99=170367] 
+2020-11-19 15:43:38:591 13 sec: 25814 operations; 2748.49 current ops/sec; est completion in 8 minutes [UPDATE: Count=2749, Max=269567, Min=1352, Avg=22512.6, 90=35711, 99=83839, 99.9=183167, 99.99=269567] 
+2020-11-19 15:43:39:506 14 sec: 28503 operations; 2942.01 current ops/sec; est completion in 8 minutes [UPDATE: Count=2672, Max=247551, Min=1519, Avg=21294.28, 90=32511, 99=95103, 99.9=188415, 99.99=247551] 
+2020-11-19 15:43:39:734 14 sec: 29192 operations; 3021.93 current ops/sec; est completion in 8 minutes [UPDATE: Count=687, Max=156415, Min=1346, Avg=14712.89, 90=23871, 99=98815, 99.9=155519, 99.99=156415] 
+2020-11-19 15:43:40:338 15 sec: 31035 operations; 3051.32 current ops/sec; est completion in 8 minutes [UPDATE: Count=1844, Max=264447, Min=1323, Avg=21260.54, 90=29887, 99=95551, 99.9=244479, 99.99=264447] 
+2020-11-19 15:43:41:103 16 sec: 33450 operations; 3156.86 current ops/sec; est completion in 7 minutes [UPDATE: Count=2518, Max=194559, Min=1382, Avg=19545.43, 90=28383, 99=84159, 99.9=184447, 99.99=194559] 
+2020-11-19 15:43:41:471 16 sec: 34601 operations; 3127.72 current ops/sec; est completion in 7 minutes [UPDATE: Count=1048, Max=82303, Min=1345, Avg=19661.47, 90=29023, 99=53183, 99.9=67583, 99.99=82303] 
+2020-11-19 15:43:41:814 17 sec: 35699 operations; 3201.17 current ops/sec; est completion in 7 minutes [UPDATE: Count=1099, Max=133759, Min=1373, Avg=18095.25, 90=30735, 99=87039, 99.9=123263, 99.99=133759] 
+2020-11-19 15:43:42:814 18 sec: 39102 operations; 3403 current ops/sec; est completion in 7 minutes [UPDATE: Count=3403, Max=211583, Min=1257, Avg=18340.06, 90=27695, 99=78719, 99.9=200831, 99.99=211583] 
+2020-11-19 15:43:43:814 19 sec: 42679 operations; 3577 current ops/sec; est completion in 7 minutes [UPDATE: Count=3578, Max=193023, Min=1218, Avg=17432.54, 90=28287, 99=72831, 99.9=126527, 99.99=193023] 
+2020-11-19 15:43:44:814 20 sec: 46215 operations; 3536 current ops/sec; est completion in 6 minutes [UPDATE: Count=3535, Max=195071, Min=1094, Avg=17228.51, 90=27663, 99=84671, 99.9=147967, 99.99=195071] 
+2020-11-19 15:43:45:814 21 sec: 50051 operations; 3836 current ops/sec; est completion in 6 minutes [UPDATE: Count=3835, Max=216831, Min=1096, Avg=16257.19, 90=25647, 99=63327, 99.9=158975, 99.99=216831] 
+2020-11-19 15:43:46:814 22 sec: 54124 operations; 4073 current ops/sec; est completion in 6 minutes [UPDATE: Count=4074, Max=374527, Min=988, Avg=14506.41, 90=25007, 99=79871, 99.9=127935, 99.99=374527] 
+2020-11-19 15:43:47:814 23 sec: 58804 operations; 4680 current ops/sec; est completion in 6 minutes [UPDATE: Count=4681, Max=190847, Min=860, Avg=13246.84, 90=22383, 99=44223, 99.9=109247, 99.99=190847] 
+2020-11-19 15:43:48:814 24 sec: 63976 operations; 5172 current ops/sec; est completion in 5 minutes [UPDATE: Count=5174, Max=207103, Min=913, Avg=11682.75, 90=21503, 99=65919, 99.9=106431, 99.99=202239] 
+2020-11-19 15:43:49:814 25 sec: 68994 operations; 5018 current ops/sec; est completion in 5 minutes [UPDATE: Count=5017, Max=132351, Min=903, Avg=12500.89, 90=23023, 99=54975, 99.9=106175, 99.99=120447] 
+2020-11-19 15:43:50:815 26 sec: 73914 operations; 4920 current ops/sec; est completion in 5 minutes [UPDATE: Count=4920, Max=144511, Min=1046, Avg=12762.11, 90=23551, 99=45567, 99.9=71103, 99.99=144511] 
+2020-11-19 15:43:51:814 27 sec: 79117 operations; 5203 current ops/sec; est completion in 5 minutes [UPDATE: Count=5204, Max=150271, Min=925, Avg=11734.42, 90=22367, 99=53215, 99.9=116223, 99.99=143871] 
+2020-11-19 15:43:52:814 28 sec: 84381 operations; 5258.74 current ops/sec; est completion in 5 minutes [UPDATE: Count=5264, Max=121727, Min=811, Avg=11984.7, 90=21455, 99=62175, 99.9=112255, 99.99=119295] 
+2020-11-19 15:43:53:814 29 sec: 89949 operations; 5568 current ops/sec; est completion in 4 minutes [UPDATE: Count=5566, Max=139007, Min=892, Avg=11167.27, 90=19359, 99=60447, 99.9=98175, 99.99=108287] 
+2020-11-19 15:43:54:814 30 sec: 94684 operations; 4739.74 current ops/sec; est completion in 4 minutes [UPDATE: Count=4736, Max=241663, Min=962, Avg=13297.03, 90=23535, 99=107263, 99.9=228991, 99.99=241663] 
+2020-11-19 15:43:55:814 31 sec: 100065 operations; 5381 current ops/sec; est completion in 4 minutes [UPDATE: Count=5379, Max=118463, Min=909, Avg=11773.43, 90=20607, 99=49919, 99.9=101247, 99.99=106879] 
+2020-11-19 15:43:56:814 32 sec: 105591 operations; 5526 current ops/sec; est completion in 4 minutes [UPDATE: Count=5527, Max=144511, Min=870, Avg=11080.63, 90=20543, 99=54751, 99.9=100031, 99.99=126975] 
+2020-11-19 15:43:57:814 33 sec: 111099 operations; 5508 current ops/sec; est completion in 4 minutes [UPDATE: Count=5507, Max=155775, Min=879, Avg=10973.97, 90=19567, 99=47775, 99.9=100863, 99.99=117503] 
+2020-11-19 15:43:58:814 34 sec: 116711 operations; 5612 current ops/sec; est completion in 4 minutes [UPDATE: Count=5612, Max=111423, Min=881, Avg=11032.81, 90=19839, 99=43487, 99.9=102335, 99.99=110719] 
+2020-11-19 15:43:59:814 35 sec: 122423 operations; 5712 current ops/sec; est completion in 4 minutes [UPDATE: Count=5712, Max=206463, Min=990, Avg=11058.99, 90=19999, 99=35263, 99.9=48831, 99.99=175487] 
+2020-11-19 15:44:00:814 36 sec: 128135 operations; 5712 current ops/sec; est completion in 4 minutes [UPDATE: Count=5712, Max=149887, Min=837, Avg=10986.48, 90=19295, 99=36991, 99.9=102719, 99.99=135935] 
+2020-11-19 15:44:01:814 37 sec: 133910 operations; 5775 current ops/sec; est completion in 4 minutes [UPDATE: Count=5776, Max=179711, Min=1103, Avg=11001.15, 90=19215, 99=33407, 99.9=60799, 99.99=108095] 
+2020-11-19 15:44:02:814 38 sec: 139675 operations; 5765 current ops/sec; est completion in 3 minutes [UPDATE: Count=5763, Max=120191, Min=1008, Avg=10713.53, 90=18831, 99=35871, 99.9=91711, 99.99=115903] 
+2020-11-19 15:44:03:814 39 sec: 145096 operations; 5421 current ops/sec; est completion in 3 minutes [UPDATE: Count=5425, Max=148991, Min=869, Avg=11739.14, 90=21215, 99=64159, 99.9=102719, 99.99=128511] 
+2020-11-19 15:44:04:814 40 sec: 150908 operations; 5812 current ops/sec; est completion in 3 minutes [UPDATE: Count=5811, Max=183935, Min=930, Avg=10542.22, 90=18671, 99=33919, 99.9=100223, 99.99=169727] 
+2020-11-19 15:44:05:814 41 sec: 156580 operations; 5672 current ops/sec; est completion in 3 minutes [UPDATE: Count=5668, Max=115775, Min=753, Avg=10829, 90=20591, 99=49759, 99.9=74367, 99.99=106687] 
+2020-11-19 15:44:06:814 42 sec: 162217 operations; 5631.37 current ops/sec; est completion in 3 minutes [UPDATE: Count=5639, Max=177919, Min=800, Avg=10937.76, 90=20607, 99=45759, 99.9=105919, 99.99=175743] 
+2020-11-19 15:44:07:814 43 sec: 167907 operations; 5695.7 current ops/sec; est completion in 3 minutes [UPDATE: Count=5690, Max=93951, Min=894, Avg=10851.87, 90=19791, 99=31359, 99.9=75135, 99.99=90303] 
+2020-11-19 15:44:08:814 44 sec: 173503 operations; 5596 current ops/sec; est completion in 3 minutes [UPDATE: Count=5887, Max=123071, Min=841, Avg=10962.47, 90=20991, 99=49951, 99.9=89855, 99.99=110463] 
+2020-11-19 15:44:09:814 45 sec: 179017 operations; 5514 current ops/sec; est completion in 3 minutes [UPDATE: Count=5223, Max=187647, Min=788, Avg=11771.11, 90=20831, 99=59167, 99.9=119871, 99.99=186239] 
+2020-11-19 15:44:10:814 46 sec: 184621 operations; 5604 current ops/sec; est completion in 3 minutes [UPDATE: Count=5606, Max=122815, Min=919, Avg=11113.08, 90=19295, 99=52543, 99.9=101183, 99.99=121151] 
+2020-11-19 15:44:11:814 47 sec: 190345 operations; 5724 current ops/sec; est completion in 3 minutes [UPDATE: Count=5724, Max=135935, Min=998, Avg=10928.89, 90=18847, 99=36991, 99.9=105343, 99.99=131839] 
+2020-11-19 15:44:12:814 48 sec: 196731 operations; 6386 current ops/sec; est completion in 3 minutes [UPDATE: Count=6387, Max=117311, Min=980, Avg=9876.51, 90=16735, 99=35903, 99.9=97535, 99.99=114495] 
+2020-11-19 15:44:13:814 49 sec: 203605 operations; 6874 current ops/sec; est completion in 3 minutes [UPDATE: Count=6873, Max=36287, Min=880, Avg=9294.29, 90=15055, 99=29535, 99.9=33887, 99.99=34719] 
+2020-11-19 15:44:14:814 50 sec: 210792 operations; 7187 current ops/sec; est completion in 3 minutes [UPDATE: Count=7184, Max=31183, Min=1034, Avg=8859.49, 90=12607, 99=24063, 99.9=30319, 99.99=31007] 
+2020-11-19 15:44:15:814 51 sec: 217022 operations; 6230 current ops/sec; est completion in 3 minutes [UPDATE: Count=6238, Max=50335, Min=738, Avg=10268.73, 90=18735, 99=38431, 99.9=47199, 99.99=50079] 
+2020-11-19 15:44:16:814 52 sec: 223186 operations; 6164 current ops/sec; est completion in 3 minutes [UPDATE: Count=6154, Max=43935, Min=904, Avg=10385.62, 90=15975, 99=34783, 99.9=41951, 99.99=42815] 
+2020-11-19 15:44:17:814 53 sec: 229128 operations; 5942 current ops/sec; est completion in 2 minutes [UPDATE: Count=5951, Max=73087, Min=625, Avg=10746.07, 90=15959, 99=48991, 99.9=66943, 99.99=69823] 
+2020-11-19 15:44:18:817 54 sec: 235762 operations; 6607.57 current ops/sec; est completion in 2 minutes [UPDATE: Count=6625, Max=36351, Min=920, Avg=9658.02, 90=17263, 99=32511, 99.9=34847, 99.99=36319] 
+2020-11-19 15:44:19:814 55 sec: 240247 operations; 4503.01 current ops/sec; est completion in 2 minutes [UPDATE: Count=4485, Max=296191, Min=917, Avg=14205.2, 90=19343, 99=192511, 99.9=295679, 99.99=296191] 
+2020-11-19 15:44:20:814 56 sec: 247299 operations; 7052 current ops/sec; est completion in 2 minutes [UPDATE: Count=7052, Max=42463, Min=797, Avg=8812.96, 90=12807, 99=33983, 99.9=39487, 99.99=42047] 
+2020-11-19 15:44:21:814 57 sec: 255004 operations; 7705 current ops/sec; est completion in 2 minutes [UPDATE: Count=7705, Max=127231, Min=838, Avg=8526.54, 90=10215, 99=20527, 99.9=123263, 99.99=126719] 
+2020-11-19 15:44:22:814 58 sec: 263563 operations; 8559 current ops/sec; est completion in 2 minutes [UPDATE: Count=8562, Max=24223, Min=1835, Avg=7471.62, 90=9439, 99=13143, 99.9=19583, 99.99=23567] 
+2020-11-19 15:44:23:814 59 sec: 271633 operations; 8070 current ops/sec; est completion in 2 minutes [UPDATE: Count=8075, Max=24143, Min=1026, Avg=7917.65, 90=9559, 99=15887, 99.9=21535, 99.99=23871] 
+2020-11-19 15:44:24:814 60 sec: 279666 operations; 8033 current ops/sec; est completion in 2 minutes [UPDATE: Count=8029, Max=33119, Min=748, Avg=7952.12, 90=9343, 99=22815, 99.9=30431, 99.99=32927] 
+2020-11-19 15:44:25:814 61 sec: 288455 operations; 8789 current ops/sec; est completion in 2 minutes [UPDATE: Count=8785, Max=92159, Min=1216, Avg=7275.57, 90=8999, 99=22479, 99.9=83455, 99.99=87103] 
+2020-11-19 15:44:26:814 62 sec: 297693 operations; 9238 current ops/sec; est completion in 2 minutes [UPDATE: Count=9238, Max=26255, Min=1094, Avg=6914.17, 90=8439, 99=17071, 99.9=22575, 99.99=25631] 
+2020-11-19 15:44:27:814 63 sec: 307241 operations; 9548 current ops/sec; est completion in 2 minutes [UPDATE: Count=9549, Max=22751, Min=1247, Avg=6700.8, 90=8431, 99=10631, 99.9=14527, 99.99=21567] 
+2020-11-19 15:44:28:814 64 sec: 316610 operations; 9369 current ops/sec; est completion in 2 minutes [UPDATE: Count=9368, Max=23695, Min=2001, Avg=6816.21, 90=8187, 99=10967, 99.9=19375, 99.99=23503] 
+2020-11-19 15:44:29:814 65 sec: 325422 operations; 8812 current ops/sec; est completion in 2 minutes [UPDATE: Count=8816, Max=12943, Min=3574, Avg=7256.42, 90=8127, 99=9175, 99.9=10455, 99.99=12407] 
+2020-11-19 15:44:30:814 66 sec: 334440 operations; 9018 current ops/sec; est completion in 2 minutes [UPDATE: Count=9017, Max=25487, Min=856, Avg=7076.88, 90=8147, 99=14711, 99.9=23103, 99.99=25359] 
+2020-11-19 15:44:31:814 67 sec: 344786 operations; 10346 current ops/sec; est completion in 2 minutes [UPDATE: Count=10346, Max=20847, Min=976, Avg=6166.64, 90=8111, 99=10775, 99.9=16415, 99.99=20671] 
+2020-11-19 15:44:32:814 68 sec: 355090 operations; 10304 current ops/sec; est completion in 2 minutes [UPDATE: Count=10307, Max=16879, Min=2256, Avg=6204.71, 90=7951, 99=10143, 99.9=13663, 99.99=16687] 
+2020-11-19 15:44:33:814 69 sec: 365439 operations; 10349 current ops/sec; est completion in 2 minutes [UPDATE: Count=10346, Max=28431, Min=1847, Avg=6177.32, 90=8011, 99=11663, 99.9=26111, 99.99=27759] 
+2020-11-19 15:44:34:814 70 sec: 374947 operations; 9508 current ops/sec; est completion in 1 minute [UPDATE: Count=9511, Max=37855, Min=874, Avg=6712.64, 90=8375, 99=13647, 99.9=36223, 99.99=37311] 
+2020-11-19 15:44:35:814 71 sec: 384882 operations; 9935 current ops/sec; est completion in 1 minute [UPDATE: Count=9935, Max=16575, Min=3286, Avg=6435.75, 90=7791, 99=9751, 99.9=12847, 99.99=14991] 
+2020-11-19 15:44:36:814 72 sec: 394389 operations; 9507 current ops/sec; est completion in 1 minute [UPDATE: Count=9503, Max=14599, Min=2592, Avg=6717.21, 90=8463, 99=10535, 99.9=11799, 99.99=13303] 
+2020-11-19 15:44:37:814 73 sec: 404453 operations; 10064 current ops/sec; est completion in 1 minute [UPDATE: Count=10062, Max=26383, Min=1762, Avg=6354.02, 90=8135, 99=17167, 99.9=23871, 99.99=25679] 
+2020-11-19 15:44:38:814 74 sec: 414459 operations; 10006 current ops/sec; est completion in 1 minute [UPDATE: Count=10006, Max=34431, Min=655, Avg=6388.08, 90=7811, 99=10951, 99.9=24319, 99.99=33887] 
+2020-11-19 15:44:39:814 75 sec: 425562 operations; 11103 current ops/sec; est completion in 1 minute [UPDATE: Count=11108, Max=15823, Min=2054, Avg=5752.17, 90=7499, 99=9695, 99.9=13343, 99.99=15639] 
+2020-11-19 15:44:40:814 76 sec: 435937 operations; 10375 current ops/sec; est completion in 1 minute [UPDATE: Count=10370, Max=16799, Min=1244, Avg=6148.33, 90=7795, 99=10143, 99.9=13775, 99.99=16431] 
+2020-11-19 15:44:41:814 77 sec: 446171 operations; 10234 current ops/sec; est completion in 1 minute [UPDATE: Count=10236, Max=14959, Min=2636, Avg=6252.35, 90=7951, 99=9775, 99.9=12631, 99.99=14831] 
+2020-11-19 15:44:42:814 78 sec: 456022 operations; 9851 current ops/sec; est completion in 1 minute [UPDATE: Count=9853, Max=28415, Min=779, Avg=6485.46, 90=8071, 99=14095, 99.9=24159, 99.99=26879] 
+2020-11-19 15:44:43:814 79 sec: 464882 operations; 8860 current ops/sec; est completion in 1 minute [UPDATE: Count=8859, Max=13823, Min=3836, Avg=7212.5, 90=8623, 99=10559, 99.9=12207, 99.99=13575] 
+2020-11-19 15:44:44:814 80 sec: 473432 operations; 8550 current ops/sec; est completion in 1 minute [UPDATE: Count=8554, Max=15087, Min=3410, Avg=7475.37, 90=8183, 99=10143, 99.9=14223, 99.99=14831] 
+2020-11-19 15:44:45:814 81 sec: 482335 operations; 8903 current ops/sec; est completion in 1 minute [UPDATE: Count=8896, Max=15287, Min=1917, Avg=7180.28, 90=8535, 99=10607, 99.9=13543, 99.99=14711] 
+2020-11-19 15:44:46:814 82 sec: 491005 operations; 8670 current ops/sec; est completion in 1 minute [UPDATE: Count=8670, Max=23903, Min=956, Avg=7368.98, 90=8399, 99=10687, 99.9=22847, 99.99=23839] 
+2020-11-19 15:44:47:814 83 sec: 500708 operations; 9703 current ops/sec; est completion in 1 minute [UPDATE: Count=9707, Max=16231, Min=1441, Avg=6588.1, 90=8139, 99=11047, 99.9=14055, 99.99=15719] 
+2020-11-19 15:44:48:814 84 sec: 511227 operations; 10519 current ops/sec; est completion in 1 minute [UPDATE: Count=10515, Max=20719, Min=1978, Avg=6067.27, 90=7763, 99=9799, 99.9=13015, 99.99=18431] 
+2020-11-19 15:44:49:814 85 sec: 521591 operations; 10364 current ops/sec; est completion in 1 minute [UPDATE: Count=10368, Max=12695, Min=2005, Avg=6173.99, 90=7895, 99=9471, 99.9=11415, 99.99=12391] 
+2020-11-19 15:44:50:814 86 sec: 531464 operations; 9873 current ops/sec; est completion in 1 minute [UPDATE: Count=9869, Max=30319, Min=795, Avg=6461.38, 90=8187, 99=12791, 99.9=25423, 99.99=30047] 
+2020-11-19 15:44:51:814 87 sec: 541372 operations; 9908 current ops/sec; est completion in 1 minute [UPDATE: Count=9908, Max=17455, Min=899, Avg=6448.97, 90=8327, 99=11359, 99.9=15255, 99.99=17359] 
+2020-11-19 15:44:52:814 88 sec: 550530 operations; 9158 current ops/sec; est completion in 1 minute [UPDATE: Count=9160, Max=15807, Min=1329, Avg=6947.24, 90=8271, 99=11351, 99.9=15127, 99.99=15679] 
+2020-11-19 15:44:53:814 89 sec: 559941 operations; 9411 current ops/sec; est completion in 1 minute [UPDATE: Count=9413, Max=16375, Min=3194, Avg=6812.36, 90=8247, 99=10503, 99.9=13735, 99.99=14383] 
+2020-11-19 15:44:54:814 90 sec: 568427 operations; 8486 current ops/sec; est completion in 1 minute [UPDATE: Count=8484, Max=31599, Min=1177, Avg=7527.51, 90=8455, 99=12495, 99.9=28703, 99.99=29663] 
+2020-11-19 15:44:55:814 91 sec: 577561 operations; 9134 current ops/sec; est completion in 1 minute [UPDATE: Count=9132, Max=13319, Min=2358, Avg=6997.72, 90=8311, 99=10247, 99.9=11335, 99.99=12535] 
+2020-11-19 15:44:56:814 92 sec: 586715 operations; 9154 current ops/sec; est completion in 1 minute [UPDATE: Count=9154, Max=20863, Min=2138, Avg=6992.21, 90=8599, 99=11335, 99.9=14623, 99.99=18063] 
+2020-11-19 15:44:57:814 93 sec: 597396 operations; 10681 current ops/sec; est completion in 1 minute [UPDATE: Count=10687, Max=20479, Min=1893, Avg=5974.66, 90=7683, 99=10255, 99.9=18543, 99.99=20095] 
+2020-11-19 15:44:58:814 94 sec: 605917 operations; 8521 current ops/sec; est completion in 1 minute [UPDATE: Count=8519, Max=25631, Min=1287, Avg=7505.06, 90=8327, 99=12143, 99.9=22623, 99.99=25327] 
+2020-11-19 15:44:59:814 95 sec: 614365 operations; 8448 current ops/sec; est completion in 1 minute [UPDATE: Count=8444, Max=13535, Min=2706, Avg=7569.31, 90=8719, 99=10431, 99.9=12047, 99.99=12703] 
+2020-11-19 15:45:00:814 96 sec: 623899 operations; 9534 current ops/sec; est completion in 58 seconds [UPDATE: Count=9538, Max=13535, Min=2862, Avg=6705.23, 90=8375, 99=10367, 99.9=11495, 99.99=13263] 
+2020-11-19 15:45:01:814 97 sec: 633022 operations; 9123 current ops/sec; est completion in 57 seconds [UPDATE: Count=9119, Max=27999, Min=1715, Avg=7004.58, 90=8367, 99=11175, 99.9=23247, 99.99=24335] 
+2020-11-19 15:45:02:814 98 sec: 643066 operations; 10044 current ops/sec; est completion in 55 seconds [UPDATE: Count=10050, Max=28255, Min=923, Avg=6362.79, 90=7767, 99=11295, 99.9=18815, 99.99=27679] 
+2020-11-19 15:45:03:814 99 sec: 653496 operations; 10430 current ops/sec; est completion in 53 seconds [UPDATE: Count=10424, Max=14527, Min=1828, Avg=6126.42, 90=7899, 99=9983, 99.9=12087, 99.99=14511] 
+2020-11-19 15:45:04:814 100 sec: 664133 operations; 10637 current ops/sec; est completion in 51 seconds [UPDATE: Count=10642, Max=18719, Min=1190, Avg=6003.21, 90=7779, 99=11191, 99.9=13527, 99.99=17519] 
+2020-11-19 15:45:05:814 101 sec: 674265 operations; 10132 current ops/sec; est completion in 49 seconds [UPDATE: Count=10127, Max=17375, Min=2360, Avg=6311, 90=7871, 99=10591, 99.9=14663, 99.99=17375] 
+2020-11-19 15:45:06:814 102 sec: 682943 operations; 8678 current ops/sec; est completion in 48 seconds [UPDATE: Count=8678, Max=29279, Min=1399, Avg=7365.06, 90=8335, 99=10879, 99.9=25695, 99.99=27423] 
+2020-11-19 15:45:07:814 103 sec: 691562 operations; 8619 current ops/sec; est completion in 46 seconds [UPDATE: Count=8619, Max=19343, Min=2776, Avg=7411.26, 90=8215, 99=9727, 99.9=15671, 99.99=18015] 
+2020-11-19 15:45:08:814 104 sec: 700521 operations; 8959 current ops/sec; est completion in 45 seconds [UPDATE: Count=8960, Max=13367, Min=3118, Avg=7133.86, 90=8199, 99=10207, 99.9=12383, 99.99=13327] 
+2020-11-19 15:45:09:814 105 sec: 709276 operations; 8755 current ops/sec; est completion in 44 seconds [UPDATE: Count=8754, Max=16895, Min=3464, Avg=7304.92, 90=8147, 99=11679, 99.9=15647, 99.99=16559] 
+2020-11-19 15:45:10:814 106 sec: 719664 operations; 10388 current ops/sec; est completion in 42 seconds [UPDATE: Count=10391, Max=35583, Min=821, Avg=6154.3, 90=7735, 99=10575, 99.9=32639, 99.99=34943] 
+2020-11-19 15:45:11:814 107 sec: 730446 operations; 10782 current ops/sec; est completion in 40 seconds [UPDATE: Count=10782, Max=23839, Min=1736, Avg=5926.22, 90=7687, 99=9623, 99.9=15215, 99.99=23823] 
+2020-11-19 15:45:12:814 108 sec: 741138 operations; 10692 current ops/sec; est completion in 38 seconds [UPDATE: Count=10693, Max=15527, Min=1953, Avg=5972.64, 90=7707, 99=10143, 99.9=13375, 99.99=15151] 
+2020-11-19 15:45:13:814 109 sec: 750564 operations; 9426 current ops/sec; est completion in 37 seconds [UPDATE: Count=9426, Max=14607, Min=1563, Avg=6779.63, 90=8127, 99=10303, 99.9=13591, 99.99=14239] 
+2020-11-19 15:45:14:814 110 sec: 760162 operations; 9598 current ops/sec; est completion in 35 seconds [UPDATE: Count=9597, Max=29471, Min=959, Avg=6658.16, 90=8383, 99=11119, 99.9=27695, 99.99=29263] 
+2020-11-19 15:45:15:814 111 sec: 770038 operations; 9876 current ops/sec; est completion in 34 seconds [UPDATE: Count=9876, Max=14503, Min=2990, Avg=6474.23, 90=7703, 99=10423, 99.9=12439, 99.99=14463] 
+2020-11-19 15:45:16:814 112 sec: 779002 operations; 8964 current ops/sec; est completion in 32 seconds [UPDATE: Count=8961, Max=13407, Min=3582, Avg=7128.41, 90=8023, 99=9815, 99.9=11119, 99.99=13031] 
+2020-11-19 15:45:17:814 113 sec: 787999 operations; 8997 current ops/sec; est completion in 31 seconds [UPDATE: Count=8998, Max=22767, Min=1837, Avg=7103.91, 90=7911, 99=12015, 99.9=19375, 99.99=21695] 
+2020-11-19 15:45:18:814 114 sec: 798381 operations; 10382 current ops/sec; est completion in 29 seconds [UPDATE: Count=10385, Max=22559, Min=761, Avg=6157.67, 90=7955, 99=10775, 99.9=21423, 99.99=22463] 
+2020-11-19 15:45:19:814 115 sec: 807788 operations; 9407 current ops/sec; est completion in 28 seconds [UPDATE: Count=9403, Max=21663, Min=2286, Avg=6788.99, 90=8115, 99=10151, 99.9=20879, 99.99=21583] 
+2020-11-19 15:45:20:814 116 sec: 816564 operations; 8776 current ops/sec; est completion in 27 seconds [UPDATE: Count=8780, Max=19759, Min=3182, Avg=7282.51, 90=8091, 99=10247, 99.9=16311, 99.99=18591] 
+2020-11-19 15:45:21:814 117 sec: 825929 operations; 9365 current ops/sec; est completion in 25 seconds [UPDATE: Count=9365, Max=11527, Min=3244, Avg=6828.18, 90=8103, 99=9951, 99.9=10703, 99.99=11287] 
+2020-11-19 15:45:22:814 118 sec: 835811 operations; 9882 current ops/sec; est completion in 24 seconds [UPDATE: Count=9882, Max=23743, Min=1699, Avg=6466.67, 90=7851, 99=9655, 99.9=21039, 99.99=23279] 
+2020-11-19 15:45:23:814 119 sec: 845829 operations; 10018 current ops/sec; est completion in 22 seconds [UPDATE: Count=10019, Max=17279, Min=2360, Avg=6372.48, 90=7723, 99=9631, 99.9=12927, 99.99=15103] 
+2020-11-19 15:45:24:814 120 sec: 856266 operations; 10437 current ops/sec; est completion in 21 seconds [UPDATE: Count=10437, Max=13839, Min=1415, Avg=6127.47, 90=7891, 99=9623, 99.9=11639, 99.99=13719] 
+2020-11-19 15:45:25:814 121 sec: 866690 operations; 10424 current ops/sec; est completion in 19 seconds [UPDATE: Count=10423, Max=14159, Min=2025, Avg=6131.45, 90=7947, 99=9703, 99.9=11591, 99.99=13031] 
+2020-11-19 15:45:26:814 122 sec: 876616 operations; 9926 current ops/sec; est completion in 18 seconds [UPDATE: Count=9936, Max=28799, Min=1270, Avg=6430.44, 90=8215, 99=14855, 99.9=24559, 99.99=27839] 
+2020-11-19 15:45:27:814 123 sec: 885508 operations; 8892 current ops/sec; est completion in 16 seconds [UPDATE: Count=8884, Max=11055, Min=4312, Avg=7185.8, 90=7975, 99=9015, 99.9=10039, 99.99=10959] 
+2020-11-19 15:45:28:814 124 sec: 894574 operations; 9066 current ops/sec; est completion in 15 seconds [UPDATE: Count=9060, Max=16735, Min=1858, Avg=7049.82, 90=7911, 99=9559, 99.9=13703, 99.99=16319] 
+2020-11-19 15:45:29:814 125 sec: 903809 operations; 9235 current ops/sec; est completion in 14 seconds [UPDATE: Count=9235, Max=14567, Min=2984, Avg=6931.48, 90=7775, 99=9127, 99.9=12863, 99.99=14535] 
+2020-11-19 15:45:30:814 126 sec: 912796 operations; 8987 current ops/sec; est completion in 13 seconds [UPDATE: Count=8995, Max=25247, Min=955, Avg=7112.63, 90=7959, 99=10519, 99.9=20015, 99.99=24799] 
+2020-11-19 15:45:31:814 127 sec: 921675 operations; 8879 current ops/sec; est completion in 11 seconds [UPDATE: Count=8876, Max=28975, Min=2562, Avg=7199.92, 90=8095, 99=13095, 99.9=18767, 99.99=28927] 
+2020-11-19 15:45:32:814 128 sec: 931921 operations; 10246 current ops/sec; est completion in 10 seconds [UPDATE: Count=10246, Max=17615, Min=2564, Avg=6228.16, 90=7843, 99=10519, 99.9=15015, 99.99=17327] 
+2020-11-19 15:45:33:814 129 sec: 941676 operations; 9755 current ops/sec; est completion in 8 second [CLEANUP: Count=1, Max=17, Min=17, Avg=17, 90=17, 99=17, 99.9=17, 99.99=17] [UPDATE: Count=9750, Max=15519, Min=2352, Avg=6500.65, 90=7983, 99=10071, 99.9=12711, 99.99=15047] 
+2020-11-19 15:45:34:814 130 sec: 951451 operations; 9775 current ops/sec; est completion in 7 second [CLEANUP: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9795, Max=25151, Min=1105, Avg=6437.8, 90=8179, 99=11231, 99.9=23119, 99.99=24927] 
+2020-11-19 15:45:35:814 131 sec: 961499 operations; 10048 current ops/sec; est completion in 6 second [CLEANUP: Count=4, Max=6, Min=4, Avg=5, 90=6, 99=6, 99.9=6, 99.99=6] [UPDATE: Count=10028, Max=18351, Min=2674, Avg=6143.42, 90=7679, 99=10103, 99.9=15079, 99.99=18175] 
+2020-11-19 15:45:36:814 132 sec: 971043 operations; 9544 current ops/sec; est completion in 4 second [CLEANUP: Count=5, Max=6, Min=4, Avg=4.6, 90=6, 99=6, 99.9=6, 99.99=6] [UPDATE: Count=9552, Max=24015, Min=2037, Avg=6034.56, 90=7747, 99=10319, 99.9=21775, 99.99=23743] 
+2020-11-19 15:45:37:814 133 sec: 981373 operations; 10330 current ops/sec; est completion in 3 second [CLEANUP: Count=3, Max=6, Min=5, Avg=5.33, 90=6, 99=6, 99.9=6, 99.99=6] [UPDATE: Count=10322, Max=16527, Min=1244, Avg=5107.25, 90=6555, 99=8375, 99.9=13767, 99.99=16399] 
+2020-11-19 15:45:38:814 134 sec: 991453 operations; 10080 current ops/sec; est completion in 2 second [CLEANUP: Count=16, Max=6, Min=3, Avg=5.25, 90=6, 99=6, 99.9=6, 99.99=6] [UPDATE: Count=10086, Max=23151, Min=1044, Avg=4406.37, 90=5739, 99=8679, 99.9=20591, 99.99=23023] 
+2020-11-19 15:45:39:814 135 sec: 999988 operations; 8535 current ops/sec; est completion in 1 second [CLEANUP: Count=34, Max=25, Min=3, Avg=5.5, 90=6, 99=25, 99.9=25, 99.99=25] [UPDATE: Count=8531, Max=9447, Min=579, Avg=2131.88, 90=3319, 99=4679, 99.9=7111, 99.99=9199] 
+2020-11-19 15:45:39:821 135 sec: 1000000 operations; 1500 current ops/sec; [CLEANUP: Count=1, Max=4, Min=4, Avg=4, 90=4, 99=4, 99.9=4, 99.99=4] [UPDATE: Count=10, Max=710, Min=598, Avg=621.8, 90=624, 99=710, 99.9=710, 99.99=710] 
+[OVERALL], RunTime(ms), 135006
+[OVERALL], Throughput(ops/sec), 7407.078203931677
+[TOTAL_GCS_G1_Young_Generation], Count, 31
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 411
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.30443091418159196
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 31
+[TOTAL_GC_TIME], Time(ms), 411
+[TOTAL_GC_TIME_%], Time(%), 0.30443091418159196
+[CLEANUP], Operations, 64
+[CLEANUP], AverageLatency(us), 5.484375
+[CLEANUP], MinLatency(us), 3
+[CLEANUP], MaxLatency(us), 25
+[CLEANUP], 95thPercentileLatency(us), 7
+[CLEANUP], 99thPercentileLatency(us), 17
+[UPDATE], Operations, 1000000
+[UPDATE], AverageLatency(us), 8452.470081
+[UPDATE], MinLatency(us), 579
+[UPDATE], MaxLatency(us), 3182591
+[UPDATE], 95thPercentileLatency(us), 18735
+[UPDATE], 99thPercentileLatency(us), 33119
+[UPDATE], Return=OK, 1000000

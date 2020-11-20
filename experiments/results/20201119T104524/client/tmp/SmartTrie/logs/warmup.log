@@ -1,0 +1,1291 @@
+Command line: -t -s -db smarttrie.app.client.Client -threads 64 -P config/workload -p operationcount=1000000
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-11-19 14:49:33:617 0 sec: 0 operations; est completion in 0 second 
+2020-11-19 14:49:34:441 1 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-19 14:49:35:464 2 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-19 14:49:36.145 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.145 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.140 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.145 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.149 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.152 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.153 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.155 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.157 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.159 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.164 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.168 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.170 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.172 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.173 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.174 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.177 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.179 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.181 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.182 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.183 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.184 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.185 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.188 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.192 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.196 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.197 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.199 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.201 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.202 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.204 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.206 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.208 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.210 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.210 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.212 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.212 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.214 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.220 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.222 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.223 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.225 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.253 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.254 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.256 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.256 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.258 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.259 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.265 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.269 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.272 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.273 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.274 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.275 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.277 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.278 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.280 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.280 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.298 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.298 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.300 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.301 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.302 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.321 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-11-19 14:49:36.348 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.349 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.350 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.353 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.362 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.365 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.368 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.368 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.368 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.374 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.379 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.379 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.380 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.384 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.384 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.386 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.386 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.391 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.391 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.408 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.409 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.410 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.412 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.412 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.412 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.413 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.414 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.415 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.416 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.417 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.418 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.419 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.421 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.421 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.421 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.421 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.422 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.423 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.423 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.424 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.424 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.425 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.426 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.427 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.428 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.428 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.429 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.429 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.430 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.430 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.431 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.432 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.432 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.433 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.434 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.434 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.435 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.435 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.436 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.436 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36:440 3 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-11-19 14:49:36.437 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.438 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.439 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:36.443 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-11-19 14:49:37:441 4 sec: 1308 operations; 1308 current ops/sec; est completion in 50 minutes [UPDATE: Count=1316, Max=3315711, Min=1906, Avg=188492.79, 90=101183, 99=3174399, 99.9=3309567, 99.99=3315711] 
+2020-11-19 14:49:39:187 5 sec: 4489 operations; 1821.88 current ops/sec; est completion in 21 minutes [UPDATE: Count=3256, Max=240511, Min=1887, Avg=33727.65, 90=46015, 99=168575, 99.9=228095, 99.99=240511] 
+2020-11-19 14:49:40:374 6 sec: 6990 operations; 2106.99 current ops/sec; est completion in 16 minutes [UPDATE: Count=2419, Max=245503, Min=1451, Avg=29918.12, 90=47199, 99=170367, 99.9=232831, 99.99=245503] 
+2020-11-19 14:49:41:924 8 sec: 10718 operations; 2403.61 current ops/sec; est completion in 13 minutes [UPDATE: Count=3729, Max=446975, Min=1576, Avg=26211.15, 90=40607, 99=143103, 99.9=292607, 99.99=446975] 
+2020-11-19 14:49:43:339 9 sec: 14398 operations; 2602.55 current ops/sec; est completion in 11 minutes [UPDATE: Count=3814, Max=270335, Min=1212, Avg=24511.32, 90=34943, 99=112191, 99.9=185599, 99.99=270335] 
+2020-11-19 14:49:44:654 11 sec: 17897 operations; 2658.81 current ops/sec; est completion in 10 minutes [UPDATE: Count=3670, Max=203775, Min=1446, Avg=23762.21, 90=35423, 99=111103, 99.9=172287, 99.99=203775] 
+2020-11-19 14:49:45:720 12 sec: 20849 operations; 2771.83 current ops/sec; est completion in 9 minutes [UPDATE: Count=2646, Max=246527, Min=1255, Avg=22732.26, 90=33919, 99=97855, 99.9=180351, 99.99=246527] 
+2020-11-19 14:49:45:754 12 sec: 20851 operations; 57.14 current ops/sec; est completion in 9 minutes [UPDATE: Count=1, Max=24767, Min=24752, Avg=24760, 90=24767, 99=24767, 99.9=24767, 99.99=24767] 
+2020-11-19 14:49:45:766 12 sec: 20851 operations; 0 current ops/sec; est completion in 9 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:46:442 13 sec: 20851 operations; 0 current ops/sec; est completion in 10 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:47:440 14 sec: 20851 operations; 0 current ops/sec; est completion in 10 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:48:440 15 sec: 20851 operations; 0 current ops/sec; est completion in 11 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:49:440 16 sec: 20851 operations; 0 current ops/sec; est completion in 12 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:50:440 17 sec: 20851 operations; 0 current ops/sec; est completion in 13 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:51:440 18 sec: 20851 operations; 0 current ops/sec; est completion in 14 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:52:440 19 sec: 20851 operations; 0 current ops/sec; est completion in 14 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:53:440 20 sec: 20851 operations; 0 current ops/sec; est completion in 15 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:54:440 21 sec: 20851 operations; 0 current ops/sec; est completion in 16 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:55:440 22 sec: 20851 operations; 0 current ops/sec; est completion in 17 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:56:440 23 sec: 20851 operations; 0 current ops/sec; est completion in 18 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:57:440 24 sec: 20851 operations; 0 current ops/sec; est completion in 18 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:58:440 25 sec: 20851 operations; 0 current ops/sec; est completion in 19 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:49:59:440 26 sec: 20851 operations; 0 current ops/sec; est completion in 20 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:00:440 27 sec: 20851 operations; 0 current ops/sec; est completion in 21 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:01:440 28 sec: 20851 operations; 0 current ops/sec; est completion in 21 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:02:440 29 sec: 20851 operations; 0 current ops/sec; est completion in 22 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:03:440 30 sec: 20851 operations; 0 current ops/sec; est completion in 23 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:04:440 31 sec: 20851 operations; 0 current ops/sec; est completion in 24 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:05:440 32 sec: 20851 operations; 0 current ops/sec; est completion in 25 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:06:440 33 sec: 20851 operations; 0 current ops/sec; est completion in 25 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:07:440 34 sec: 20851 operations; 0 current ops/sec; est completion in 26 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:08:441 35 sec: 20851 operations; 0 current ops/sec; est completion in 27 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:09:440 36 sec: 20851 operations; 0 current ops/sec; est completion in 28 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:10:440 37 sec: 20851 operations; 0 current ops/sec; est completion in 28 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:11:440 38 sec: 20851 operations; 0 current ops/sec; est completion in 29 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:12:440 39 sec: 20851 operations; 0 current ops/sec; est completion in 30 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:13:440 40 sec: 20851 operations; 0 current ops/sec; est completion in 31 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:14:440 41 sec: 20851 operations; 0 current ops/sec; est completion in 32 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:15:440 42 sec: 20851 operations; 0 current ops/sec; est completion in 32 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:16:440 43 sec: 20851 operations; 0 current ops/sec; est completion in 33 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:17:440 44 sec: 20851 operations; 0 current ops/sec; est completion in 34 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:18:440 45 sec: 20851 operations; 0 current ops/sec; est completion in 35 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:19:440 46 sec: 20851 operations; 0 current ops/sec; est completion in 36 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:20:440 47 sec: 20851 operations; 0 current ops/sec; est completion in 36 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:21:442 48 sec: 20851 operations; 0 current ops/sec; est completion in 37 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:22:440 49 sec: 20851 operations; 0 current ops/sec; est completion in 38 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:23:440 50 sec: 20851 operations; 0 current ops/sec; est completion in 39 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:24:440 51 sec: 20851 operations; 0 current ops/sec; est completion in 39 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:25:440 52 sec: 20851 operations; 0 current ops/sec; est completion in 40 minutes [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:25.684 [Thread-24] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.685 [Thread-24] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=307, Replies received: 0
+2020-11-19 14:50:25.688 [Thread-26] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.688 [Thread-26] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=328, Replies received: 0
+2020-11-19 14:50:25.694 [Thread-30] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.694 [Thread-30] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=323, Replies received: 0
+2020-11-19 14:50:25.694 [Thread-63] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.694 [Thread-63] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=337, Replies received: 0
+2020-11-19 14:50:25.696 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.696 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=325, Replies received: 0
+2020-11-19 14:50:25.697 [Thread-55] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.697 [Thread-55] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=330, Replies received: 0
+2020-11-19 14:50:25.699 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.699 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=328, Replies received: 0
+2020-11-19 14:50:25.700 [Thread-26] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.701 [Thread-17] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.701 [Thread-17] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=336, Replies received: 0
+2020-11-19 14:50:25.701 [Thread-16] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.701 [Thread-16] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=303, Replies received: 0
+2020-11-19 14:50:25.701 [Thread-17] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.701 [Thread-16] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.701 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.702 [Thread-55] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.702 [Thread-32] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.702 [Thread-32] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=379, Replies received: 0
+2020-11-19 14:50:25.702 [Thread-53] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.702 [Thread-39] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.702 [Thread-53] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=339, Replies received: 0
+2020-11-19 14:50:25.702 [Thread-39] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=323, Replies received: 0
+2020-11-19 14:50:25.702 [Thread-32] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.700 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.702 [Thread-53] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.702 [Thread-39] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.703 [Thread-19] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.703 [Thread-19] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=350, Replies received: 0
+2020-11-19 14:50:25.703 [Thread-35] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.704 [Thread-35] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=348, Replies received: 0
+2020-11-19 14:50:25.704 [Thread-19] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.704 [Thread-11] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.704 [Thread-11] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=334, Replies received: 0
+2020-11-19 14:50:25.704 [Thread-11] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.704 [Thread-13] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.704 [Thread-62] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.704 [Thread-13] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=330, Replies received: 0
+2020-11-19 14:50:25.704 [Thread-62] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=358, Replies received: 0
+2020-11-19 14:50:25.704 [Thread-22] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.705 [Thread-22] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=311, Replies received: 0
+2020-11-19 14:50:25.705 [Thread-62] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.705 [Thread-13] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.705 [Thread-22] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.706 [Thread-12] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.706 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.706 [Thread-12] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=325, Replies received: 0
+2020-11-19 14:50:25.706 [Thread-36] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.706 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.706 [Thread-36] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=339, Replies received: 0
+2020-11-19 14:50:25.706 [Thread-12] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.706 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=299, Replies received: 0
+2020-11-19 14:50:25.707 [Thread-36] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.707 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.707 [Thread-46] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.707 [Thread-46] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=314, Replies received: 0
+2020-11-19 14:50:25.707 [Thread-46] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.707 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.707 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=337, Replies received: 0
+2020-11-19 14:50:25.707 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.707 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=295, Replies received: 0
+2020-11-19 14:50:25.707 [Thread-48] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.708 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.708 [Thread-48] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=326, Replies received: 0
+2020-11-19 14:50:25.708 [Thread-51] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.708 [Thread-51] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=360, Replies received: 0
+2020-11-19 14:50:25.709 [Thread-21] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.709 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.709 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=322, Replies received: 0
+2020-11-19 14:50:25.709 [Thread-64] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.709 [Thread-41] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.709 [Thread-64] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=315, Replies received: 0
+2020-11-19 14:50:25.709 [Thread-41] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=323, Replies received: 0
+2020-11-19 14:50:25.709 [Thread-44] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.710 [Thread-44] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=321, Replies received: 0
+2020-11-19 14:50:25.710 [Thread-15] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.710 [Thread-15] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=314, Replies received: 0
+2020-11-19 14:50:25.710 [Thread-28] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.710 [Thread-28] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=324, Replies received: 0
+2020-11-19 14:50:25.710 [Thread-49] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.710 [Thread-49] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=294, Replies received: 0
+2020-11-19 14:50:25.710 [Thread-34] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.710 [Thread-34] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=337, Replies received: 0
+2020-11-19 14:50:25.711 [Thread-37] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.711 [Thread-37] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=359, Replies received: 0
+2020-11-19 14:50:25.711 [Thread-42] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.711 [Thread-42] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=318, Replies received: 0
+2020-11-19 14:50:25.711 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.711 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=326, Replies received: 0
+2020-11-19 14:50:25.711 [Thread-10] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.711 [Thread-10] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=316, Replies received: 0
+2020-11-19 14:50:25.712 [Thread-58] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.712 [Thread-58] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=347, Replies received: 0
+2020-11-19 14:50:25.712 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.713 [Thread-35] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.713 [Thread-40] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.713 [Thread-40] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=278, Replies received: 0
+2020-11-19 14:50:25.713 [Thread-10] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.713 [Thread-33] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.713 [Thread-40] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.713 [Thread-33] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=335, Replies received: 0
+2020-11-19 14:50:25.713 [Thread-29] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.713 [Thread-33] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.713 [Thread-29] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=292, Replies received: 0
+2020-11-19 14:50:25.714 [Thread-29] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.714 [Thread-25] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.714 [Thread-57] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.714 [Thread-25] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=314, Replies received: 0
+2020-11-19 14:50:25.715 [Thread-57] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=350, Replies received: 0
+2020-11-19 14:50:25.715 [Thread-25] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.715 [Thread-57] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.715 [Thread-18] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.715 [Thread-18] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=334, Replies received: 0
+2020-11-19 14:50:25.716 [Thread-60] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.716 [Thread-18] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.716 [Thread-23] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.716 [Thread-60] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=355, Replies received: 0
+2020-11-19 14:50:25.716 [Thread-23] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=329, Replies received: 0
+2020-11-19 14:50:25.716 [Thread-23] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.716 [Thread-60] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.717 [Thread-61] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.717 [Thread-61] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=346, Replies received: 0
+2020-11-19 14:50:25.717 [Thread-47] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.717 [Thread-47] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=373, Replies received: 0
+2020-11-19 14:50:25.717 [Thread-61] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.717 [Thread-52] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.717 [Thread-47] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.717 [Thread-52] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=326, Replies received: 0
+2020-11-19 14:50:25.718 [Thread-52] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.718 [Thread-59] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.718 [Thread-59] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=351, Replies received: 0
+2020-11-19 14:50:25.718 [Thread-31] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.718 [Thread-54] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.718 [Thread-31] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=325, Replies received: 0
+2020-11-19 14:50:25.718 [Thread-54] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=331, Replies received: 0
+2020-11-19 14:50:25.719 [Thread-59] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.719 [Thread-31] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.719 [Thread-54] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.719 [Thread-65] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.719 [Thread-65] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=302, Replies received: 0
+2020-11-19 14:50:25.719 [Thread-65] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.719 [Thread-56] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.720 [Thread-56] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=287, Replies received: 0
+2020-11-19 14:50:25.720 [Thread-56] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.720 [Thread-43] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.720 [Thread-43] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=278, Replies received: 0
+2020-11-19 14:50:25.720 [Thread-50] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.720 [Thread-50] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=319, Replies received: 0
+2020-11-19 14:50:25.721 [Thread-43] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.721 [Thread-50] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.721 [Thread-38] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.721 [Thread-38] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=346, Replies received: 0
+2020-11-19 14:50:25.721 [Thread-38] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.721 [Thread-20] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.721 [Thread-14] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.721 [Thread-20] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=305, Replies received: 0
+2020-11-19 14:50:25.721 [Thread-14] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=300, Replies received: 0
+2020-11-19 14:50:25.722 [Thread-20] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.722 [Thread-14] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.722 [Thread-45] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.722 [Thread-45] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=330, Replies received: 0
+2020-11-19 14:50:25.722 [Thread-58] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.722 [Thread-45] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.724 [Thread-27] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2020-11-19 14:50:25.724 [Thread-27] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=310, Replies received: 0
+2020-11-19 14:50:25.724 [Thread-27] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.700 [Thread-63] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.726 [Thread-30] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.726 [Thread-24] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.730 [Thread-42] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.730 [Thread-37] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.730 [Thread-34] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.731 [Thread-28] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.731 [Thread-44] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.731 [Thread-15] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.731 [Thread-49] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.732 [Thread-64] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.732 [Thread-41] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.732 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.709 [Thread-21] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=307, Replies received: 0
+2020-11-19 14:50:25.733 [Thread-21] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.733 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.733 [Thread-51] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.734 [Thread-48] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:25.740 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=328, Replies received: 0
+2020-11-19 14:50:25.740 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-19 14:50:26:440 53 sec: 20915 operations; 64 current ops/sec; est completion in 41 minutes [UPDATE-FAILED: Count=64, Max=40075263, Min=39976960, Avg=40005632, 90=40042495, 99=40075263, 99.9=40075263, 99.99=40075263] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:27:440 54 sec: 20915 operations; 0 current ops/sec; est completion in 42 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:28:440 55 sec: 20915 operations; 0 current ops/sec; est completion in 42 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:29:442 56 sec: 20915 operations; 0 current ops/sec; est completion in 43 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:30:440 57 sec: 20915 operations; 0 current ops/sec; est completion in 44 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:31:440 58 sec: 20915 operations; 0 current ops/sec; est completion in 45 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:32:440 59 sec: 20915 operations; 0 current ops/sec; est completion in 46 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2020-11-19 14:50:33:440 60 sec: 21124 operations; 209 current ops/sec; est completion in 46 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=212, Max=7716863, Min=1417, Avg=2322173.28, 90=7679999, 99=7708671, 99.9=7716863, 99.99=7716863] 
+2020-11-19 14:50:34:440 61 sec: 24758 operations; 3634 current ops/sec; est completion in 40 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=3636, Max=195327, Min=1265, Avg=17201.84, 90=28399, 99=132095, 99.9=180735, 99.99=195327] 
+2020-11-19 14:50:35:441 62 sec: 28740 operations; 3982 current ops/sec; est completion in 34 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=3979, Max=298751, Min=1012, Avg=15913.32, 90=23455, 99=121855, 99.9=195199, 99.99=298751] 
+2020-11-19 14:50:36:440 63 sec: 32824 operations; 4084 current ops/sec; est completion in 30 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=4086, Max=143487, Min=1221, Avg=15493.4, 90=22751, 99=61887, 99.9=101119, 99.99=143487] 
+2020-11-19 14:50:37:440 64 sec: 36877 operations; 4053 current ops/sec; est completion in 27 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=4056, Max=181119, Min=1143, Avg=15302.34, 90=22015, 99=44927, 99.9=107007, 99.99=181119] 
+2020-11-19 14:50:38:440 65 sec: 41633 operations; 4756 current ops/sec; est completion in 24 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=4758, Max=176639, Min=952, Avg=12450.19, 90=17935, 99=70207, 99.9=116159, 99.99=176639] 
+2020-11-19 14:50:39:440 66 sec: 47031 operations; 5398 current ops/sec; est completion in 22 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=5397, Max=161535, Min=933, Avg=11593.93, 90=16263, 99=41663, 99.9=111807, 99.99=157695] 
+2020-11-19 14:50:40:441 67 sec: 52380 operations; 5349 current ops/sec; est completion in 20 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=5351, Max=267519, Min=883, Avg=11405.39, 90=16511, 99=79871, 99.9=133631, 99.99=201215] 
+2020-11-19 14:50:41:441 68 sec: 57526 operations; 5146 current ops/sec; est completion in 18 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=5142, Max=256511, Min=981, Avg=12270.04, 90=19487, 99=97215, 99.9=159359, 99.99=240127] 
+2020-11-19 14:50:42:440 69 sec: 63317 operations; 5791 current ops/sec; est completion in 17 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=5792, Max=165503, Min=929, Avg=10836, 90=16671, 99=58015, 99.9=110655, 99.99=128831] 
+2020-11-19 14:50:43:440 70 sec: 69973 operations; 6656 current ops/sec; est completion in 15 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=6658, Max=161663, Min=829, Avg=9382.67, 90=14471, 99=48095, 99.9=158847, 99.99=160639] 
+2020-11-19 14:50:44:441 71 sec: 77206 operations; 7233 current ops/sec; est completion in 14 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=7236, Max=171007, Min=840, Avg=8757.34, 90=13599, 99=46143, 99.9=120575, 99.99=170367] 
+2020-11-19 14:50:45:440 72 sec: 85591 operations; 8385 current ops/sec; est completion in 12 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9123, Max=119551, Min=686, Avg=7565.38, 90=11399, 99=38719, 99.9=75391, 99.99=113919] 
+2020-11-19 14:50:46:440 73 sec: 94007 operations; 8416 current ops/sec; est completion in 11 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=7675, Max=107775, Min=858, Avg=7594.98, 90=13303, 99=32527, 99.9=62687, 99.99=79743] 
+2020-11-19 14:50:47:440 74 sec: 102526 operations; 8519 current ops/sec; est completion in 10 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8520, Max=180351, Min=777, Avg=7505.76, 90=12423, 99=31727, 99.9=73983, 99.99=170751] 
+2020-11-19 14:50:48:441 75 sec: 110732 operations; 8206 current ops/sec; est completion in 10 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8199, Max=96383, Min=931, Avg=7767.44, 90=11063, 99=26911, 99.9=54623, 99.99=66815] 
+2020-11-19 14:50:49:441 76 sec: 118714 operations; 7982 current ops/sec; est completion in 9 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=7981, Max=104767, Min=782, Avg=7967.7, 90=13255, 99=45599, 99.9=80063, 99.99=95807] 
+2020-11-19 14:50:50:440 77 sec: 127148 operations; 8434 current ops/sec; est completion in 8 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8435, Max=93695, Min=966, Avg=7585.65, 90=11343, 99=35935, 99.9=65183, 99.99=90943] 
+2020-11-19 14:50:51:440 78 sec: 135738 operations; 8590 current ops/sec; est completion in 8 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8592, Max=85311, Min=938, Avg=7414.57, 90=10775, 99=22527, 99.9=41887, 99.99=84479] 
+2020-11-19 14:50:52:440 79 sec: 142293 operations; 6555 current ops/sec; est completion in 7 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=6555, Max=164223, Min=804, Avg=9731.07, 90=13151, 99=104959, 99.9=162303, 99.99=163327] 
+2020-11-19 14:50:53:440 80 sec: 152036 operations; 9743 current ops/sec; est completion in 7 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9746, Max=181631, Min=782, Avg=6509.29, 90=10407, 99=33727, 99.9=88575, 99.99=122367] 
+2020-11-19 14:50:54:441 81 sec: 161838 operations; 9802 current ops/sec; est completion in 7 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9799, Max=38911, Min=906, Avg=6509.69, 90=10735, 99=19007, 99.9=31343, 99.99=38047] 
+2020-11-19 14:50:55:442 82 sec: 171814 operations; 9976 current ops/sec; est completion in 6 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10044, Max=63871, Min=836, Avg=6395.26, 90=10615, 99=19695, 99.9=30447, 99.99=61631] 
+2020-11-19 14:50:56:440 83 sec: 181604 operations; 9790 current ops/sec; est completion in 6 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9726, Max=83455, Min=864, Avg=6503.85, 90=10967, 99=32799, 99.9=52671, 99.99=75519] 
+2020-11-19 14:50:57:440 84 sec: 191718 operations; 10114 current ops/sec; est completion in 5 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10118, Max=90495, Min=833, Avg=6322.89, 90=10607, 99=25263, 99.9=65855, 99.99=79743] 
+2020-11-19 14:50:58:440 85 sec: 201799 operations; 10081 current ops/sec; est completion in 5 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10083, Max=70975, Min=864, Avg=6327.63, 90=9991, 99=21039, 99.9=43551, 99.99=70079] 
+2020-11-19 14:50:59:440 86 sec: 211923 operations; 10124 current ops/sec; est completion in 5 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10117, Max=92479, Min=795, Avg=6302.78, 90=10727, 99=19311, 99.9=33119, 99.99=65087] 
+2020-11-19 14:51:00:440 87 sec: 220842 operations; 8919 current ops/sec; est completion in 5 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8920, Max=72639, Min=646, Avg=7163.53, 90=11159, 99=24447, 99.9=54143, 99.99=68799] 
+2020-11-19 14:51:01:440 88 sec: 229218 operations; 8376 current ops/sec; est completion in 4 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8371, Max=34559, Min=1131, Avg=7619.74, 90=10239, 99=16703, 99.9=24719, 99.99=31279] 
+2020-11-19 14:51:02:441 89 sec: 238132 operations; 8914 current ops/sec; est completion in 4 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8919, Max=26479, Min=2310, Avg=7170.06, 90=9183, 99=14287, 99.9=20223, 99.99=26351] 
+2020-11-19 14:51:03:440 90 sec: 246973 operations; 8841 current ops/sec; est completion in 4 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8845, Max=41311, Min=937, Avg=7217.7, 90=9663, 99=17871, 99.9=28271, 99.99=38911] 
+2020-11-19 14:51:04:440 91 sec: 255457 operations; 8484 current ops/sec; est completion in 4 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8477, Max=58143, Min=907, Avg=7504.18, 90=10383, 99=23759, 99.9=42047, 99.99=50399] 
+2020-11-19 14:51:05:440 92 sec: 265514 operations; 10057 current ops/sec; est completion in 4 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10053, Max=98559, Min=800, Avg=6363.29, 90=9295, 99=20063, 99.9=48927, 99.99=83519] 
+2020-11-19 14:51:06:440 93 sec: 275821 operations; 10307 current ops/sec; est completion in 4 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10315, Max=31503, Min=992, Avg=6199.73, 90=9335, 99=16127, 99.9=22767, 99.99=29743] 
+2020-11-19 14:51:07:440 94 sec: 286527 operations; 10706 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10702, Max=67263, Min=1198, Avg=5964.21, 90=8759, 99=20719, 99.9=33759, 99.99=57503] 
+2020-11-19 14:51:08:440 95 sec: 297032 operations; 10505 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10508, Max=62495, Min=776, Avg=6086.77, 90=8051, 99=21103, 99.9=45919, 99.99=55999] 
+2020-11-19 14:51:09:440 96 sec: 307647 operations; 10615 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10611, Max=35935, Min=1211, Avg=6008.28, 90=8255, 99=14543, 99.9=21743, 99.99=33279] 
+2020-11-19 14:51:10:440 97 sec: 316123 operations; 8476 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8478, Max=19631, Min=3154, Avg=7550.97, 90=9623, 99=11703, 99.9=13903, 99.99=18127] 
+2020-11-19 14:51:11:440 98 sec: 324908 operations; 8785 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8783, Max=31247, Min=2248, Avg=7267.81, 90=9135, 99=11823, 99.9=14615, 99.99=26879] 
+2020-11-19 14:51:12:440 99 sec: 333522 operations; 8614 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8609, Max=25039, Min=1666, Avg=7433.93, 90=8255, 99=11167, 99.9=23135, 99.99=25007] 
+2020-11-19 14:51:13:440 100 sec: 342659 operations; 9137 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9144, Max=24527, Min=2045, Avg=6993.68, 90=8767, 99=12943, 99.9=21695, 99.99=24239] 
+2020-11-19 14:51:14:440 101 sec: 353562 operations; 10903 current ops/sec; est completion in 3 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10913, Max=16959, Min=2120, Avg=5859, 90=7755, 99=10551, 99.9=13111, 99.99=15007] 
+2020-11-19 14:51:15:441 102 sec: 364349 operations; 10787 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10784, Max=25631, Min=1048, Avg=5925.55, 90=7799, 99=11951, 99.9=23839, 99.99=25231] 
+2020-11-19 14:51:16:440 103 sec: 375169 operations; 10820 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10819, Max=31055, Min=921, Avg=5910.45, 90=7815, 99=10791, 99.9=16319, 99.99=29407] 
+2020-11-19 14:51:17:440 104 sec: 386629 operations; 11460 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=11448, Max=17295, Min=1703, Avg=5573.16, 90=7235, 99=9647, 99.9=13511, 99.99=16383] 
+2020-11-19 14:51:18:440 105 sec: 397384 operations; 10755 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10759, Max=17519, Min=2035, Avg=5944.06, 90=7807, 99=9879, 99.9=12279, 99.99=13799] 
+2020-11-19 14:51:19:440 106 sec: 406922 operations; 9538 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9542, Max=48223, Min=945, Avg=6695.04, 90=8471, 99=12319, 99.9=45855, 99.99=47935] 
+2020-11-19 14:51:20:440 107 sec: 417339 operations; 10417 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10419, Max=14311, Min=2994, Avg=6139.24, 90=7735, 99=9703, 99.9=11335, 99.99=13335] 
+2020-11-19 14:51:21:440 108 sec: 427940 operations; 10601 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10605, Max=12975, Min=3206, Avg=6021.13, 90=7623, 99=9207, 99.9=10279, 99.99=11311] 
+2020-11-19 14:51:22:441 109 sec: 438642 operations; 10702 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10694, Max=13063, Min=3146, Avg=5976.99, 90=7419, 99=9735, 99.9=11183, 99.99=12751] 
+2020-11-19 14:51:23:440 110 sec: 447384 operations; 8742 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8744, Max=25487, Min=910, Avg=7315.33, 90=8727, 99=17167, 99.9=25279, 99.99=25455] 
+2020-11-19 14:51:24:440 111 sec: 457619 operations; 10235 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10234, Max=15847, Min=2158, Avg=6245.94, 90=8175, 99=10559, 99.9=13295, 99.99=15607] 
+2020-11-19 14:51:25:441 112 sec: 468044 operations; 10425 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10433, Max=18159, Min=1083, Avg=6128.38, 90=8135, 99=11663, 99.9=16263, 99.99=17839] 
+2020-11-19 14:51:26:440 113 sec: 477349 operations; 9305 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9295, Max=20303, Min=2896, Avg=6868.3, 90=8663, 99=10671, 99.9=17487, 99.99=19935] 
+2020-11-19 14:51:27:440 114 sec: 485979 operations; 8630 current ops/sec; est completion in 2 minutes [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8632, Max=25039, Min=908, Avg=7410.83, 90=8343, 99=10919, 99.9=21791, 99.99=23615] 
+2020-11-19 14:51:28:441 115 sec: 495209 operations; 9230 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9240, Max=22655, Min=3062, Avg=6928.23, 90=8123, 99=10503, 99.9=14887, 99.99=22207] 
+2020-11-19 14:51:29:440 116 sec: 504240 operations; 9031 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9021, Max=14983, Min=2748, Avg=7071.31, 90=8447, 99=11295, 99.9=13823, 99.99=14575] 
+2020-11-19 14:51:30:440 117 sec: 515712 operations; 11472 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=11472, Max=17359, Min=1892, Avg=5570.15, 90=7343, 99=9991, 99.9=13407, 99.99=15423] 
+2020-11-19 14:51:31:440 118 sec: 526034 operations; 10322 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10328, Max=38687, Min=1105, Avg=6189.38, 90=7979, 99=14487, 99.9=35551, 99.99=38527] 
+2020-11-19 14:51:32:440 119 sec: 536398 operations; 10364 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10352, Max=19839, Min=2056, Avg=6170.07, 90=8119, 99=11863, 99.9=15295, 99.99=18319] 
+2020-11-19 14:51:33:440 120 sec: 547046 operations; 10648 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10653, Max=19807, Min=1274, Avg=6003.63, 90=7899, 99=10511, 99.9=13303, 99.99=19295] 
+2020-11-19 14:51:34:440 121 sec: 557636 operations; 10590 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10585, Max=27007, Min=766, Avg=6035.69, 90=7891, 99=10479, 99.9=21711, 99.99=23503] 
+2020-11-19 14:51:35:440 122 sec: 568392 operations; 10756 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10757, Max=13207, Min=3254, Avg=5939.78, 90=7367, 99=9223, 99.9=10775, 99.99=12903] 
+2020-11-19 14:51:36:440 123 sec: 578769 operations; 10377 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10385, Max=14423, Min=3442, Avg=6160.74, 90=7739, 99=10735, 99.9=12943, 99.99=14095] 
+2020-11-19 14:51:37:440 124 sec: 589101 operations; 10332 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10325, Max=16783, Min=1467, Avg=6184.03, 90=7831, 99=9879, 99.9=12759, 99.99=15231] 
+2020-11-19 14:51:38:440 125 sec: 599232 operations; 10131 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10140, Max=28511, Min=1098, Avg=6309.1, 90=8167, 99=13415, 99.9=26207, 99.99=28175] 
+2020-11-19 14:51:39:440 126 sec: 610269 operations; 11037 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=11032, Max=14463, Min=1852, Avg=5789.36, 90=7599, 99=10103, 99.9=12759, 99.99=14047] 
+2020-11-19 14:51:40:440 127 sec: 621196 operations; 10927 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10922, Max=15015, Min=2358, Avg=5841.29, 90=7627, 99=9583, 99.9=11839, 99.99=14847] 
+2020-11-19 14:51:41:440 128 sec: 630185 operations; 8989 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9001, Max=19951, Min=941, Avg=7113.59, 90=8287, 99=13719, 99.9=17183, 99.99=19599] 
+2020-11-19 14:51:42:440 129 sec: 639192 operations; 9007 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9004, Max=22735, Min=1100, Avg=7095.88, 90=8135, 99=10631, 99.9=21471, 99.99=22639] 
+2020-11-19 14:51:43:440 130 sec: 648441 operations; 9249 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9250, Max=12807, Min=2516, Avg=6915.09, 90=8107, 99=10071, 99.9=11679, 99.99=12695] 
+2020-11-19 14:51:44:440 131 sec: 658085 operations; 9644 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9638, Max=11695, Min=3172, Avg=6621.91, 90=7819, 99=9087, 99.9=10399, 99.99=11063] 
+2020-11-19 14:51:45:440 132 sec: 668058 operations; 9973 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9976, Max=16575, Min=1906, Avg=6413.09, 90=8463, 99=11135, 99.9=13991, 99.99=15367] 
+2020-11-19 14:51:46:441 133 sec: 679199 operations; 11141 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=11134, Max=32399, Min=873, Avg=5741.69, 90=7607, 99=10575, 99.9=30175, 99.99=32303] 
+2020-11-19 14:51:47:440 134 sec: 689963 operations; 10764 current ops/sec; est completion in 1 minute [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10762, Max=18143, Min=1613, Avg=5930.03, 90=7759, 99=10463, 99.9=14551, 99.99=17999] 
+2020-11-19 14:51:48:440 135 sec: 700146 operations; 10183 current ops/sec; est completion in 58 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10196, Max=21583, Min=1811, Avg=6276.75, 90=8119, 99=10903, 99.9=17887, 99.99=20031] 
+2020-11-19 14:51:49:440 136 sec: 709322 operations; 9176 current ops/sec; est completion in 56 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9167, Max=15631, Min=2686, Avg=6974.56, 90=8139, 99=11111, 99.9=14927, 99.99=15399] 
+2020-11-19 14:51:50:440 137 sec: 718958 operations; 9636 current ops/sec; est completion in 54 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9631, Max=22991, Min=1611, Avg=6628.79, 90=8439, 99=10767, 99.9=19791, 99.99=21407] 
+2020-11-19 14:51:51:440 138 sec: 728557 operations; 9599 current ops/sec; est completion in 52 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9602, Max=13583, Min=2003, Avg=6660.13, 90=8327, 99=10159, 99.9=11807, 99.99=12535] 
+2020-11-19 14:51:52:440 139 sec: 738374 operations; 9817 current ops/sec; est completion in 50 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9819, Max=20799, Min=3076, Avg=6508.66, 90=8083, 99=11031, 99.9=17135, 99.99=18687] 
+2020-11-19 14:51:53:440 140 sec: 748013 operations; 9639 current ops/sec; est completion in 48 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9634, Max=12799, Min=2238, Avg=6631.71, 90=8031, 99=9735, 99.9=11415, 99.99=12143] 
+2020-11-19 14:51:54:440 141 sec: 758619 operations; 10606 current ops/sec; est completion in 45 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10606, Max=24847, Min=878, Avg=6026.35, 90=7863, 99=10615, 99.9=20735, 99.99=24831] 
+2020-11-19 14:51:55:440 142 sec: 769150 operations; 10531 current ops/sec; est completion in 43 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10541, Max=15407, Min=1456, Avg=6066.15, 90=7951, 99=9951, 99.9=12191, 99.99=14431] 
+2020-11-19 14:51:56:440 143 sec: 779323 operations; 10173 current ops/sec; est completion in 41 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10177, Max=16431, Min=2270, Avg=6281.45, 90=7991, 99=10319, 99.9=13447, 99.99=15535] 
+2020-11-19 14:51:57:440 144 sec: 787986 operations; 8663 current ops/sec; est completion in 39 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8650, Max=24223, Min=944, Avg=7384.7, 90=8147, 99=10703, 99.9=19503, 99.99=22287] 
+2020-11-19 14:51:58:440 145 sec: 796671 operations; 8685 current ops/sec; est completion in 38 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8696, Max=12047, Min=3548, Avg=7360.86, 90=8199, 99=10199, 99.9=11263, 99.99=11959] 
+2020-11-19 14:51:59:440 146 sec: 805673 operations; 9002 current ops/sec; est completion in 36 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9002, Max=10871, Min=3864, Avg=7098.09, 90=7867, 99=9151, 99.9=10431, 99.99=10639] 
+2020-11-19 14:52:00:440 147 sec: 815134 operations; 9461 current ops/sec; est completion in 34 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9460, Max=24031, Min=1426, Avg=6757.75, 90=8015, 99=10231, 99.9=20543, 99.99=23359] 
+2020-11-19 14:52:01:445 148 sec: 825766 operations; 10579.1 current ops/sec; est completion in 32 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10625, Max=33695, Min=1417, Avg=5903.67, 90=7711, 99=9999, 99.9=13887, 99.99=32079] 
+2020-11-19 14:52:02:440 149 sec: 836467 operations; 10754.77 current ops/sec; est completion in 30 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10703, Max=45471, Min=727, Avg=6078.04, 90=7707, 99=10119, 99.9=40287, 99.99=44767] 
+2020-11-19 14:52:03:440 150 sec: 847394 operations; 10927 current ops/sec; est completion in 28 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10932, Max=15911, Min=1978, Avg=5853.03, 90=7639, 99=10375, 99.9=14743, 99.99=15735] 
+2020-11-19 14:52:04:440 151 sec: 856911 operations; 9517 current ops/sec; est completion in 26 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9506, Max=15543, Min=1871, Avg=6710.48, 90=8091, 99=10807, 99.9=14207, 99.99=15327] 
+2020-11-19 14:52:05:440 152 sec: 865891 operations; 8980 current ops/sec; est completion in 24 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=8986, Max=23551, Min=1204, Avg=7126.06, 90=8407, 99=11551, 99.9=22175, 99.99=23407] 
+2020-11-19 14:52:06:440 153 sec: 875174 operations; 9283 current ops/sec; est completion in 22 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9281, Max=13175, Min=3428, Avg=6879.99, 90=8279, 99=11127, 99.9=12583, 99.99=13015] 
+2020-11-19 14:52:07:440 154 sec: 884733 operations; 9559 current ops/sec; est completion in 21 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9562, Max=14575, Min=2514, Avg=6683.47, 90=8151, 99=10255, 99.9=11591, 99.99=14055] 
+2020-11-19 14:52:08:440 155 sec: 894611 operations; 9878 current ops/sec; est completion in 19 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9877, Max=18863, Min=1966, Avg=6470.98, 90=8247, 99=11167, 99.9=16151, 99.99=18255] 
+2020-11-19 14:52:09:440 156 sec: 904920 operations; 10309 current ops/sec; est completion in 17 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10315, Max=28607, Min=1083, Avg=6202.23, 90=7987, 99=13703, 99.9=22479, 99.99=26735] 
+2020-11-19 14:52:10:440 157 sec: 915361 operations; 10441 current ops/sec; est completion in 15 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10444, Max=19423, Min=1797, Avg=6123.06, 90=7919, 99=10583, 99.9=14895, 99.99=16047] 
+2020-11-19 14:52:11:440 158 sec: 926278 operations; 10917 current ops/sec; est completion in 13 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=10912, Max=12287, Min=3210, Avg=5857.71, 90=7291, 99=9143, 99.9=10615, 99.99=12055] 
+2020-11-19 14:52:12:441 159 sec: 936079 operations; 9801 current ops/sec; est completion in 11 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9798, Max=12943, Min=2498, Avg=6522.56, 90=8319, 99=10239, 99.9=11631, 99.99=12375] 
+2020-11-19 14:52:13:440 160 sec: 945637 operations; 9558 current ops/sec; est completion in 10 seconds [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=9556, Max=36255, Min=851, Avg=6689.1, 90=8591, 99=11983, 99.9=30159, 99.99=36255] 
+2020-11-19 14:52:14:440 161 sec: 954900 operations; 9263 current ops/sec; est completion in 8 second [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=1, Max=7, Min=7, Avg=7, 90=7, 99=7, 99.9=7, 99.99=7] [UPDATE: Count=9273, Max=21215, Min=1093, Avg=6878.59, 90=8367, 99=10527, 99.9=17343, 99.99=20639] 
+2020-11-19 14:52:15:440 162 sec: 964788 operations; 9888 current ops/sec; est completion in 6 second [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=2, Max=6, Min=5, Avg=5.5, 90=6, 99=6, 99.9=6, 99.99=6] [UPDATE: Count=9887, Max=14231, Min=2236, Avg=6312.05, 90=7995, 99=9895, 99.9=12463, 99.99=14223] 
+2020-11-19 14:52:16:440 163 sec: 975231 operations; 10443 current ops/sec; est completion in 5 second [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=4, Max=6, Min=4, Avg=4.75, 90=6, 99=6, 99.9=6, 99.99=6] [UPDATE: Count=10442, Max=19343, Min=1606, Avg=5654.73, 90=7375, 99=9463, 99.9=14135, 99.99=18639] 
+2020-11-19 14:52:17:440 164 sec: 984719 operations; 9488 current ops/sec; est completion in 3 second [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=7, Max=20, Min=4, Avg=7.57, 90=7, 99=20, 99.9=20, 99.99=20] [UPDATE: Count=9494, Max=21775, Min=848, Avg=5648.74, 90=6947, 99=12391, 99.9=18895, 99.99=21599] 
+2020-11-19 14:52:18:440 165 sec: 993747 operations; 9028 current ops/sec; est completion in 2 second [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=13, Max=10, Min=4, Avg=5.46, 90=6, 99=10, 99.9=10, 99.99=10] [UPDATE: Count=9023, Max=9119, Min=1417, Avg=4953.63, 90=6247, 99=7719, 99.9=8519, 99.99=9007] 
+2020-11-19 14:52:19:230 165 sec: 1000000 operations; 7925.22 current ops/sec; [UPDATE-FAILED: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=37, Max=7, Min=4, Avg=4.78, 90=6, 99=7, 99.9=7, 99.99=7] [UPDATE: Count=6239, Max=15487, Min=560, Avg=2519.71, 90=4115, 99=5455, 99.9=14431, 99.99=15063] 
+[OVERALL], RunTime(ms), 165788
+[OVERALL], Throughput(ops/sec), 6031.799647742901
+[TOTAL_GCS_G1_Young_Generation], Count, 32
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 458
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.27625642386662486
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 32
+[TOTAL_GC_TIME], Time(ms), 458
+[TOTAL_GC_TIME_%], Time(%), 0.27625642386662486
+[UPDATE-FAILED], Operations, 64
+[UPDATE-FAILED], AverageLatency(us), 4.0005632E7
+[UPDATE-FAILED], MinLatency(us), 39976960
+[UPDATE-FAILED], MaxLatency(us), 40075263
+[UPDATE-FAILED], 95thPercentileLatency(us), 40042495
+[UPDATE-FAILED], 99thPercentileLatency(us), 40075263
+[CLEANUP], Operations, 64
+[CLEANUP], AverageLatency(us), 5.28125
+[CLEANUP], MinLatency(us), 4
+[CLEANUP], MaxLatency(us), 20
+[CLEANUP], 95thPercentileLatency(us), 7
+[CLEANUP], 99thPercentileLatency(us), 10
+[UPDATE], Operations, 999936
+[UPDATE], AverageLatency(us), 7932.240814412123
+[UPDATE], MinLatency(us), 560
+[UPDATE], MaxLatency(us), 7716863
+[UPDATE], 95thPercentileLatency(us), 12863
+[UPDATE], 99thPercentileLatency(us), 29343
+[UPDATE], Return=OK, 999936
+[UPDATE], Return=ERROR, 64
