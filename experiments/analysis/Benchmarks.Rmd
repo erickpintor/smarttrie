@@ -1,13 +1,15 @@
 ---
-title: "SmartTrie - Project Benchmarks"
+title: "SmartTrie - Benchmarks"
+header-includes:
+  - \usepackage[brazil]{babel}
 output:
-  html_notebook:
-    code_folding: none
-    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
+    toc: yes
+  html_notebook:
+    code_folding: none
     toc: yes
 ---
 
@@ -80,8 +82,8 @@ load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
   colnames(checkpoints) = c("ts", "event")
 
   as_tibble(checkpoints) %>%
-    mutate(event = sub(checkpoint_start, "Checkpoint Start", event)) %>%
-    mutate(event = sub(checkpoint_stop, "Checkpoint Stop", event)) %>%
+    mutate(event = sub(checkpoint_start, "Checkpoint start", event)) %>%
+    mutate(event = sub(checkpoint_stop, "Checkpoint stop", event)) %>%
     mutate_at(vars(ts), as.POSIXct) %>%
     mutate_at(vars(event), as.factor) %>%
     filter(ts >= start_ts & ts <= end_ts)
