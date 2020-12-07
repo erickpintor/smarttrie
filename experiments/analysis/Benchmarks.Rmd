@@ -3,13 +3,13 @@ title: "SmartTrie - Benchmarks"
 header-includes:
   - \usepackage[brazil]{babel}
 output:
+  html_notebook:
+    code_folding: none
+    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
-    toc: yes
-  html_notebook:
-    code_folding: none
     toc: yes
 ---
 
@@ -452,4 +452,42 @@ plot_througput_vs_checkpoints(
   "../results/20201119T113910/server/tmp/SmartTrie/logs/app.log",
   # "../results/20201119T113910/server/tmp/SmartTrie/logs/gc.log"
 ) + scale_x_datetime(breaks = pretty_breaks(10))
+```
+
+## 2020-12-07 - Coleta de dados de GC para o artigo final
+
+| Configuração | Valor | Observação |
+|---|---|---|
+| Servidores vs Clientes | 1/1 | Node 41-42 |
+| Escrita vs Leitura | 100/0 | |
+| Chaves | 1500000 | |
+| Requests | 20000000 | |
+| Threads no cliente | 64 | |
+| Bytes/Registro | 4kb | |
+| Período de Checkpoints | 100000 | |
+| Checkpoints assíncrono | Sim | |
+| Log assíncrono | - | Log desabilitado |
+| Estrutura de dados | java.util.TreeMap e scala.collection.concurrent.TrieMap | |
+| Commit | ce0d34d | |
+
+Repetimos o experimento anterior apenas coletando dados de GC da baseline utilizando G1 e Parallel GC para fins de comparação no artigo final.
+
+```{r experiment-2020-12-07-tree-map-g1, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "TreeMap + G1 GC",
+  "../results/20201207T100117/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201207T100117/server/tmp/SmartTrie/logs/app.log",
+  # "../results/20201207T100117/server/tmp/SmartTrie/logs/gc.log"
+) + scale_x_datetime(breaks = pretty_breaks(10))
+  # coord_cartesian(xlim=c(as.POSIXct("2020/12/07 14:21:55"), as.POSIXct("2020/12/07 14:25:30")))
+```
+
+```{r experiment-2020-12-07-tree-map-parallel, echo=FALSE, message=FALSE, warning=FALSE}
+plot_througput_vs_checkpoints(
+  "TreeMap + ParallelGC",
+  "../results/20201207T120308/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20201207T120308/server/tmp/SmartTrie/logs/app.log",
+  # "../results/20201207T120308/server/tmp/SmartTrie/logs/gc.log"
+) + scale_x_datetime(breaks = pretty_breaks(10))
+  # coord_cartesian(xlim=c(as.POSIXct("2020/12/07 16:22:50"), as.POSIXct("2020/12/07 16:26:25")))
 ```

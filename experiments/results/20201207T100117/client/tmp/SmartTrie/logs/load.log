@@ -1,0 +1,393 @@
+Command line: -load -s -db smarttrie.app.client.Client -threads 64 -P config/workload
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2020-12-07 14:04:25:608 0 sec: 0 operations; est completion in 0 second 
+2020-12-07 14:04:26:449 1 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-12-07 14:04:27:475 2 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-12-07 14:04:28:448 3 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-12-07 14:04:28.455 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.460 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.468 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.470 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.474 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.476 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.478 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.484 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.496 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.498 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.501 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.502 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.504 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.506 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.508 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.512 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.512 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.514 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.515 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.516 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.517 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.519 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.520 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.522 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.524 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.531 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.532 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.535 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.535 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.536 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.536 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.538 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.538 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.539 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.540 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.541 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.542 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.544 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.545 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.547 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.549 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.550 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.551 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.553 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.554 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.555 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.557 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.559 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.560 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.562 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.564 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.567 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.568 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.601 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.604 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.608 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.619 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.621 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.628 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.635 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.637 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.639 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.644 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.661 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2020-12-07 14:04:28.691 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.691 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.691 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.691 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.692 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.692 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.694 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.694 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.695 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.695 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.695 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.695 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.696 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.696 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.696 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.697 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.698 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.699 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.699 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.700 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.700 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.700 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.700 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.701 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.701 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.702 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.702 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.703 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.703 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.703 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.703 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.704 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.704 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.705 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.705 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.705 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.706 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.707 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.707 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.708 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.709 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.709 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.710 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.698 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.712 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.713 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.713 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.726 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.727 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.728 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.729 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.730 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.731 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.731 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.731 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.731 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.732 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.733 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.734 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.735 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.736 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.736 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.737 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:28.738 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2020-12-07 14:04:29:449 4 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2020-12-07 14:04:30:449 5 sec: 1646 operations; 1647.65 current ops/sec; est completion in 1 hour 15 minutes [INSERT: Count=2045, Max=3993599, Min=4632, Avg=156612.56, 90=63135, 99=3952639, 99.9=3987455, 99.99=3993599] 
+2020-12-07 14:04:31:449 6 sec: 4489 operations; 2840.16 current ops/sec; est completion in 33 minutes [INSERT: Count=2447, Max=87551, Min=2800, Avg=21888.59, 90=41503, 99=71807, 99.9=81471, 99.99=87551] 
+2020-12-07 14:04:32:448 7 sec: 8992 operations; 4507.51 current ops/sec; est completion in 19 minutes [INSERT: Count=4500, Max=103359, Min=1627, Avg=13998.64, 90=21247, 99=43391, 99.9=84671, 99.99=103359] 
+2020-12-07 14:04:33:449 8 sec: 13849 operations; 4857 current ops/sec; est completion in 14 minutes [INSERT: Count=4857, Max=44799, Min=2168, Avg=13193.71, 90=14871, 99=41311, 99.9=43455, 99.99=44799] 
+2020-12-07 14:04:34:449 9 sec: 18831 operations; 4982 current ops/sec; est completion in 11 minutes [INSERT: Count=4982, Max=55327, Min=2378, Avg=12475.47, 90=16151, 99=48511, 99.9=53951, 99.99=55327] 
+2020-12-07 14:04:35:448 10 sec: 24724 operations; 5893 current ops/sec; est completion in 9 minutes [INSERT: Count=5900, Max=77311, Min=2482, Avg=11063.52, 90=13591, 99=66943, 99.9=74367, 99.99=75839] 
+2020-12-07 14:04:36:449 11 sec: 31743 operations; 7019 current ops/sec; est completion in 8 minutes [INSERT: Count=7016, Max=50239, Min=2026, Avg=9106.27, 90=10527, 99=22991, 99.9=45311, 99.99=46847] 
+2020-12-07 14:04:37:448 12 sec: 38352 operations; 6609 current ops/sec; est completion in 7 minutes [INSERT: Count=6622, Max=65535, Min=2504, Avg=9661.22, 90=11311, 99=24639, 99.9=63903, 99.99=64671] 
+2020-12-07 14:04:38:448 13 sec: 46189 operations; 7837 current ops/sec; est completion in 6 minutes [INSERT: Count=7826, Max=109759, Min=1593, Avg=8118.9, 90=9015, 99=28111, 99.9=103167, 99.99=107327] 
+2020-12-07 14:04:39:448 14 sec: 54511 operations; 8322 current ops/sec; est completion in 6 minutes [INSERT: Count=8316, Max=31263, Min=996, Avg=7715.17, 90=10359, 99=16167, 99.9=28143, 99.99=31023] 
+2020-12-07 14:04:40:448 15 sec: 61431 operations; 6920 current ops/sec; est completion in 5 minutes [INSERT: Count=6920, Max=122751, Min=3570, Avg=9009.36, 90=9431, 99=13215, 99.9=121215, 99.99=122303] 
+2020-12-07 14:04:41:448 16 sec: 69857 operations; 8426 current ops/sec; est completion in 5 minutes [INSERT: Count=8435, Max=127679, Min=1109, Avg=7769.26, 90=9423, 99=13199, 99.9=125375, 99.99=127551] 
+2020-12-07 14:04:42:448 17 sec: 77713 operations; 7856 current ops/sec; est completion in 5 minutes [INSERT: Count=7847, Max=110271, Min=1889, Avg=8109.88, 90=8527, 99=12671, 99.9=108159, 99.99=109375] 
+2020-12-07 14:04:43:448 18 sec: 86371 operations; 8658 current ops/sec; est completion in 4 minutes [INSERT: Count=8668, Max=81919, Min=1675, Avg=7365.65, 90=9007, 99=14311, 99.9=80767, 99.99=81279] 
+2020-12-07 14:04:44:448 19 sec: 94950 operations; 8579 current ops/sec; est completion in 4 minutes [INSERT: Count=8580, Max=31663, Min=874, Avg=7449.99, 90=8375, 99=12751, 99.9=27023, 99.99=30351] 
+2020-12-07 14:04:45:448 20 sec: 104272 operations; 9322 current ops/sec; est completion in 4 minutes [INSERT: Count=9320, Max=101183, Min=1254, Avg=6854.07, 90=8063, 99=12199, 99.9=98495, 99.99=100479] 
+2020-12-07 14:04:46:448 21 sec: 113036 operations; 8764 current ops/sec; est completion in 4 minutes [INSERT: Count=8768, Max=95679, Min=1994, Avg=7310.93, 90=8067, 99=12391, 99.9=93695, 99.99=94719] 
+2020-12-07 14:04:47:448 22 sec: 122900 operations; 9864 current ops/sec; est completion in 4 minutes [INSERT: Count=9851, Max=24079, Min=1169, Avg=6145.01, 90=7291, 99=10143, 99.9=20543, 99.99=22735] 
+2020-12-07 14:04:48:448 23 sec: 132582 operations; 9682 current ops/sec; est completion in 3 minutes [INSERT: Count=9682, Max=92991, Min=1131, Avg=6939.38, 90=7275, 99=14631, 99.9=90367, 99.99=92607] 
+2020-12-07 14:04:49:448 24 sec: 141288 operations; 8706 current ops/sec; est completion in 3 minutes [INSERT: Count=8712, Max=111359, Min=1763, Avg=7331.57, 90=8039, 99=11911, 99.9=108927, 99.99=110335] 
+2020-12-07 14:04:50:449 25 sec: 150309 operations; 9021 current ops/sec; est completion in 3 minutes [INSERT: Count=9030, Max=24367, Min=988, Avg=7081.87, 90=8863, 99=12327, 99.9=18927, 99.99=23631] 
+2020-12-07 14:04:51:448 26 sec: 158390 operations; 8081 current ops/sec; est completion in 3 minutes [INSERT: Count=8080, Max=119231, Min=2056, Avg=7906.09, 90=8719, 99=12679, 99.9=115391, 99.99=115967] 
+2020-12-07 14:04:52:448 27 sec: 168509 operations; 10119 current ops/sec; est completion in 3 minutes [INSERT: Count=10106, Max=26271, Min=919, Avg=6313.23, 90=7531, 99=11703, 99.9=24527, 99.99=25983] 
+2020-12-07 14:04:53:448 28 sec: 177154 operations; 8645 current ops/sec; est completion in 3 minutes [INSERT: Count=8649, Max=125119, Min=1497, Avg=7386.58, 90=8359, 99=15191, 99.9=124415, 99.99=124735] 
+2020-12-07 14:04:54:448 29 sec: 188947 operations; 11793 current ops/sec; est completion in 3 minutes [INSERT: Count=11795, Max=19519, Min=1195, Avg=5418.68, 90=6767, 99=9783, 99.9=14447, 99.99=18367] 
+2020-12-07 14:04:55:448 30 sec: 197939 operations; 8992 current ops/sec; est completion in 3 minutes [INSERT: Count=9002, Max=116095, Min=882, Avg=7103.18, 90=7907, 99=10687, 99.9=113791, 99.99=115519] 
+2020-12-07 14:04:56:449 31 sec: 207881 operations; 9942 current ops/sec; est completion in 3 minutes [INSERT: Count=9935, Max=22431, Min=633, Avg=6430.04, 90=7619, 99=10943, 99.9=20863, 99.99=21951] 
+2020-12-07 14:04:57:448 32 sec: 216035 operations; 8154 current ops/sec; est completion in 3 minutes [INSERT: Count=8152, Max=122687, Min=2054, Avg=7829.66, 90=8143, 99=12951, 99.9=120575, 99.99=122687] 
+2020-12-07 14:04:58:449 33 sec: 225412 operations; 9377 current ops/sec; est completion in 3 minutes [INSERT: Count=9385, Max=18703, Min=1439, Avg=6818.25, 90=7975, 99=9591, 99.9=12135, 99.99=15967] 
+2020-12-07 14:04:59:448 34 sec: 234582 operations; 9170 current ops/sec; est completion in 3 minutes [INSERT: Count=9166, Max=18815, Min=2684, Avg=6955.07, 90=7935, 99=9511, 99.9=11687, 99.99=18607] 
+2020-12-07 14:05:00:448 35 sec: 244192 operations; 9610 current ops/sec; est completion in 3 minutes [INSERT: Count=9598, Max=17663, Min=1140, Avg=6664, 90=7859, 99=10079, 99.9=16479, 99.99=17215] 
+2020-12-07 14:05:01:448 36 sec: 253039 operations; 8855.86 current ops/sec; est completion in 2 minutes [INSERT: Count=8857, Max=164095, Min=1820, Avg=7222.03, 90=7511, 99=9543, 99.9=162431, 99.99=163711] 
+2020-12-07 14:05:02:448 37 sec: 263369 operations; 10319.68 current ops/sec; est completion in 2 minutes [INSERT: Count=10326, Max=26479, Min=1046, Avg=6181.8, 90=7271, 99=10175, 99.9=24383, 99.99=25839] 
+2020-12-07 14:05:03:448 38 sec: 271552 operations; 8183 current ops/sec; est completion in 2 minutes [INSERT: Count=8177, Max=23439, Min=2088, Avg=6846.18, 90=7863, 99=9103, 99.9=10559, 99.99=11175] 
+2020-12-07 14:05:04:448 39 sec: 280656 operations; 9104 current ops/sec; est completion in 2 minutes [INSERT: Count=9109, Max=167039, Min=1657, Avg=7891.69, 90=7979, 99=16783, 99.9=164991, 99.99=166783] 
+2020-12-07 14:05:05:448 40 sec: 290360 operations; 9704 current ops/sec; est completion in 2 minutes [INSERT: Count=9699, Max=22367, Min=2722, Avg=6585.97, 90=7555, 99=8935, 99.9=13135, 99.99=15279] 
+2020-12-07 14:05:06:448 41 sec: 298920 operations; 8560 current ops/sec; est completion in 2 minutes [INSERT: Count=8573, Max=145919, Min=1250, Avg=7457.34, 90=7987, 99=11343, 99.9=144255, 99.99=145279] 
+2020-12-07 14:05:07:448 42 sec: 308502 operations; 9582 current ops/sec; est completion in 2 minutes [INSERT: Count=9569, Max=18127, Min=1468, Avg=6681.68, 90=7751, 99=9759, 99.9=12311, 99.99=17647] 
+2020-12-07 14:05:08:448 43 sec: 318360 operations; 9858 current ops/sec; est completion in 2 minutes [INSERT: Count=9858, Max=12015, Min=1857, Avg=6480.18, 90=7411, 99=8991, 99.9=10967, 99.99=11655] 
+2020-12-07 14:05:09:448 44 sec: 326266 operations; 7906 current ops/sec; est completion in 2 minutes [INSERT: Count=7908, Max=158207, Min=831, Avg=8079.73, 90=8359, 99=23903, 99.9=156287, 99.99=157951] 
+2020-12-07 14:05:10:448 45 sec: 335730 operations; 9464 current ops/sec; est completion in 2 minutes [INSERT: Count=9466, Max=13727, Min=2782, Avg=6763.79, 90=8027, 99=9375, 99.9=10751, 99.99=13511] 
+2020-12-07 14:05:11:449 46 sec: 345057 operations; 9327 current ops/sec; est completion in 2 minutes [INSERT: Count=9337, Max=17999, Min=1430, Avg=6851.73, 90=8631, 99=14359, 99.9=17327, 99.99=17695] 
+2020-12-07 14:05:12:448 47 sec: 353897 operations; 8840 current ops/sec; est completion in 2 minutes [INSERT: Count=8836, Max=150783, Min=2354, Avg=7222.12, 90=7371, 99=12535, 99.9=148991, 99.99=150527] 
+2020-12-07 14:05:13:448 48 sec: 363045 operations; 9148 current ops/sec; est completion in 2 minutes [INSERT: Count=9143, Max=17647, Min=1972, Avg=6998.63, 90=7811, 99=12423, 99.9=15687, 99.99=17199] 
+2020-12-07 14:05:14:448 49 sec: 372635 operations; 9590 current ops/sec; est completion in 2 minutes [INSERT: Count=9595, Max=24655, Min=1220, Avg=6654.43, 90=8335, 99=11847, 99.9=14447, 99.99=24207] 
+2020-12-07 14:05:15:448 50 sec: 381115 operations; 8480 current ops/sec; est completion in 2 minutes [INSERT: Count=8470, Max=152831, Min=1336, Avg=7550.97, 90=7639, 99=11135, 99.9=150271, 99.99=151295] 
+2020-12-07 14:05:16:448 51 sec: 390672 operations; 9557 current ops/sec; est completion in 2 minutes [INSERT: Count=9565, Max=22911, Min=954, Avg=6676.57, 90=7951, 99=10063, 99.9=19567, 99.99=22191] 
+2020-12-07 14:05:17:448 52 sec: 400104 operations; 9432 current ops/sec; est completion in 2 minutes [INSERT: Count=9430, Max=18495, Min=2170, Avg=6783.1, 90=8463, 99=10487, 99.9=16607, 99.99=18031] 
+2020-12-07 14:05:18:448 53 sec: 407866 operations; 7762 current ops/sec; est completion in 2 minutes [INSERT: Count=7756, Max=188543, Min=1138, Avg=8257.83, 90=8927, 99=15991, 99.9=181247, 99.99=188159] 
+2020-12-07 14:05:19:448 54 sec: 416967 operations; 9101 current ops/sec; est completion in 2 minutes [INSERT: Count=9101, Max=18799, Min=1802, Avg=7020.71, 90=8103, 99=9983, 99.9=11991, 99.99=18383] 
+2020-12-07 14:05:20:448 55 sec: 426080 operations; 9113 current ops/sec; est completion in 2 minutes [INSERT: Count=9119, Max=13839, Min=1962, Avg=7016.9, 90=8367, 99=10207, 99.9=13255, 99.99=13807] 
+2020-12-07 14:05:21:448 56 sec: 434442 operations; 8362 current ops/sec; est completion in 2 minutes [INSERT: Count=8361, Max=158079, Min=2060, Avg=7647.29, 90=8123, 99=16399, 99.9=153855, 99.99=157951] 
+2020-12-07 14:05:22:448 57 sec: 444006 operations; 9564 current ops/sec; est completion in 2 minutes [INSERT: Count=9559, Max=13031, Min=2594, Avg=6687.61, 90=7707, 99=10047, 99.9=12447, 99.99=12879] 
+2020-12-07 14:05:23:448 58 sec: 453888 operations; 9882 current ops/sec; est completion in 2 minutes [INSERT: Count=9895, Max=23503, Min=820, Avg=6464.35, 90=7923, 99=13103, 99.9=20159, 99.99=22959] 
+2020-12-07 14:05:24:448 59 sec: 463757 operations; 9869 current ops/sec; est completion in 2 minutes [INSERT: Count=9856, Max=17311, Min=2230, Avg=6148.9, 90=7675, 99=9703, 99.9=16383, 99.99=17103] 
+2020-12-07 14:05:25:448 60 sec: 472837 operations; 9080 current ops/sec; est completion in 2 minutes [INSERT: Count=9084, Max=161407, Min=1498, Avg=7407.05, 90=7895, 99=11527, 99.9=159871, 99.99=161023] 
+2020-12-07 14:05:26:448 61 sec: 482649 operations; 9812 current ops/sec; est completion in 2 minutes [INSERT: Count=9815, Max=18879, Min=1993, Avg=6505.59, 90=7687, 99=10183, 99.9=14527, 99.99=18639] 
+2020-12-07 14:05:27:448 62 sec: 492528 operations; 9879 current ops/sec; est completion in 2 minutes [INSERT: Count=9872, Max=14615, Min=1994, Avg=6125.9, 90=7511, 99=9367, 99.9=13679, 99.99=14143] 
+2020-12-07 14:05:28:448 63 sec: 501422 operations; 8894 current ops/sec; est completion in 2 minutes [INSERT: Count=8895, Max=167039, Min=1750, Avg=7589.69, 90=7211, 99=14463, 99.9=164863, 99.99=166015] 
+2020-12-07 14:05:29:448 64 sec: 511406 operations; 9984 current ops/sec; est completion in 2 minutes [INSERT: Count=9987, Max=23007, Min=1151, Avg=6387.93, 90=8015, 99=9879, 99.9=20831, 99.99=22607] 
+2020-12-07 14:05:30:448 65 sec: 521153 operations; 9747 current ops/sec; est completion in 2 minutes [INSERT: Count=9743, Max=18175, Min=1534, Avg=6185.32, 90=7863, 99=10759, 99.9=15743, 99.99=17119] 
+2020-12-07 14:05:31:448 66 sec: 529900 operations; 8747 current ops/sec; est completion in 2 minutes [INSERT: Count=8757, Max=174719, Min=1698, Avg=7721.88, 90=7959, 99=10943, 99.9=173567, 99.99=173823] 
+2020-12-07 14:05:32:448 67 sec: 539796 operations; 9896 current ops/sec; est completion in 2 minutes [INSERT: Count=9895, Max=17247, Min=1825, Avg=6471.44, 90=7987, 99=10207, 99.9=16575, 99.99=17071] 
+2020-12-07 14:05:33:448 68 sec: 549732 operations; 9936 current ops/sec; est completion in 1 minute [INSERT: Count=9942, Max=10303, Min=2066, Avg=6424.92, 90=7927, 99=8999, 99.9=9639, 99.99=10247] 
+2020-12-07 14:05:34:448 69 sec: 557746 operations; 8014 current ops/sec; est completion in 1 minute [INSERT: Count=8007, Max=225279, Min=2050, Avg=7985.9, 90=7931, 99=9999, 99.9=224511, 99.99=225279] 
+2020-12-07 14:05:35:448 70 sec: 568422 operations; 10676 current ops/sec; est completion in 1 minute [INSERT: Count=10674, Max=22559, Min=1622, Avg=5983.91, 90=7359, 99=16095, 99.9=22015, 99.99=22543] 
+2020-12-07 14:05:36:448 71 sec: 579175 operations; 10753 current ops/sec; est completion in 1 minute [INSERT: Count=10751, Max=21567, Min=814, Avg=5954.24, 90=7447, 99=11655, 99.9=19151, 99.99=21471] 
+2020-12-07 14:05:37:448 72 sec: 588257 operations; 9082 current ops/sec; est completion in 1 minute [INSERT: Count=9080, Max=214783, Min=1271, Avg=7032.81, 90=7047, 99=14719, 99.9=213119, 99.99=214527] 
+2020-12-07 14:05:38:448 73 sec: 599038 operations; 10781 current ops/sec; est completion in 1 minute [INSERT: Count=10779, Max=15495, Min=1803, Avg=5934.63, 90=7247, 99=9815, 99.9=14375, 99.99=15103] 
+2020-12-07 14:05:39:448 74 sec: 608325 operations; 9287 current ops/sec; est completion in 1 minute [INSERT: Count=9287, Max=22975, Min=1495, Avg=6881.2, 90=8375, 99=11119, 99.9=16375, 99.99=16623] 
+2020-12-07 14:05:40:448 75 sec: 616380 operations; 8055 current ops/sec; est completion in 1 minute [INSERT: Count=8059, Max=186879, Min=3202, Avg=7936.04, 90=7455, 99=9447, 99.9=185343, 99.99=186495] 
+2020-12-07 14:05:41:448 76 sec: 626876 operations; 10496 current ops/sec; est completion in 1 minute [INSERT: Count=10492, Max=18991, Min=2164, Avg=6082.57, 90=7531, 99=9783, 99.9=15847, 99.99=18143] 
+2020-12-07 14:05:42:448 77 sec: 634866 operations; 7990 current ops/sec; est completion in 1 minute [INSERT: Count=7990, Max=25647, Min=996, Avg=7353.96, 90=9007, 99=11351, 99.9=23375, 99.99=25103] 
+2020-12-07 14:05:43:448 78 sec: 643898 operations; 9032 current ops/sec; est completion in 1 minute [INSERT: Count=9032, Max=176511, Min=1553, Avg=7656.21, 90=7663, 99=15015, 99.9=175615, 99.99=176511] 
+2020-12-07 14:05:44:448 79 sec: 653438 operations; 9540 current ops/sec; est completion in 1 minute [INSERT: Count=9546, Max=14663, Min=2364, Avg=6696.26, 90=8119, 99=10583, 99.9=13191, 99.99=14503] 
+2020-12-07 14:05:45:448 80 sec: 662677 operations; 9239 current ops/sec; est completion in 1 minute [INSERT: Count=9238, Max=164735, Min=1951, Avg=6920.67, 90=7691, 99=10231, 99.9=161535, 99.99=164095] 
+2020-12-07 14:05:46:448 81 sec: 672519 operations; 9842 current ops/sec; est completion in 1 minute [INSERT: Count=9837, Max=11631, Min=3090, Avg=6495.65, 90=7603, 99=9439, 99.9=10815, 99.99=11527] 
+2020-12-07 14:05:47:448 82 sec: 682352 operations; 9833 current ops/sec; est completion in 1 minute [INSERT: Count=9833, Max=13135, Min=1624, Avg=6505.08, 90=7475, 99=9455, 99.9=11303, 99.99=12687] 
+2020-12-07 14:05:48:448 83 sec: 690473 operations; 8121 current ops/sec; est completion in 1 minute [INSERT: Count=8121, Max=168063, Min=1655, Avg=7869.45, 90=8091, 99=17439, 99.9=166271, 99.99=167167] 
+2020-12-07 14:05:49:448 84 sec: 700182 operations; 9709 current ops/sec; est completion in 1 minute [INSERT: Count=9712, Max=21839, Min=1106, Avg=6589.43, 90=7863, 99=9727, 99.9=20495, 99.99=21183] 
+2020-12-07 14:05:50:448 85 sec: 710319 operations; 10137 current ops/sec; est completion in 1 minute [INSERT: Count=10139, Max=14335, Min=1724, Avg=6303.55, 90=7515, 99=10295, 99.9=12407, 99.99=13543] 
+2020-12-07 14:05:51:448 86 sec: 719159 operations; 8840 current ops/sec; est completion in 1 minute [INSERT: Count=8835, Max=16287, Min=1892, Avg=6561.48, 90=7915, 99=10007, 99.9=15175, 99.99=15727] 
+2020-12-07 14:05:52:448 87 sec: 728284 operations; 9125 current ops/sec; est completion in 1 minute [INSERT: Count=9132, Max=173183, Min=2108, Avg=7656.15, 90=7787, 99=9639, 99.9=172287, 99.99=173183] 
+2020-12-07 14:05:53:448 88 sec: 739221 operations; 10937 current ops/sec; est completion in 1 minute [INSERT: Count=10930, Max=14167, Min=2554, Avg=5844.86, 90=6867, 99=8703, 99.9=13127, 99.99=13967] 
+2020-12-07 14:05:54:448 89 sec: 748633 operations; 9412 current ops/sec; est completion in 1 minute [INSERT: Count=9412, Max=10407, Min=1561, Avg=5736.66, 90=7167, 99=8855, 99.9=9807, 99.99=10055] 
+2020-12-07 14:05:55:448 90 sec: 757164 operations; 8531 current ops/sec; est completion in 1 minute [INSERT: Count=8531, Max=175743, Min=3842, Avg=8657.41, 90=8439, 99=9983, 99.9=174975, 99.99=175615] 
+2020-12-07 14:05:56:448 91 sec: 766215 operations; 9060.06 current ops/sec; est completion in 1 minute [INSERT: Count=9055, Max=32127, Min=677, Avg=7074.13, 90=8059, 99=18175, 99.9=31135, 99.99=31567] 
+2020-12-07 14:05:57:448 92 sec: 773848 operations; 7625.37 current ops/sec; est completion in 1 minute [INSERT: Count=7636, Max=203263, Min=2352, Avg=8353.04, 90=8559, 99=13791, 99.9=197119, 99.99=198527] 
+2020-12-07 14:05:58:448 93 sec: 783916 operations; 10068 current ops/sec; est completion in 1 minute [INSERT: Count=10061, Max=15807, Min=2254, Avg=6364.86, 90=7903, 99=9559, 99.9=12151, 99.99=15319] 
+2020-12-07 14:05:59:448 94 sec: 794119 operations; 10213.21 current ops/sec; est completion in 1 minute [INSERT: Count=10206, Max=11247, Min=1607, Avg=6270.96, 90=7467, 99=9031, 99.9=10391, 99.99=11095] 
+2020-12-07 14:06:00:448 95 sec: 802645 operations; 8517.48 current ops/sec; est completion in 1 minute [INSERT: Count=8523, Max=156543, Min=1299, Avg=7496.84, 90=7571, 99=9983, 99.9=155903, 99.99=156543] 
+2020-12-07 14:06:01:448 96 sec: 813456 operations; 10811 current ops/sec; est completion in 1 minute [INSERT: Count=10816, Max=17439, Min=2056, Avg=5915.09, 90=7375, 99=8935, 99.9=12671, 99.99=17311] 
+2020-12-07 14:06:02:448 97 sec: 824321 operations; 10865 current ops/sec; est completion in 1 minute [INSERT: Count=10861, Max=21343, Min=653, Avg=5890.41, 90=6715, 99=9231, 99.9=18383, 99.99=20271] 
+2020-12-07 14:06:03:448 98 sec: 833182 operations; 8861 current ops/sec; est completion in 1 minute [INSERT: Count=8860, Max=173567, Min=2480, Avg=7204.71, 90=7539, 99=9359, 99.9=170879, 99.99=172287] 
+2020-12-07 14:06:04:448 99 sec: 842173 operations; 9000 current ops/sec; est completion in 1 minute [INSERT: Count=8994, Max=18015, Min=3634, Avg=7105.85, 90=7823, 99=9391, 99.9=17327, 99.99=18015] 
+2020-12-07 14:06:05:448 100 sec: 851016 operations; 8834.17 current ops/sec; est completion in 1 minute [INSERT: Count=8848, Max=14903, Min=4432, Avg=7232.75, 90=7931, 99=9615, 99.9=13847, 99.99=14503] 
+2020-12-07 14:06:06:448 101 sec: 858839 operations; 7823 current ops/sec; est completion in 1 minute [INSERT: Count=7815, Max=172799, Min=2914, Avg=8175.27, 90=7747, 99=9903, 99.9=168959, 99.99=172415] 
+2020-12-07 14:06:07:448 102 sec: 868335 operations; 9496 current ops/sec; est completion in 1 minute [INSERT: Count=9496, Max=17791, Min=2722, Avg=6738.09, 90=7831, 99=13799, 99.9=16975, 99.99=17679] 
+2020-12-07 14:06:08:448 103 sec: 878112 operations; 9777 current ops/sec; est completion in 1 minute [INSERT: Count=9782, Max=15959, Min=1861, Avg=6536.46, 90=7995, 99=10151, 99.9=14279, 99.99=14935] 
+2020-12-07 14:06:09:448 104 sec: 887142 operations; 9030 current ops/sec; est completion in 1 minute [INSERT: Count=9025, Max=147327, Min=761, Avg=7085.17, 90=7555, 99=19263, 99.9=145791, 99.99=146943] 
+2020-12-07 14:06:10:448 105 sec: 897099 operations; 9957 current ops/sec; est completion in 1 minute [INSERT: Count=9957, Max=19151, Min=1907, Avg=6410.78, 90=7739, 99=9903, 99.9=16511, 99.99=17327] 
+2020-12-07 14:06:11:448 106 sec: 907180 operations; 10081 current ops/sec; est completion in 1 minute [INSERT: Count=10082, Max=15687, Min=905, Avg=6347.26, 90=7795, 99=9735, 99.9=14223, 99.99=15359] 
+2020-12-07 14:06:12:448 107 sec: 915992 operations; 8820.82 current ops/sec; est completion in 1 minute [INSERT: Count=8814, Max=162047, Min=664, Avg=7226.15, 90=7711, 99=10215, 99.9=161023, 99.99=161791] 
+2020-12-07 14:06:13:448 108 sec: 925993 operations; 10001 current ops/sec; est completion in 1 minute [INSERT: Count=9998, Max=23455, Min=2436, Avg=6389.76, 90=8115, 99=10303, 99.9=16863, 99.99=20175] 
+2020-12-07 14:06:14:448 109 sec: 936217 operations; 10224 current ops/sec; est completion in 1 minute [INSERT: Count=10231, Max=17343, Min=2642, Avg=6252.14, 90=7811, 99=9543, 99.9=15863, 99.99=16183] 
+2020-12-07 14:06:15:448 110 sec: 944441 operations; 8215.78 current ops/sec; est completion in 1 minute [INSERT: Count=8223, Max=175359, Min=2898, Avg=7785.38, 90=7459, 99=9935, 99.9=174591, 99.99=175231] 
+2020-12-07 14:06:16:448 111 sec: 954383 operations; 9942 current ops/sec; est completion in 1 minute [INSERT: Count=9936, Max=21311, Min=899, Avg=6430.36, 90=7379, 99=14095, 99.9=20095, 99.99=20895] 
+2020-12-07 14:06:17:448 112 sec: 963193 operations; 8810 current ops/sec; est completion in 1 minute [INSERT: Count=8820, Max=127039, Min=3608, Avg=7256.29, 90=7231, 99=15055, 99.9=126463, 99.99=126847] 
+2020-12-07 14:06:18:448 113 sec: 973770 operations; 10577 current ops/sec; est completion in 1 minute [INSERT: Count=10571, Max=12463, Min=2066, Avg=6047.85, 90=7211, 99=8743, 99.9=11375, 99.99=12327] 
+2020-12-07 14:06:19:448 114 sec: 983622 operations; 9852 current ops/sec; est completion in 1 minute [INSERT: Count=9848, Max=12471, Min=1101, Avg=6485.56, 90=7811, 99=9335, 99.9=11127, 99.99=11791] 
+2020-12-07 14:06:20:448 115 sec: 992802 operations; 9180 current ops/sec; est completion in 59 seconds [INSERT: Count=9180, Max=15999, Min=2184, Avg=6100.1, 90=7235, 99=9447, 99.9=15495, 99.99=15823] 
+2020-12-07 14:06:21:448 116 sec: 1002127 operations; 9334.33 current ops/sec; est completion in 58 seconds [INSERT: Count=9331, Max=154239, Min=1479, Avg=7704.08, 90=8303, 99=10311, 99.9=152575, 99.99=153855] 
+2020-12-07 14:06:22:448 117 sec: 1011467 operations; 9330.67 current ops/sec; est completion in 57 seconds [INSERT: Count=9336, Max=30815, Min=1394, Avg=6846.29, 90=8479, 99=14751, 99.9=27391, 99.99=30607] 
+2020-12-07 14:06:23:448 118 sec: 1019379 operations; 7912 current ops/sec; est completion in 56 seconds [INSERT: Count=7910, Max=217855, Min=1352, Avg=8094.4, 90=7811, 99=13775, 99.9=213119, 99.99=217471] 
+2020-12-07 14:06:24:448 119 sec: 1029861 operations; 10482 current ops/sec; est completion in 55 seconds [INSERT: Count=10482, Max=13319, Min=1148, Avg=6085.36, 90=7927, 99=9519, 99.9=11879, 99.99=13151] 
+2020-12-07 14:06:25:448 120 sec: 1040605 operations; 10744 current ops/sec; est completion in 53 seconds [INSERT: Count=10744, Max=23247, Min=1519, Avg=5608.23, 90=6947, 99=9991, 99.9=16895, 99.99=22719] 
+2020-12-07 14:06:26:448 121 sec: 1049799 operations; 9194 current ops/sec; est completion in 52 seconds [INSERT: Count=9200, Max=141439, Min=1593, Avg=7363.89, 90=7383, 99=8535, 99.9=140671, 99.99=141311] 
+2020-12-07 14:06:27:448 122 sec: 1060718 operations; 10919 current ops/sec; est completion in 51 seconds [INSERT: Count=10918, Max=13375, Min=2384, Avg=5850.5, 90=7119, 99=8807, 99.9=12263, 99.99=12871] 
+2020-12-07 14:06:28:448 123 sec: 1070595 operations; 9877 current ops/sec; est completion in 50 seconds [INSERT: Count=9876, Max=23311, Min=546, Avg=6480.82, 90=7391, 99=9159, 99.9=21727, 99.99=22991] 
+2020-12-07 14:06:29:448 124 sec: 1078665 operations; 8070 current ops/sec; est completion in 49 seconds [INSERT: Count=8070, Max=183551, Min=2294, Avg=7929, 90=8163, 99=10631, 99.9=182271, 99.99=183423] 
+2020-12-07 14:06:30:448 125 sec: 1087320 operations; 8655 current ops/sec; est completion in 48 seconds [INSERT: Count=8656, Max=24207, Min=1613, Avg=7372.76, 90=8807, 99=11135, 99.9=20959, 99.99=24015] 
+2020-12-07 14:06:31:448 126 sec: 1095611 operations; 8291 current ops/sec; est completion in 47 seconds [INSERT: Count=8292, Max=174847, Min=2354, Avg=7220.61, 90=7915, 99=17631, 99.9=171647, 99.99=172543] 
+2020-12-07 14:06:32:448 127 sec: 1104776 operations; 9165 current ops/sec; est completion in 46 seconds [INSERT: Count=9159, Max=178175, Min=2013, Avg=7431.31, 90=8583, 99=12919, 99.9=171135, 99.99=177279] 
+2020-12-07 14:06:33:448 128 sec: 1114506 operations; 9730 current ops/sec; est completion in 45 seconds [INSERT: Count=9735, Max=18495, Min=2152, Avg=6564.81, 90=8439, 99=9975, 99.9=13231, 99.99=18287] 
+2020-12-07 14:06:34:448 129 sec: 1124322 operations; 9816 current ops/sec; est completion in 44 seconds [INSERT: Count=9811, Max=141823, Min=2212, Avg=6514.79, 90=7187, 99=15743, 99.9=140543, 99.99=141695] 
+2020-12-07 14:06:35:448 130 sec: 1135636 operations; 11314 current ops/sec; est completion in 42 seconds [INSERT: Count=11321, Max=24559, Min=955, Avg=5654.03, 90=6683, 99=9231, 99.9=22655, 99.99=24447] 
+2020-12-07 14:06:36:448 131 sec: 1145225 operations; 9589 current ops/sec; est completion in 41 seconds [INSERT: Count=9587, Max=146687, Min=2690, Avg=6661.48, 90=6551, 99=8983, 99.9=145919, 99.99=146687] 
+2020-12-07 14:06:37:448 132 sec: 1154174 operations; 8949 current ops/sec; est completion in 40 seconds [INSERT: Count=8944, Max=13599, Min=3166, Avg=7154.34, 90=8207, 99=9791, 99.9=11463, 99.99=13519] 
+2020-12-07 14:06:38:448 133 sec: 1163377 operations; 9203 current ops/sec; est completion in 39 seconds [INSERT: Count=9208, Max=20927, Min=1879, Avg=6948.52, 90=8191, 99=10991, 99.9=18815, 99.99=20927] 
+2020-12-07 14:06:39:448 134 sec: 1171556 operations; 8179 current ops/sec; est completion in 38 seconds [INSERT: Count=8176, Max=160127, Min=1489, Avg=7819.43, 90=7919, 99=10783, 99.9=152447, 99.99=157567] 
+2020-12-07 14:06:40:448 135 sec: 1181207 operations; 9651 current ops/sec; est completion in 37 seconds [INSERT: Count=9650, Max=12095, Min=3792, Avg=6628.24, 90=7431, 99=8175, 99.9=8903, 99.99=11575] 
+2020-12-07 14:06:41:448 136 sec: 1189744 operations; 8537 current ops/sec; est completion in 36 seconds [INSERT: Count=8537, Max=129343, Min=1340, Avg=7487.64, 90=8035, 99=16847, 99.9=128127, 99.99=128831] 
+2020-12-07 14:06:42:448 137 sec: 1199883 operations; 10139 current ops/sec; est completion in 35 seconds [INSERT: Count=10138, Max=21503, Min=876, Avg=6304.15, 90=7163, 99=13471, 99.9=19951, 99.99=21391] 
+2020-12-07 14:06:43:448 138 sec: 1209302 operations; 9419 current ops/sec; est completion in 34 seconds [INSERT: Count=9424, Max=115327, Min=1860, Avg=6787.39, 90=7119, 99=8783, 99.9=114687, 99.99=115199] 
+2020-12-07 14:06:44:448 139 sec: 1218946 operations; 9644 current ops/sec; est completion in 33 seconds [INSERT: Count=9639, Max=15199, Min=1661, Avg=6373.4, 90=7319, 99=9543, 99.9=14639, 99.99=15135] 
+2020-12-07 14:06:45:448 140 sec: 1227345 operations; 8399 current ops/sec; est completion in 32 seconds [INSERT: Count=8405, Max=115647, Min=2674, Avg=7906.7, 90=8431, 99=11159, 99.9=114815, 99.99=115583] 
+2020-12-07 14:06:46:448 141 sec: 1236585 operations; 9240 current ops/sec; est completion in 31 seconds [INSERT: Count=9234, Max=105919, Min=2326, Avg=6920.75, 90=7703, 99=10271, 99.9=95551, 99.99=104447] 
+2020-12-07 14:06:47:448 142 sec: 1245990 operations; 9405 current ops/sec; est completion in 29 seconds [INSERT: Count=9405, Max=25183, Min=1431, Avg=6790.27, 90=8479, 99=10095, 99.9=15847, 99.99=24815] 
+2020-12-07 14:06:48:448 143 sec: 1254421 operations; 8431 current ops/sec; est completion in 28 seconds [INSERT: Count=8432, Max=119487, Min=2003, Avg=7608.84, 90=8263, 99=10607, 99.9=118591, 99.99=119231] 
+2020-12-07 14:06:49:448 144 sec: 1262986 operations; 8565 current ops/sec; est completion in 28 seconds [INSERT: Count=8568, Max=98111, Min=1376, Avg=7460.19, 90=8415, 99=17167, 99.9=95167, 99.99=98047] 
+2020-12-07 14:06:50:448 145 sec: 1271765 operations; 8779 current ops/sec; est completion in 27 seconds [INSERT: Count=8781, Max=86271, Min=3298, Avg=7282.09, 90=8159, 99=16335, 99.9=84543, 99.99=85951] 
+2020-12-07 14:06:51:448 146 sec: 1280573 operations; 8808 current ops/sec; est completion in 26 seconds [INSERT: Count=8807, Max=75391, Min=1023, Avg=7242.82, 90=8019, 99=17551, 99.9=73919, 99.99=74751] 
+2020-12-07 14:06:52:448 147 sec: 1287466 operations; 6893 current ops/sec; est completion in 25 seconds [INSERT: Count=6893, Max=68031, Min=4656, Avg=9300.57, 90=10103, 99=11639, 99.9=66367, 99.99=67839] 
+2020-12-07 14:06:53:448 148 sec: 1295632 operations; 8166 current ops/sec; est completion in 24 seconds [INSERT: Count=8161, Max=74815, Min=3970, Avg=7830.97, 90=8123, 99=15487, 99.9=72959, 99.99=74751] 
+2020-12-07 14:06:54:448 149 sec: 1304602 operations; 8970 current ops/sec; est completion in 23 seconds [INSERT: Count=8977, Max=74623, Min=2628, Avg=7113.88, 90=7767, 99=14991, 99.9=73343, 99.99=74239] 
+2020-12-07 14:06:55:448 150 sec: 1313725 operations; 9123 current ops/sec; est completion in 22 seconds [INSERT: Count=9116, Max=82943, Min=1128, Avg=7021.4, 90=7551, 99=13847, 99.9=81407, 99.99=82943] 
+2020-12-07 14:06:56:448 151 sec: 1321804 operations; 8079 current ops/sec; est completion in 21 seconds [INSERT: Count=8084, Max=98559, Min=2003, Avg=7920.5, 90=8887, 99=23407, 99.9=97727, 99.99=98367] 
+2020-12-07 14:06:57:448 152 sec: 1331348 operations; 9544 current ops/sec; est completion in 20 seconds [INSERT: Count=9539, Max=60927, Min=3218, Avg=6692.91, 90=7115, 99=8759, 99.9=59199, 99.99=60831] 
+2020-12-07 14:06:58:448 153 sec: 1340497 operations; 9149 current ops/sec; est completion in 19 seconds [INSERT: Count=9149, Max=73087, Min=999, Avg=6991.68, 90=7995, 99=12495, 99.9=72511, 99.99=73087] 
+2020-12-07 14:06:59:448 154 sec: 1349242 operations; 8745 current ops/sec; est completion in 18 seconds [INSERT: Count=8747, Max=68031, Min=3222, Avg=7313.93, 90=7955, 99=9487, 99.9=67519, 99.99=67903] 
+2020-12-07 14:07:00:448 155 sec: 1358557 operations; 9315 current ops/sec; est completion in 17 seconds [INSERT: Count=9313, Max=71807, Min=2228, Avg=6853.54, 90=7755, 99=16375, 99.9=62719, 99.99=69439] 
+2020-12-07 14:07:01:448 156 sec: 1367408 operations; 8851 current ops/sec; est completion in 16 seconds [INSERT: Count=8851, Max=77055, Min=1243, Avg=7229.75, 90=7923, 99=17023, 99.9=75967, 99.99=76607] 
+2020-12-07 14:07:02:448 157 sec: 1377050 operations; 9642 current ops/sec; est completion in 15 seconds [INSERT: Count=9646, Max=78335, Min=1886, Avg=6631.85, 90=7451, 99=9447, 99.9=75647, 99.99=78079] 
+2020-12-07 14:07:03:448 158 sec: 1385535 operations; 8485 current ops/sec; est completion in 14 seconds [INSERT: Count=8486, Max=84095, Min=1504, Avg=7532.75, 90=8959, 99=22127, 99.9=81727, 99.99=83199] 
+2020-12-07 14:07:04:448 159 sec: 1395108 operations; 9573 current ops/sec; est completion in 12 seconds [INSERT: Count=9568, Max=65727, Min=1827, Avg=6678.54, 90=7635, 99=17919, 99.9=64607, 99.99=65599] 
+2020-12-07 14:07:05:448 160 sec: 1404049 operations; 8949.95 current ops/sec; est completion in 11 seconds [INSERT: Count=8941, Max=64031, Min=1988, Avg=6948.89, 90=7663, 99=10711, 99.9=60511, 99.99=61951] 
+2020-12-07 14:07:06:448 161 sec: 1412514 operations; 8456.54 current ops/sec; est completion in 10 seconds [INSERT: Count=8465, Max=65727, Min=3694, Avg=7767.33, 90=7879, 99=63615, 99.9=65247, 99.99=65727] 
+2020-12-07 14:07:07:448 162 sec: 1421348 operations; 8834 current ops/sec; est completion in 9 second [INSERT: Count=8834, Max=11831, Min=3788, Avg=7008.75, 90=8131, 99=10023, 99.9=10959, 99.99=11663] 
+2020-12-07 14:07:08:448 163 sec: 1430686 operations; 9338 current ops/sec; est completion in 8 second [INSERT: Count=9342, Max=87487, Min=990, Avg=7066.89, 90=7395, 99=69055, 99.9=86911, 99.99=87359] 
+2020-12-07 14:07:09:448 164 sec: 1440779 operations; 10093 current ops/sec; est completion in 7 second [INSERT: Count=10089, Max=82943, Min=2564, Avg=6334.21, 90=7007, 99=9127, 99.9=82303, 99.99=82879] 
+2020-12-07 14:07:10:448 165 sec: 1449646 operations; 8867 current ops/sec; est completion in 6 second [INSERT: Count=8873, Max=71295, Min=1104, Avg=7202.02, 90=7679, 99=20191, 99.9=70207, 99.99=70975] 
+2020-12-07 14:07:11:448 166 sec: 1458819 operations; 9182.18 current ops/sec; est completion in 5 second [INSERT: Count=9174, Max=76159, Min=1047, Avg=6969.85, 90=8199, 99=16943, 99.9=72511, 99.99=73663] 
+2020-12-07 14:07:12:448 167 sec: 1468089 operations; 9260.74 current ops/sec; est completion in 4 second [INSERT: Count=9265, Max=70655, Min=2944, Avg=6902.44, 90=7795, 99=11831, 99.9=69759, 99.99=70399] 
+2020-12-07 14:07:13:448 168 sec: 1477903 operations; 9814 current ops/sec; est completion in 3 second [CLEANUP: Count=4, Max=4, Min=2, Avg=3, 90=4, 99=4, 99.9=4, 99.99=4] [INSERT: Count=9820, Max=71231, Min=1163, Avg=6348.4, 90=7351, 99=10479, 99.9=67839, 99.99=71039] 
+2020-12-07 14:07:14:448 169 sec: 1487563 operations; 9660 current ops/sec; est completion in 2 second [CLEANUP: Count=10, Max=3, Min=2, Avg=2.6, 90=3, 99=3, 99.9=3, 99.99=3] [INSERT: Count=9658, Max=59423, Min=1604, Avg=5710.26, 90=7283, 99=9839, 99.9=56415, 99.99=59231] 
+2020-12-07 14:07:15:448 170 sec: 1497184 operations; 9621 current ops/sec; est completion in 1 second [CLEANUP: Count=29, Max=7, Min=1, Avg=2.55, 90=3, 99=7, 99.9=7, 99.99=7] [INSERT: Count=9620, Max=63359, Min=1349, Avg=3950.25, 90=4835, 99=6879, 99.9=61439, 99.99=62783] 
+2020-12-07 14:07:15:809 170 sec: 1500000 operations; 7800.55 current ops/sec; [CLEANUP: Count=21, Max=3, Min=1, Avg=2.52, 90=3, 99=3, 99.9=3, 99.99=3] [INSERT: Count=2811, Max=7235, Min=513, Avg=1672.26, 90=2589, 99=3037, 99.9=4363, 99.99=7235] 
+[OVERALL], RunTime(ms), 170360
+[OVERALL], Throughput(ops/sec), 8804.883775534163
+[TOTAL_GCS_G1_Young_Generation], Count, 33
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 409
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.2400798309462315
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 33
+[TOTAL_GC_TIME], Time(ms), 409
+[TOTAL_GC_TIME_%], Time(%), 0.2400798309462315
+[CLEANUP], Operations, 64
+[CLEANUP], AverageLatency(us), 2.578125
+[CLEANUP], MinLatency(us), 1
+[CLEANUP], MaxLatency(us), 7
+[CLEANUP], 95thPercentileLatency(us), 3
+[CLEANUP], 99thPercentileLatency(us), 4
+[INSERT], Operations, 1500000
+[INSERT], AverageLatency(us), 7216.696405333333
+[INSERT], MinLatency(us), 513
+[INSERT], MaxLatency(us), 3993599
+[INSERT], 95thPercentileLatency(us), 9015
+[INSERT], 99thPercentileLatency(us), 15199
+[INSERT], Return=OK, 1500000
