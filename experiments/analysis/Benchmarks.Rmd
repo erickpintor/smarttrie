@@ -106,26 +106,23 @@ load_gc_marks = function(gc_log_path, start_ts, end_ts) {
 
 plot_througput_vs_checkpoints = function(title,
                                          ycsb_log,
-                                         server_log,
+                                         server_log = NA,
                                          gc_log = NA,
                                          version = 1) {
   ycsb = load_ycsb_througput(ycsb_log)
   start = head(ycsb$ts)
   end = last(ycsb$ts)
   
-  checkpoints = load_checkpoint_marks(server_log, start, end, version)
-  
   plot = ggplot() +
-    geom_line(data = ycsb, aes(ts, throughput)) +
-    geom_vline(data = checkpoints,
+    geom_line(data = ycsb, aes(ts, throughput))
+  
+  if (!is.na(server_log)) {
+    checkpoints = load_checkpoint_marks(server_log, start, end, version)
+    plot = plot +
+      geom_vline(data = checkpoints,
                aes(xintercept = ts, color = event),
-               linetype = "dashed") +
-    labs(title = title,
-         x = "Time",
-         y = "Througput (requests/second)") +
-    scale_color_discrete(name = "Markers:") +
-    scale_y_continuous(breaks = pretty_breaks(15)) +
-    theme(legend.position = "bottom")
+               linetype = "dashed")
+  }
   
   if (!is.na(gc_log)) {
     gc_pauses = load_gc_marks(gc_log, start, end)
@@ -135,7 +132,13 @@ plot_througput_vs_checkpoints = function(title,
                  linetype = "dotted")
   }
   
-  plot
+  plot +
+    labs(title = title,
+         x = "Time",
+         y = "Throughput (requests/second)") +
+    scale_color_discrete(name = "Markers:") +
+    scale_y_continuous(breaks = pretty_breaks(15)) +
+    theme(legend.position = "bottom")
 }
 ```
 
