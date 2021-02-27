@@ -1,0 +1,774 @@
+2021-02-15 13:45:37.449 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.448 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.451 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.448 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.456 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.459 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.460 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.462 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.462 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.468 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.470 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.472 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.476 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.478 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.480 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.480 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.482 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.482 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.484 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.486 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.488 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.490 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.491 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.493 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.495 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.497 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.499 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.501 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.503 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.503 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.505 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.507 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.508 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.509 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.516 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.517 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.519 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.519 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.521 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.521 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.522 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.524 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.528 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.530 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.532 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.536 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.537 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.539 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.540 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.541 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.543 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.544 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.545 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.547 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.547 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.551 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.552 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.552 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.554 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.555 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.557 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.559 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.560 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.593 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:45:37.741 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.743 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.744 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.745 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.745 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.746 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.747 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.747 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.747 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.748 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.748 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.748 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.749 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.749 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.749 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.749 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.749 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.750 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.750 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.751 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.751 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.751 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.752 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.752 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.753 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.753 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.753 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.754 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.754 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.754 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.755 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.755 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.755 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.755 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.756 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.756 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.756 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.756 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.756 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.756 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.757 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.757 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.757 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.757 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.758 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.758 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.759 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.755 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.759 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.759 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.760 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.760 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.760 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.761 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.761 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.762 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.762 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.762 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.768 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.769 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.769 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.769 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.770 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:45:37.772 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:52.959 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.962 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.963 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.963 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.965 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.969 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.970 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.975 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.977 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.978 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.980 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.982 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.983 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.992 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.994 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.996 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:52.998 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.000 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.002 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.004 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.005 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.006 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.008 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.009 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.011 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.012 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.014 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.016 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.018 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.020 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.022 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.024 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.026 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.028 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.030 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.031 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.033 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.036 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.037 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.040 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.042 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.043 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.045 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.047 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.049 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.051 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.080 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.083 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.084 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.085 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.085 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.086 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.087 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.088 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.088 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.088 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.089 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.092 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.092 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.092 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.093 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.096 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.096 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.118 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:48:53.196 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.197 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.200 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.201 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.202 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.203 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.208 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.210 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.213 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.215 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.219 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.219 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.221 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.221 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.223 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.225 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.228 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.228 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.230 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.239 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.239 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.240 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.241 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.242 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.242 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.244 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.244 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.246 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.246 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.247 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.248 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.248 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.250 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.250 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.251 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.251 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.253 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.253 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.254 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.255 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.255 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.256 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.257 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.257 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.258 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.259 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.259 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.261 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.261 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.262 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.263 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.263 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.263 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.264 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.265 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.265 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.266 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.266 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.266 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.267 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.268 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.269 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.269 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:48:53.275 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 13:51:45.869 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 13:51:45.900 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.352 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.352 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.356 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.364 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.365 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.367 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.369 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.369 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.370 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.371 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.372 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.372 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.373 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.374 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.376 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.376 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.377 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.378 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.379 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.381 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.381 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.381 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.382 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.384 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.385 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.385 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.388 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.388 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.392 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.392 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.425 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.430 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.432 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.434 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.449 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.450 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.450 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.454 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.457 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.458 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.458 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.460 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.462 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.462 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.463 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.463 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.463 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.464 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.468 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.468 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.468 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.469 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.470 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.470 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.471 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.472 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.476 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.476 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.477 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.477 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.478 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.478 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.479 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.517 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:07:27.567 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.567 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.570 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.572 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.577 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.577 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.583 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.583 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.586 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.586 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.587 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.597 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.605 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.605 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.606 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.606 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.598 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.598 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.598 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.599 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.599 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.609 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.600 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.600 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.600 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.610 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.601 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.601 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.600 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.601 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.602 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.602 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.602 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.603 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.612 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.613 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.613 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.604 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.614 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.615 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.616 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.618 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.619 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.620 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.621 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.621 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.622 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.623 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.612 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.624 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.625 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.625 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.626 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.627 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.629 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.629 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.630 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.631 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.631 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.632 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.633 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.634 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.635 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:07:27.636 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:39.745 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.742 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.744 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.752 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.753 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.756 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.757 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.759 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.761 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.762 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.764 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.766 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.769 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.774 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.776 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.777 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.779 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.780 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.782 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.783 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.785 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.792 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.794 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.796 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.798 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.800 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.800 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.802 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.804 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.806 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.808 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.810 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.812 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.814 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.814 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.816 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.818 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.819 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.821 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.824 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.828 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.829 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.830 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.831 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.833 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.835 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.836 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.876 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.876 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.881 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.882 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.884 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.885 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.888 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.888 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.890 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.892 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.892 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.893 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.896 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.897 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.898 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.900 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.920 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:10:39.994 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:39.995 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:39.997 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:39.997 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:39.999 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.000 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.000 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.002 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.003 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.005 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.011 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.011 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.012 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.016 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.019 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.021 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.033 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.033 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.034 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.034 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.019 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.040 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.035 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.036 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.036 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.037 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.041 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.042 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.042 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.043 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.038 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.038 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.044 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.038 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.038 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.044 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.045 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.046 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.046 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.047 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.047 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.048 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.048 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.048 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.049 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.049 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.050 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.050 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.051 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.039 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.053 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.053 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.053 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.054 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.055 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.056 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.057 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.058 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.059 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.060 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.060 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.061 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.062 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:10:40.063 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:13:19.440 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:13:19.466 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.645 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.651 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.656 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.664 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.666 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.667 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.669 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.670 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.671 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.672 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.674 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.675 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.675 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.677 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.678 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.678 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.680 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.681 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.681 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.683 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.683 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.685 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.687 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.688 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.689 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.690 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.692 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.696 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.697 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.700 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.704 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.704 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.705 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.706 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.708 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.708 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.710 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.710 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.712 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.713 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.714 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.715 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.717 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.717 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.719 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.719 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.722 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.723 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.724 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.725 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.726 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.728 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.730 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.732 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.736 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.737 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.739 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.740 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.741 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.742 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.744 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.746 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.782 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.783 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:30:22.903 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.904 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.905 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.906 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.906 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.906 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.907 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.907 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.908 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.908 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.909 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.909 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.909 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.910 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.910 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.910 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.911 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.911 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.911 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.911 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.912 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.912 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.912 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.912 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.913 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.903 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.903 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.913 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.905 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.914 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.908 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.910 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.911 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.903 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.914 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.905 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.915 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.916 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.917 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.917 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.918 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.920 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.920 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.921 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.922 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.922 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.922 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.922 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.923 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.925 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.926 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.926 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.927 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.929 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.930 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.930 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.931 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.933 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.933 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.933 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.934 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.935 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.909 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:30:22.938 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.414 [Thread-20] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.420 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.421 [Thread-24] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.422 [Thread-51] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.428 [Thread-62] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.436 [Thread-35] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.440 [Thread-13] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.441 [Thread-30] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.443 [Thread-48] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.445 [Thread-44] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.450 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.453 [Thread-65] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.455 [Thread-25] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.457 [Thread-54] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.460 [Thread-31] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.462 [Thread-56] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.464 [Thread-37] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.465 [Thread-50] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.468 [Thread-32] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.470 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.472 [Thread-18] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.474 [Thread-23] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.476 [Thread-10] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.477 [Thread-43] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.481 [Thread-47] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.482 [Thread-55] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.484 [Thread-14] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.488 [Thread-41] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.490 [Thread-16] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.492 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.494 [Thread-45] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.497 [Thread-12] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.497 [Thread-58] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.500 [Thread-17] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.502 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.528 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.536 [Thread-29] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.540 [Thread-57] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.542 [Thread-15] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.543 [Thread-11] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.544 [Thread-49] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.548 [Thread-19] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.552 [Thread-21] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.553 [Thread-42] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.554 [Thread-39] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.555 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.557 [Thread-63] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.558 [Thread-36] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.559 [Thread-33] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.560 [Thread-52] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.561 [Thread-26] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.564 [Thread-38] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.568 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.569 [Thread-46] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.570 [Thread-22] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.571 [Thread-60] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.572 [Thread-53] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.574 [Thread-59] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.576 [Thread-61] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.577 [Thread-27] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.579 [Thread-34] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.580 [Thread-64] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.610 [Thread-28] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.616 [Thread-40] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:33:36.719 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.719 [nioEventLoopGroup-33-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.720 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.720 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.720 [nioEventLoopGroup-50-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.721 [nioEventLoopGroup-39-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.721 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.722 [nioEventLoopGroup-48-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.722 [nioEventLoopGroup-61-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.722 [nioEventLoopGroup-46-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.722 [nioEventLoopGroup-25-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.723 [nioEventLoopGroup-14-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.723 [nioEventLoopGroup-17-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.723 [nioEventLoopGroup-18-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.723 [nioEventLoopGroup-64-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.724 [nioEventLoopGroup-13-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.724 [nioEventLoopGroup-57-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.724 [nioEventLoopGroup-51-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.725 [nioEventLoopGroup-40-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.725 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.726 [nioEventLoopGroup-52-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.726 [nioEventLoopGroup-49-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.727 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.728 [nioEventLoopGroup-15-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.728 [nioEventLoopGroup-32-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.728 [nioEventLoopGroup-29-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.728 [nioEventLoopGroup-47-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.729 [nioEventLoopGroup-44-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.729 [nioEventLoopGroup-37-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.730 [nioEventLoopGroup-22-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.730 [nioEventLoopGroup-65-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.730 [nioEventLoopGroup-19-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.731 [nioEventLoopGroup-45-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.731 [nioEventLoopGroup-26-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.732 [nioEventLoopGroup-59-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.732 [nioEventLoopGroup-56-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.733 [nioEventLoopGroup-38-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.733 [nioEventLoopGroup-53-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.734 [nioEventLoopGroup-31-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.735 [nioEventLoopGroup-23-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.736 [nioEventLoopGroup-41-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.736 [nioEventLoopGroup-63-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.736 [nioEventLoopGroup-20-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.737 [nioEventLoopGroup-27-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.738 [nioEventLoopGroup-55-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.738 [nioEventLoopGroup-36-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.739 [nioEventLoopGroup-10-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.726 [nioEventLoopGroup-60-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.740 [nioEventLoopGroup-24-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.735 [nioEventLoopGroup-35-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.741 [nioEventLoopGroup-43-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.741 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.742 [nioEventLoopGroup-21-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.742 [nioEventLoopGroup-28-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.743 [nioEventLoopGroup-12-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.743 [nioEventLoopGroup-11-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.723 [nioEventLoopGroup-54-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.728 [nioEventLoopGroup-16-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.743 [nioEventLoopGroup-58-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.745 [nioEventLoopGroup-42-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.746 [nioEventLoopGroup-30-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.746 [nioEventLoopGroup-62-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.734 [nioEventLoopGroup-34-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:33:36.765 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-02-15 14:36:26.737 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-02-15 14:36:26.766 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active

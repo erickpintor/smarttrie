@@ -13,6 +13,7 @@
         - run
         - server
         - load
+        - warmup
         - benchmark
         - cleanup
         - fetch
@@ -35,6 +36,7 @@
         - run
         - server
         - load
+        - warmup
         - benchmark
         - cleanup
         - fetch
@@ -116,7 +118,7 @@
         chdir: "{{ experiment_path }}"
           #cmd: "{{ run_cmd }} -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:StartFlightRecording=filename=recording.jfr,maxsize=1024m,maxage=1d,settings=profile,dumponexit=true -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -XX:+UseStringDeduplication -XX:InitialHeapSize=2G -XX:MaxHeapSize=8G -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
         cmd: "{{ run_cmd }} -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UseCompressedOops -XX:+UseStringDeduplication -XX:InitialHeapSize=2G -XX:MaxHeapSize=16G -Xlog:gc=debug:file=logs/gc.log:time smarttrie.app.server.Server 0 {{ state }}"
-      async: 10800 # 3h
+      async: 18000 # 5h
       poll: 0
       when: not ansible_check_mode
       tags:
@@ -129,6 +131,8 @@
   any_errors_fatal: true
   vars:
     - threads: 64
+    - operations: 20000000
+    - duration: 3600
   tasks:
     - name: ensure logs folder
       file:
@@ -137,32 +141,33 @@
       tags:
         - run
         - load
+        - warmup
         - benchmark
     - name: load data
       shell:
         chdir: "{{ experiment_path }}"
         cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -load -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/load.log"
-      async: 10800 # 3h
+      async: 18000 # 5h
       poll: 10
       when: not ansible_check_mode
       tags:
         - run
         - load
-    - name: warm-up run
+    - name: warmup run
       shell:
         chdir: "{{ experiment_path }}"
         cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount=1000000 2>&1 | tee logs/warmup.log"
-      async: 10800 # 3h
+      async: 18000 # 5h
       poll: 10
       when: not ansible_check_mode
       tags:
         - run
-        - benchmark
+        - warmup
     - name: benchmark run
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/benchmark.log"
-      async: 10800 # 3h
+        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount={{ operations }} -p maxexecutiontime={{ duration }} 2>&1 | tee logs/benchmark.log"
+      async: 18000 # 5h
       poll: 10
       when: not ansible_check_mode
       tags:
@@ -182,7 +187,6 @@
         state: absent
       tags:
         - run
-        - load
         - benchmark
         - fetch
     - name: ensure results folder
@@ -193,7 +197,6 @@
         state: directory
       tags:
         - run
-        - load
         - benchmark
         - fetch
     - name: fetch client results
@@ -207,7 +210,6 @@
         - benchmark.log
       tags:
         - run
-        - load
         - benchmark
         - fetch
     - name: fetch server logs
@@ -220,7 +222,6 @@
         - gc.log
       tags:
         - run
-        - load
         - benchmark
         - fetch
 
