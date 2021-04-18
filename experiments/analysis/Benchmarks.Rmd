@@ -1,15 +1,15 @@
 ---
-title: "SmartTrie - Benchmarks"
+title: "SMaRtTrie - Benchmarks"
 header-includes:
   - \usepackage[brazil]{babel}
 output:
+  html_notebook:
+    code_folding: none
+    toc: yes
   pdf_document: 
     fig_crop: no
     fig_height: 4
     fig_width: 7
-    toc: yes
-  html_notebook:
-    code_folding: none
     toc: yes
 ---
 
@@ -20,6 +20,8 @@ library(ggplot2)
 library(scales)
 library(knitr)
 library(ggpubr)
+
+theme_set(theme_minimal())
 
 load_ycsb_throughput = function(log_file_path) {
   ycsb_lines = regex(
@@ -58,7 +60,10 @@ load_ycsb_throughput = function(log_file_path) {
               as.numeric)
 }
 
-load_checkpoint_marks = function(server_log_path, start_ts, end_ts, version) {
+load_checkpoint_marks = function(server_log_path,
+                                 start_ts,
+                                 end_ts,
+                                 version = 1) {
   if (version == 0) {
     checkpoint_start = "Starting replica checkpoint serialization"
     checkpoint_stop = "Next command occurred after \\d+s since last checkpoint"
@@ -191,11 +196,14 @@ plot_gc_table = function(...) {
     df = bind_rows(df, ycsb)
   }
   
-  ggtexttable(df, rows = NULL)
+  ggtexttable(df, rows = NULL, theme = ttheme("light")) %>%
+    tab_add_footnote(text = "Unit: requests per second.",
+                     size = 9,
+                     face = "italic")
 }
 
 se    = function (x) sd(x) / sqrt(length(x))
-pdiff = function (a, b)  (1 - a / b) * 100
+pdiff = function (a, b)  ((b - a) / a) * 100
 prow   = function (a, b) c(a, b, pdiff(a, b))
 ```
 
@@ -205,19 +213,19 @@ prow   = function (a, b) c(a, b, pdiff(a, b))
 
 Criação da baseline com aplicação tradicional. Configurações relevantes:
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 91-92 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 500000 | |
-| Requests | 500000 | |
-| Threads no cliente | 1 | |
-| Bytes/Registro | 4kb | |
-| Período de checkpoints | 100000 | |
-| Checkpoints assíncrono | Não | |
-| Log assíncrono | Sim |
-| Estrutura de dados | java.util.TreeMap | |
-| Commit | 26544ab | |
+| Configuração           | Valor             | Observação |
+|------------------------|-------------------|------------|
+| Servidores vs Clientes | 1/1               | Node 91-92 |
+| Escrita vs Leitura     | 100/0             |            |
+| Chaves                 | 500000            |            |
+| Requests               | 500000            |            |
+| Threads no cliente     | 1                 |            |
+| Bytes/Registro         | 4kb               |            |
+| Período de checkpoints | 100000            |            |
+| Checkpoints assíncrono | Não               |            |
+| Log assíncrono         | Sim               |            |
+| Estrutura de dados     | java.util.TreeMap |            |
+| Commit                 | 26544ab           |            |
 
 Após a carga de dados, o estado em memória atingiu 1967MB (1.92G). Checkpoints levaram entre 30-40 segundos. A vazão da baseline parece irregular nos períodos entre checkpoints, o que motivou a execução com outros tipos de garbage collector. Por padrão a JVM 11 utiliza o algoritmo G1, porém, ZGC aparenta ser o algoritmo mais estável para esta aplicação. Dois bugs foram encontrados: 1) ao tentar executar a aplicação com 1M de chaves, a carga de dados é completada mas, o benchmark tem timeouts em praticamente todas as requisições; 2) ao reiniciar o servidor mantendo os dados persistidos, praticamente todas as requisições resultam em timeout (similar ao problema 1).
 
@@ -252,19 +260,31 @@ plot_throughput_vs_checkpoints(
 
 Nesta iteração, assumimos controle dos mecanismos de checkpoint e log. Para avaliar o impacto de tais componentes, reexecutamos a baseline. A seguir estão as configuração relevantes:
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 91-92 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 500000 | |
-| Requests | 500000 | |
-| Threads no cliente | 1 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim/Não | TrieMap é assíncrono, demais são síncronos |
-| Log assíncrono | Sim |
-| Estrutura de dados | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap | |
-| Commit | 3d47d90 | |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Configuração           | Valor                                                                                | Observação                                 |
++========================+======================================================================================+============================================+
+| Servidores vs Clientes | 1/1                                                                                  | Node 91-92                                 |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Escrita vs Leitura     | 100/0                                                                                |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Chaves                 | 500000                                                                               |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Requests               | 500000                                                                               |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Threads no cliente     | 1                                                                                    |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Bytes/Registro         | 4kb                                                                                  |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Período de Checkpoints | 100000                                                                               |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Checkpoints assíncrono | Sim/Não                                                                              | TrieMap é assíncrono, demais são síncronos |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Log assíncrono         | Sim                                                                                  |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Estrutura de dados     | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Commit                 | 3d47d90                                                                              |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
 
 Iniciamos com a reexecução da baseline, utilizando uma estrutura de dados do tipo Tree-Map, e o algoritmo de GC paralelo. É visível que o tempo de execução do checkpoint diminuiu se comparado com a versão anterior do dia 09, que utiliza os algoritmos do BFT-Smart. No entanto, o comportamento é o mesmo: durante a execução do checkpoint nenhum comando é executado.
 
@@ -286,7 +306,7 @@ plot_throughput_vs_checkpoints(
 )
 ```
 
-A seguir, executamos um experimento similar, apenas variando o tipo da estrutura de um TreeMap (não thread-safe) para um ConcurrentHashMap (thread-safe). A hipótese é que a vazão de uma estrutura não thread-safe pode ser maior que a de uma estrutura thread-safe e, portanto, não seria uma comparação justa com a estrutura thread-safe CTrie. Ambas estruturas variam na mesma faixa de ~1800 a ~2200 RPS, sendo que a TreeMap se mantém mais próximo ao limite superior. Apesar disto, a instabilidade na vazão do serviço em ambos os casos torna difícil chegar a qualquer conclusão.
+A seguir, executamos um experimento similar, apenas variando o tipo da estrutura de um TreeMap (não thread-safe) para um ConcurrentHashMap (thread-safe). A hipótese é que a vazão de uma estrutura não thread-safe pode ser maior que a de uma estrutura thread-safe e, portanto, não seria uma comparação justa com a estrutura thread-safe CTrie. Ambas estruturas variam na mesma faixa de \~1800 a \~2200 RPS, sendo que a TreeMap se mantém mais próximo ao limite superior. Apesar disto, a instabilidade na vazão do serviço em ambos os casos torna difícil chegar a qualquer conclusão.
 
 ```{r experiment-2020-10-17-hash-map-parallel-gc, echo=FALSE, warning=FALSE}
 plot_throughput_vs_checkpoints(
@@ -308,28 +328,40 @@ plot_throughput_vs_checkpoints(
 
 O experimento com a CTrie se mostra promissor. No entanto, a instabilidade na vazão do serviço dificulta a sua análise. Próximos passos:
 
-* Depurar o código afim de estabilizar a vazão do serviço;
-* Reexecutar os experimentos.
+-   Depurar o código afim de estabilizar a vazão do serviço;
+-   Reexecutar os experimentos.
 
 <!-- Coleta de dados para depuração: ../results/20201017T121311 -->
 
 ## 2020-10-23 - Otimizações de memória e carga de dados
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 41-42 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 500000 | |
-| Requests | 5000000 | |
-| Threads no cliente | 32 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim/Não | TrieMap é assíncrono, demais são síncronos |
-| Log assíncrono | Sim |
-| Estrutura de dados | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap | |
-| Commit | c4cafdc | |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Configuração           | Valor                                                                                | Observação                                 |
++========================+======================================================================================+============================================+
+| Servidores vs Clientes | 1/1                                                                                  | Node 41-42                                 |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Escrita vs Leitura     | 100/0                                                                                |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Chaves                 | 500000                                                                               |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Requests               | 5000000                                                                              |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Threads no cliente     | 32                                                                                   |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Bytes/Registro         | 4kb                                                                                  |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Período de Checkpoints | 100000                                                                               |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Checkpoints assíncrono | Sim/Não                                                                              | TrieMap é assíncrono, demais são síncronos |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Log assíncrono         | Sim                                                                                  |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Estrutura de dados     | java.util.TreeMap, java.util.concurrent.HashMap, scala.collection.concurrent.TrieMap |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
+| Commit                 | c4cafdc                                                                              |                                            |
++------------------------+--------------------------------------------------------------------------------------+--------------------------------------------+
 
-Neste experimento buscamos avaliar as otimizações feitas para reduzir as pausas de GC durante a execução dos sistema. Além disso, verificamos que os servidores 91 e 92 possuem um número grande de processos parallelos a execução do experimento (aproximadamente 700). Utilizamos, então, os servidores 41 e 42 que possuem memos processos em execução (~130). Aumentamos também o número de theads do benchmark afim de evitar períodos de lock no servidor devido a falta de trabalho a ser executado.
+Neste experimento buscamos avaliar as otimizações feitas para reduzir as pausas de GC durante a execução dos sistema. Além disso, verificamos que os servidores 91 e 92 possuem um número grande de processos parallelos a execução do experimento (aproximadamente 700). Utilizamos, então, os servidores 41 e 42 que possuem memos processos em execução (\~130). Aumentamos também o número de theads do benchmark afim de evitar períodos de lock no servidor devido a falta de trabalho a ser executado.
 
 ```{r experiment-2020-10-23-tree-map, echo=FALSE, message=FALSE, warning=FALSE}
 plot_throughput_vs_checkpoints(
@@ -359,19 +391,31 @@ Apesar do aumento na vazão, a tempo de serviço continua instável. A variaçã
 
 ## 2020-11-05 - Experimentos sem checkpoint e sem log
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 41-42 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 500000 | |
-| Requests | 500000 | |
-| Threads no cliente | 1 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim | |
-| Log assíncrono | Sim |
-| Estrutura de dados | scala.collection.concurrent.TrieMap | |
-| Commit | 686eb73 | Alterações foram feitas no código de maneira experimental (não há commits para cada experimento). |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Configuração           | Valor                               | Observação                                                                                        |
++========================+=====================================+===================================================================================================+
+| Servidores vs Clientes | 1/1                                 | Node 41-42                                                                                        |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Escrita vs Leitura     | 100/0                               |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Chaves                 | 500000                              |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Requests               | 500000                              |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Threads no cliente     | 1                                   |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Bytes/Registro         | 4kb                                 |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Período de Checkpoints | 100000                              |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Checkpoints assíncrono | Sim                                 |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Log assíncrono         | Sim                                 |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Estrutura de dados     | scala.collection.concurrent.TrieMap |                                                                                                   |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
+| Commit                 | 686eb73                             | Alterações foram feitas no código de maneira experimental (não há commits para cada experimento). |
++------------------------+-------------------------------------+---------------------------------------------------------------------------------------------------+
 
 Para avaliar o impacto dos mecanismos de checkpoint e log na vazão e aparente instabilidade do serviço. Os seguintes experimentos foram executados removendo as rotinas de log e checkpoint.
 
@@ -403,19 +447,19 @@ plot_throughput_vs_checkpoints(
 
 ## 2020-11-12 - Análize do impacto dos coletores de lixo
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 41-42 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 500000 | |
-| Requests | 5000000 | |
-| Threads no cliente | 64 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim | |
-| Log assíncrono | - | Log desabilitado |
-| Estrutura de dados | scala.collection.concurrent.TrieMap | |
-| Commit | 20110f9 | |
+| Configuração           | Valor                               | Observação       |
+|------------------------|-------------------------------------|------------------|
+| Servidores vs Clientes | 1/1                                 | Node 41-42       |
+| Escrita vs Leitura     | 100/0                               |                  |
+| Chaves                 | 500000                              |                  |
+| Requests               | 5000000                             |                  |
+| Threads no cliente     | 64                                  |                  |
+| Bytes/Registro         | 4kb                                 |                  |
+| Período de Checkpoints | 100000                              |                  |
+| Checkpoints assíncrono | Sim                                 |                  |
+| Log assíncrono         | \-                                  | Log desabilitado |
+| Estrutura de dados     | scala.collection.concurrent.TrieMap |                  |
+| Commit                 | 20110f9                             |                  |
 
 Neste experimento, removemos a rotina de log a fim de minimizar o número de variáveis que possam alterar a vazão. Comparamos em detalhe a execução do sistema com diferentes algoritmos de coleção. O primeiro experimento foi executado com o algoritmo ParallelGC, onde é possível observar quedas expressivas na vasão do serviço. Ao cruzar a vazão com as pausas de GC, é possível perceber que grandes quedas estão relacionadas a pausas longas do tipo "GC Pause Full".
 
@@ -477,22 +521,33 @@ plot_throughput_vs_checkpoints(
 include_graphics("./img/Screen Shot 2020-11-13 at 10.02.40 AM.png")
 ```
 
-
 ## 2020-11-19 - Experimentos de longa duração
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 41-42 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 1500000 | |
-| Requests | 20000000 | |
-| Threads no cliente | 64 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim | |
-| Log assíncrono | - | Log desabilitado |
-| Estrutura de dados | java.util.TreeMap e scala.collection.concurrent.TrieMap | |
-| Commit | ce0d34d | |
++------------------------+---------------------------------------------------------+------------------+
+| Configuração           | Valor                                                   | Observação       |
++========================+=========================================================+==================+
+| Servidores vs Clientes | 1/1                                                     | Node 41-42       |
++------------------------+---------------------------------------------------------+------------------+
+| Escrita vs Leitura     | 100/0                                                   |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Chaves                 | 1500000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Requests               | 20000000                                                |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Threads no cliente     | 64                                                      |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Bytes/Registro         | 4kb                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Período de Checkpoints | 100000                                                  |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Checkpoints assíncrono | Sim                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Log assíncrono         | \-                                                      | Log desabilitado |
++------------------------+---------------------------------------------------------+------------------+
+| Estrutura de dados     | java.util.TreeMap e scala.collection.concurrent.TrieMap |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Commit                 | ce0d34d                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
 
 Re-executamos os experimentos anteriores por maior duração a fim de coletar dados suficientes para escolher recortes que demostrem a execução dos sitema com vários checkpoints sendo criados. Para tal fim, aumentamos o tamanho do dataset para 5G e executamos 20M de requests variando a estrutura de dados. Nestes experimentos utilizamos o coletor de lixo ZGC com uma heap de 16G.
 
@@ -516,19 +571,31 @@ plot_throughput_vs_checkpoints(
 
 ## 2020-12-07 - Coleta de dados de GC para o artigo final
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 41-42 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 1500000 | |
-| Requests | 20000000 | |
-| Threads no cliente | 64 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | 100000 | |
-| Checkpoints assíncrono | Sim | |
-| Log assíncrono | - | Log desabilitado |
-| Estrutura de dados | java.util.TreeMap e scala.collection.concurrent.TrieMap | |
-| Commit | ce0d34d | |
++------------------------+---------------------------------------------------------+------------------+
+| Configuração           | Valor                                                   | Observação       |
++========================+=========================================================+==================+
+| Servidores vs Clientes | 1/1                                                     | Node 41-42       |
++------------------------+---------------------------------------------------------+------------------+
+| Escrita vs Leitura     | 100/0                                                   |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Chaves                 | 1500000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Requests               | 20000000                                                |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Threads no cliente     | 64                                                      |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Bytes/Registro         | 4kb                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Período de Checkpoints | 100000                                                  |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Checkpoints assíncrono | Sim                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Log assíncrono         | \-                                                      | Log desabilitado |
++------------------------+---------------------------------------------------------+------------------+
+| Estrutura de dados     | java.util.TreeMap e scala.collection.concurrent.TrieMap |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Commit                 | ce0d34d                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
 
 Repetimos o experimento anterior apenas coletando dados de GC da baseline utilizando G1 e Parallel GC para fins de comparação no artigo final.
 
@@ -554,7 +621,7 @@ plot_throughput_vs_checkpoints(
 
 ## 2021-01-31 - Análise estatística
 
-_Não houveram novos experimentos._
+*Não houveram novos experimentos.*
 
 ### Vazão em relação ao algoritmo de GC utilizado.
 
@@ -603,20 +670,19 @@ fig = ggarrange(
 )
 ```
 
-```{r gc-analysis, echo=FALSE, message=FALSE, warning=FALSE}
+```{r 2021-01-31-gc-analysis, echo=FALSE, message=FALSE, warning=FALSE}
 fig # work arround blank plot issue
 ```
 
-
 ### Vazão média em relação ao modelo de concorrência
 
-```{r blocking-vs-non-blocking, echo=FALSE, message=FALSE, warning=FALSE}
+```{r experiment-2021-01-31-blocking-vs-non-blocking, echo=FALSE, message=FALSE, warning=FALSE}
 plot_blocking_vs_non_blocking = function () {
   tree_map = load_ycsb_throughput("../results/20201119T104524/client/tmp/SmartTrie/logs/benchmark.log")
   trie_map = load_ycsb_throughput("../results/20201119T113910/client/tmp/SmartTrie/logs/benchmark.log")
   
   tibble(
-    Model = c("Blocking", "Non-Blocking", "-"),
+    Model = c("Blocking", "Concurrent", "-"),
     Mean  = prow(mean(tree_map$throughput), mean(trie_map$throughput)),
     SD    = prow(sd(tree_map$throughput), sd(trie_map$throughput)),
     SE    = prow(se(tree_map$throughput), se(trie_map$throughput))
@@ -628,7 +694,7 @@ kable(plot_blocking_vs_non_blocking())
 
 ### Vazão média fora e dentro de checkpoints
 
-```{r throughput-break-down, echo=FALSE, message=FALSE, warning=FALSE}
+```{r experiment-2021-01-31-throughput-break-down, echo=FALSE, message=FALSE, warning=FALSE}
 plot_non_blocking_breakdown = function () {
   bench = load_ycsb_throughput("../results/20201119T113910/client/tmp/SmartTrie/logs/benchmark.log")
   
@@ -668,27 +734,41 @@ kable(plot_non_blocking_breakdown())
 
 ## 2021-12-15 - Ponto de saturação do sistema
 
-| Configuração | Valor | Observação |
-|---|---|---|
-| Servidores vs Clientes | 1/1 | Node 41-42 |
-| Escrita vs Leitura | 100/0 | |
-| Chaves | 1500000 | |
-| Requests | 5000000 | |
-| Threads no cliente | 1-512 | |
-| Bytes/Registro | 4kb | |
-| Período de Checkpoints | NA | |
-| Checkpoints assíncrono | NA | |
-| Log assíncrono | - | Log desabilitado |
-| Estrutura de dados | java.util.TreeMap e scala.collection.concurrent.TrieMap | |
-| Commit | ce0d34d | 275a205 |
++------------------------+---------------------------------------------------------+------------------+
+| Configuração           | Valor                                                   | Observação       |
++========================+=========================================================+==================+
+| Servidores vs Clientes | 1/1                                                     | Node 41-42       |
++------------------------+---------------------------------------------------------+------------------+
+| Escrita vs Leitura     | 100/0                                                   |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Chaves                 | 1500000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Requests               | 5000000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Threads no cliente     | 1-512                                                   |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Bytes/Registro         | 4kb                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Período de Checkpoints | NA                                                      |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Checkpoints assíncrono | NA                                                      |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Log assíncrono         | \-                                                      | Log desabilitado |
++------------------------+---------------------------------------------------------+------------------+
+| Estrutura de dados     | java.util.TreeMap e scala.collection.concurrent.TrieMap |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Commit                 | ce0d34d                                                 | 275a205          |
++------------------------+---------------------------------------------------------+------------------+
 
 Neste experimento buscamos encontrar o ponto de saturação do sistema variando o número de threads em um sistema com checkpoints desligados.
-
 
 ```{r system-saturation-point-throughput, echo=FALSE, message=FALSE, warning=FALSE}
 benchmarks = tibble()
 
-for (model in c("tree-map", "trie-map")) {
+for (model in list(
+  list(state = "tree-map", label = "Blocking"),
+  list(state = "trie-map", label = "Concurrent")
+)) {
   for (th in c("001",
                "002",
                "004",
@@ -701,14 +781,16 @@ for (model in c("tree-map", "trie-map")) {
                "512")) {
     basepath = "../results/20210215/"
     benchpath = "/client/tmp/SmartTrie/logs/benchmark.log"
-    path = paste0(basepath, model, "/", th, benchpath)
+    path = paste0(basepath, model$state, "/", th, benchpath)
     
     ycsb =
       load_ycsb_throughput(path) %>%
       summarise_at(vars(throughput, p99), mean) %>%
-      mutate(threads = as.factor(as.numeric(th)),
-             model = as.factor(model),
-             p99 = p99 / 1000) # us to ms
+      mutate(
+        threads = as.factor(as.numeric(th)),
+        model = as.factor(model$label),
+        p99 = p99 / 1000
+      ) # us to ms
     
     
     benchmarks = bind_rows(benchmarks, ycsb)
@@ -716,19 +798,299 @@ for (model in c("tree-map", "trie-map")) {
 }
 
 ggplot(benchmarks, aes(threads, throughput, group = model, color = model)) +
-  geom_point() +  geom_line() + scale_y_continuous(breaks = pretty_breaks(15))
+  geom_point() + geom_line() +
+  labs(title = "Throughput by number of threads", x = "Threads", y = "Throughput (rps)") +
+  scale_color_discrete(name = "Model") +
+  scale_y_continuous(breaks = pretty_breaks(15))
 ```
 
 ```{r system-saturation-point-latency, echo=FALSE, message=FALSE, warning=FALSE}
-ggplot(benchmarks, aes(threads, p99, group=model, color = model)) +
-  geom_point() +  geom_line() + scale_y_continuous(breaks = pretty_breaks(15))
+ggplot(benchmarks, aes(threads, p99, group = model, color = model)) +
+  geom_point() +  geom_line() +
+  labs(title = "Latency by number of threads", x = "Threads", y = "Throughput (rps)") +
+  scale_color_discrete(name = "Model") +
+  scale_y_continuous(breaks = pretty_breaks(15))
 ```
 
-```{r system-saturation-point-latency, echo=FALSE, message=FALSE, warning=FALSE}
-benchmarks
-
-ggplot(benchmarks, aes(throughput, p99, color=model, group=model)) +
-  geom_point() + geom_line() + 
+```{r system-saturation-point-latency-by-throughput, echo=FALSE, message=FALSE, warning=FALSE}
+ggplot(benchmarks, aes(throughput, p99, color = model)) +
+  geom_path() + geom_point(aes(shape = threads), size = 3) +
+  scale_shape_manual(values = 1:10) +
   scale_y_continuous(breaks = pretty_breaks(15)) +
-  scale_x_continuous(breaks = pretty_breaks(15))
+  scale_x_continuous(breaks = pretty_breaks(10)) +
+  labs(
+    title = "Throughput vs Latency",
+    x = "Throughput (rps)",
+    y = "Latency (ms)",
+    color = "Model",
+    shape = "Clients"
+  )
+```
+
+## 2020-02-27 - Experimentos de longa duração em regime
+
++------------------------+---------------------------------------------------------+------------------+
+| Configuração           | Valor                                                   | Observação       |
++========================+=========================================================+==================+
+| Servidores vs Clientes | 1/1                                                     | Node 41-42       |
++------------------------+---------------------------------------------------------+------------------+
+| Escrita vs Leitura     | 100/0                                                   |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Chaves                 | 1500000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Requests               | 1h                                                      |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Threads no cliente     | 8                                                       |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Bytes/Registro         | 4kb                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Período de Checkpoints | 2000000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Checkpoints assíncrono | Sim                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Log assíncrono         | \-                                                      | Log desabilitado |
++------------------------+---------------------------------------------------------+------------------+
+| Estrutura de dados     | java.util.TreeMap e scala.collection.concurrent.TrieMap |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Commit                 | ce0d34d                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+
+Re-executamos os experimentos de longa duração em regime (8 threads).
+
+```{r experiment-2020-02-27-tree-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_throughput_vs_checkpoints(
+  "TreeMap",
+  "../results/20210227/tree-map/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20210227/tree-map/server/tmp/SmartTrie/logs/app.log",
+  # "../results/20210227/tree-map/server/tmp/SmartTrie/logs/gc.log"
+) + 
+  scale_x_datetime(breaks = pretty_breaks(10)) +
+  coord_cartesian(xlim=c(as.POSIXct("2021-02-27 17:50:30"),
+                         as.POSIXct("2021-02-27 18:44:00")))
+```
+
+```{r experiment-2020-02-27-trie-map, echo=FALSE, message=FALSE, warning=FALSE}
+plot_throughput_vs_checkpoints(
+  "TrieMap",
+  "../results/20210227/trie-map/client/tmp/SmartTrie/logs/benchmark.log",
+  "../results/20210227/trie-map/server/tmp/SmartTrie/logs/app.log",
+  # "../results/20210227/trie-map/server/tmp/SmartTrie/logs/gc.log"
+) + 
+  scale_x_datetime(breaks = pretty_breaks(10)) +
+  coord_cartesian(xlim=c(as.POSIXct("2021-02-27 19:10:00"),
+                         as.POSIXct("2021-02-27 19:54:00")))
+```
+
+### Vazão média em relação ao modelo de concorrência
+
+```{r experiment-2021-02-27-blocking-vs-non-blocking, echo=FALSE, message=FALSE, warning=FALSE}
+plot_blocking_vs_non_blocking = function () {
+  tree_map = load_ycsb_throughput("../results/20210227/tree-map/client/tmp/SmartTrie/logs/benchmark.log")
+  trie_map = load_ycsb_throughput("../results/20210227/trie-map/client/tmp/SmartTrie/logs/benchmark.log")
+  
+  tibble(
+    Model = c("Blocking", "Concurrent", "-"),
+    Mean  = prow(mean(tree_map$throughput), mean(trie_map$throughput)),
+    SD    = prow(sd(tree_map$throughput), sd(trie_map$throughput)),
+    SE    = prow(se(tree_map$throughput), se(trie_map$throughput))
+  ) %>% mutate(across(where(is.double), round, 2))
+}
+
+kable(plot_blocking_vs_non_blocking())
+```
+
+### Vazão média fora e dentro de checkpoints
+
+```{r experiment-2021-02-27-throughput-break-down, echo=FALSE, message=FALSE, warning=FALSE}
+plot_non_blocking_breakdown = function () {
+  bench = load_ycsb_throughput("../results/20210227/trie-map/client/tmp/SmartTrie/logs/benchmark.log")
+  
+  cout = 
+    bench %>% 
+			filter(ts < as.POSIXct("2021-02-27 19:01:07") | ts > as.POSIXct("2021-02-27 19:01:55")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:05:59") | ts > as.POSIXct("2021-02-27 19:06:44")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:10:50") | ts > as.POSIXct("2021-02-27 19:11:36")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:15:43") | ts > as.POSIXct("2021-02-27 19:16:29")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:20:34") | ts > as.POSIXct("2021-02-27 19:21:20")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:25:21") | ts > as.POSIXct("2021-02-27 19:26:07")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:30:11") | ts > as.POSIXct("2021-02-27 19:30:56")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:35:01") | ts > as.POSIXct("2021-02-27 19:35:47")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:39:52") | ts > as.POSIXct("2021-02-27 19:40:38")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:44:42") | ts > as.POSIXct("2021-02-27 19:45:28")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:49:31") | ts > as.POSIXct("2021-02-27 19:50:17")) %>%
+			filter(ts < as.POSIXct("2021-02-27 19:54:22") | ts > as.POSIXct("2021-02-27 19:55:08"))
+  
+  cin =
+    bench %>% 
+      filter(
+				(ts >= as.POSIXct("2021-02-27 19:01:07") & ts <= as.POSIXct("2021-02-27 19:01:55")) |
+				(ts >= as.POSIXct("2021-02-27 19:05:59") & ts <= as.POSIXct("2021-02-27 19:06:44")) |
+				(ts >= as.POSIXct("2021-02-27 19:10:50") & ts <= as.POSIXct("2021-02-27 19:11:36")) |
+				(ts >= as.POSIXct("2021-02-27 19:15:43") & ts <= as.POSIXct("2021-02-27 19:16:29")) |
+				(ts >= as.POSIXct("2021-02-27 19:20:34") & ts <= as.POSIXct("2021-02-27 19:21:20")) |
+				(ts >= as.POSIXct("2021-02-27 19:25:21") & ts <= as.POSIXct("2021-02-27 19:26:07")) |
+				(ts >= as.POSIXct("2021-02-27 19:30:11") & ts <= as.POSIXct("2021-02-27 19:30:56")) |
+				(ts >= as.POSIXct("2021-02-27 19:35:01") & ts <= as.POSIXct("2021-02-27 19:35:47")) |
+				(ts >= as.POSIXct("2021-02-27 19:39:52") & ts <= as.POSIXct("2021-02-27 19:40:38")) |
+				(ts >= as.POSIXct("2021-02-27 19:44:42") & ts <= as.POSIXct("2021-02-27 19:45:28")) |
+				(ts >= as.POSIXct("2021-02-27 19:49:31") & ts <= as.POSIXct("2021-02-27 19:50:17")) |
+				(ts >= as.POSIXct("2021-02-27 19:54:22") & ts <= as.POSIXct("2021-02-27 19:55:08")))
+
+  
+  tibble(
+    Checkpoint = c("Out", "In", "-"),
+    Mean       = prow(mean(cout$throughput), mean(cin$throughput)),
+    SD         = prow(sd(cout$throughput), sd(cin$throughput)),
+    SE         = prow(se(cout$throughput), se(cin$throughput))
+  ) %>% mutate(across(where(is.double), round, 2))
+}
+
+kable(plot_non_blocking_breakdown())
+```
+
+## 2020-02-28 - Matrix de experimentos Threads x Tamanho do estado
+
++------------------------+---------------------------------------------------------+------------------+
+| Configuração           | Valor                                                   | Observação       |
++========================+=========================================================+==================+
+| Servidores vs Clientes | 1/1                                                     | Node 41-42       |
++------------------------+---------------------------------------------------------+------------------+
+| Escrita vs Leitura     | 100/0                                                   |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Chaves                 | 25600 (100MB), 262144 (1G), 1310720 (5G)                |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Requests               | 15m                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Threads no cliente     | 1, 2, 4, 8                                              |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Bytes/Registro         | 4kb                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Período de Checkpoints | 2000000                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Checkpoints assíncrono | Sim                                                     |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Log assíncrono         | \-                                                      | Log desabilitado |
++------------------------+---------------------------------------------------------+------------------+
+| Estrutura de dados     | java.util.TreeMap e scala.collection.concurrent.TrieMap |                  |
++------------------------+---------------------------------------------------------+------------------+
+| Commit                 | ce0d34d                                                 |                  |
++------------------------+---------------------------------------------------------+------------------+
+
+```{r experiment-2021-02-28-experiment-matrix, echo=FALSE, message=FALSE, warning=FALSE}
+benchmarks = tibble()
+checkpoints = tibble()
+root = "../results/20210228/"
+
+for (dataset in list(
+  list(records = "25600",   label = "100M"),
+  list(records = "262144",  label = "1G"),
+  list(records = "1310720", label = "5G")
+)) {
+  for (model in list(
+    list(state = "tree-map", label = "Blocking"),
+    list(state = "trie-map", label = "Concurrent")
+  )) {
+    for (threads in list("1", "2", "4", "8")) {
+      basepath = paste0(root, dataset$records, "/", model$state, "/", threads)
+      benchpath = paste0(basepath, "/client/tmp/SmartTrie/logs/benchmark.log")
+      checkpath = paste0(basepath, "/server/tmp/SmartTrie/logs/app.log")
+      
+      if (file.exists(benchpath)) {
+        ycsb =
+          load_ycsb_throughput(benchpath) %>%
+          mutate(
+            size = as.factor(dataset$label),
+            model = as.factor(model$label),
+            threads = as.factor(threads)
+          )
+        
+        checks =
+          load_checkpoint_marks(checkpath, first(ycsb$ts), last(ycsb$ts)) %>%
+          mutate(
+            size = as.factor(dataset$label),
+            model = as.factor(model$label),
+            threads = as.factor(threads)
+          )
+        
+        benchmarks = bind_rows(benchmarks, ycsb)
+        checkpoints = bind_rows(checkpoints, checks)
+      }
+    }
+  }
+}
+
+# checkpoints %>%
+#   filter(event == "Checkpoint start") %>%
+#   group_by(across(all_of(c(
+#     "size",
+#     "threads",
+#     "model"
+#   )))) %>%
+#   summarise(n = n())
+
+# ggplot(benchmarks) +
+#   geom_violin(aes(model, throughput, fill = model)) +
+#   facet_grid(size ~ threads, labeller = labeller(
+#     threads = function (n) {
+#       ifelse(n == 1, "1 thread", paste(n, "threads"))
+#     }
+#   )) +
+#   scale_x_discrete(labels = NULL, breaks = NULL) +
+#   labs(title = "Thoughput by data set and number of threads",
+#        x = NULL,
+#        y = "Throughput (rps)",
+#        fill = "Model")
+
+benchmarks %>%
+  group_by(size, threads, model) %>%
+  summarise(throughput = mean(throughput)) %>%
+  ggplot() +
+  geom_bar(aes(model, throughput, fill = model),
+           stat = "identity",
+           width = 0.7) +
+  facet_grid(size ~ threads, labeller = labeller(
+    threads = function (n) {
+      ifelse(n == 1, "1 client", paste(n, "clients"))
+    }
+  )) +
+  scale_x_discrete(labels = NULL, breaks = NULL) +
+  labs(title = "Thoughput by data set and number of threads",
+       x = NULL,
+       y = "Throughput (rps)",
+       fill = "Model")
+```
+
+## 2020-03-06 - Microbenchmarks das estruturas de dados utilizadas
+
+```{r experiment-2021-03-06-state-microbench, echo=FALSE, message=FALSE, warning=FALSE}
+raw = "
+   size    state       score       error
+   100M  TreeMap 1839965.612 1189038.587
+   100M  TrieMap 2760493.478   64591.277
+     1G  TreeMap  484690.679   10343.074
+     1G  TrieMap 1081895.548  189892.001
+     5G  TreeMap  352065.384  109470.738
+     5G  TrieMap  683722.914   14456.405
+"
+
+microbenchmarks = readr::read_delim(
+  raw,
+  delim = " ",
+  col_types = list(
+    readr::col_factor(),
+    readr::col_factor(),
+    readr::col_number(),
+    readr::col_number()
+  ),
+  trim_ws = T
+)
+
+ggplot(microbenchmarks, aes(size, score, fill = state)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_discrete(name = "Data structure") +
+  scale_y_continuous(labels = number_format(big.mark = "."),
+                     breaks = pretty_breaks(15)) +
+  labs(title = "Throughput by data structure and size",
+       x = "Size",
+       y = "Throughput (ops/sec)")
 ```
