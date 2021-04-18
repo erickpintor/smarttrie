@@ -130,9 +130,9 @@
   gather_facts: false
   any_errors_fatal: true
   vars:
-    - threads: 64
-    - operations: 20000000
+    - threads: 8
     - duration: 3600
+    - records: 1500000
   tasks:
     - name: ensure logs folder
       file:
@@ -146,7 +146,7 @@
     - name: load data
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -load -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload 2>&1 | tee logs/load.log"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -load -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p recordcount={{ records }} 2>&1 | tee logs/load.log"
       async: 18000 # 5h
       poll: 10
       when: not ansible_check_mode
@@ -156,7 +156,7 @@
     - name: warmup run
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount=1000000 2>&1 | tee logs/warmup.log"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p recordcount={{ records }} -p operationcount=1000000 2>&1 | tee logs/warmup.log"
       async: 18000 # 5h
       poll: 10
       when: not ansible_check_mode
@@ -166,7 +166,7 @@
     - name: benchmark run
       shell:
         chdir: "{{ experiment_path }}"
-        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p operationcount={{ operations }} -p maxexecutiontime={{ duration }} 2>&1 | tee logs/benchmark.log"
+        cmd: "{{ run_cmd }} -Xms2G -Xmx4G site.ycsb.Client -t -s -db smarttrie.app.client.Client -threads {{ threads }} -P config/workload -p recordcount={{ records }} -p maxexecutiontime={{ duration }} 2>&1 | tee logs/benchmark.log"
       async: 18000 # 5h
       poll: 10
       when: not ansible_check_mode
