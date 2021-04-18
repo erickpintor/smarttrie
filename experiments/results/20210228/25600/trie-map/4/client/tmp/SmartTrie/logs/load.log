@@ -1,0 +1,65 @@
+Command line: -load -s -db smarttrie.app.client.Client -threads 8 -P config/workload -p recordcount=25600
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2021-03-04 13:17:58:635 0 sec: 0 operations; est completion in 0 second 
+2021-03-04 13:17:59:521 1 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2021-03-04 13:18:00.050 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.049 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.050 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.050 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.055 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.064 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.064 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.065 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-04 13:18:00.090 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.090 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.091 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.091 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.093 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.090 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.090 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00.093 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-04 13:18:00:521 2 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2021-03-04 13:18:01:521 3 sec: 1126 operations; 1126 current ops/sec; est completion in 1 minute [INSERT: Count=1136, Max=2030591, Min=2310, Avg=20655.3, 90=10223, 99=21903, 99.9=2030591, 99.99=2030591] 
+2021-03-04 13:18:02:521 4 sec: 3625 operations; 2499 current ops/sec; est completion in 25 seconds [INSERT: Count=2492, Max=37599, Min=1114, Avg=3125.95, 90=4359, 99=9975, 99.9=36255, 99.99=37599] 
+2021-03-04 13:18:03:522 5 sec: 6714 operations; 3089 current ops/sec; est completion in 15 seconds [INSERT: Count=3090, Max=15967, Min=1112, Avg=2552.17, 90=3347, 99=6367, 99.9=14519, 99.99=15967] 
+2021-03-04 13:18:04:521 6 sec: 9914 operations; 3200 current ops/sec; est completion in 10 seconds [INSERT: Count=3196, Max=38751, Min=1038, Avg=2449.62, 90=3023, 99=5323, 99.9=38143, 99.99=38751] 
+2021-03-04 13:18:05:521 7 sec: 13234 operations; 3320 current ops/sec; est completion in 7 second [INSERT: Count=3320, Max=45119, Min=1090, Avg=2368.81, 90=2833, 99=5867, 99.9=42911, 99.99=45119] 
+2021-03-04 13:18:06:521 8 sec: 17073 operations; 3839 current ops/sec; est completion in 4 second [INSERT: Count=3839, Max=11711, Min=869, Avg=2065.51, 90=2631, 99=4643, 99.9=7419, 99.99=11711] 
+2021-03-04 13:18:07:521 9 sec: 21109 operations; 4036 current ops/sec; est completion in 2 second [INSERT: Count=4038, Max=27743, Min=811, Avg=1951.11, 90=2377, 99=5363, 99.9=25423, 99.99=27743] 
+2021-03-04 13:18:08:521 10 sec: 25358 operations; 4249 current ops/sec; est completion in 1 second [CLEANUP: Count=2, Max=6, Min=5, Avg=5.5, 90=6, 99=6, 99.9=6, 99.99=6] [INSERT: Count=4254, Max=28559, Min=743, Avg=1846.58, 90=2237, 99=5687, 99.9=27455, 99.99=28559] 
+2021-03-04 13:18:08:617 10 sec: 25600 operations; 2547.37 current ops/sec; [CLEANUP: Count=6, Max=5, Min=3, Avg=4.17, 90=5, 99=5, 99.9=5, 99.99=5] [INSERT: Count=235, Max=1950, Min=630, Avg=1013.97, 90=1445, 99=1764, 99.9=1950, 99.99=1950] 
+[OVERALL], RunTime(ms), 10095
+[OVERALL], Throughput(ops/sec), 2535.9088657751363
+[TOTAL_GCS_G1_Young_Generation], Count, 5
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 150
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 1.4858841010401187
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 5
+[TOTAL_GC_TIME], Time(ms), 150
+[TOTAL_GC_TIME_%], Time(%), 1.4858841010401187
+[CLEANUP], Operations, 8
+[CLEANUP], AverageLatency(us), 4.5
+[CLEANUP], MinLatency(us), 3
+[CLEANUP], MaxLatency(us), 6
+[CLEANUP], 95thPercentileLatency(us), 6
+[CLEANUP], 99thPercentileLatency(us), 6
+[INSERT], Operations, 25600
+[INSERT], AverageLatency(us), 3075.6084765625
+[INSERT], MinLatency(us), 630
+[INSERT], MaxLatency(us), 2030591
+[INSERT], 95thPercentileLatency(us), 4735
+[INSERT], 99thPercentileLatency(us), 9175
+[INSERT], Return=OK, 25600

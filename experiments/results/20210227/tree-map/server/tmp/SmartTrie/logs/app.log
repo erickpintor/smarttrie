@@ -1,0 +1,122 @@
+2021-02-27 17:39:42.488 [main] INFO  smarttrie.app.server.Server - No previews checkpoints to restore
+2021-02-27 17:39:42.492 [main] INFO  smarttrie.app.server.Server - Replica state has been restored with last id CID(-1)
+2021-02-27 17:39:42.531 [main] INFO  b.r.ServerViewController - Creating current view from configuration file
+2021-02-27 17:39:43.112 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2021-02-27 17:39:43.112 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2021-02-27 17:39:43.112 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2021-02-27 17:39:43.112 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2021-02-27 17:39:43.112 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2021-02-27 17:39:43.112 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2021-02-27 17:39:43.113 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.41
+2021-02-27 17:39:43.113 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.41:11000),
+2021-02-27 17:39:43.177 [Server CS] INFO  s.a.s.Server$InternalStateManager - Replica state is up to date
+2021-02-27 17:39:43.178 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Retrieving State
+2021-02-27 17:39:43.179 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Ready to process operations
+2021-02-27 17:40:06.349 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.349 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.351 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.354 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.355 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.356 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.356 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:40:06.356 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:31.667 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 2
+2021-02-27 17:43:31.667 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=7
+2021-02-27 17:43:31.668 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2021-02-27 17:43:31.668 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=6
+2021-02-27 17:43:31.668 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2021-02-27 17:43:31.668 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=5
+2021-02-27 17:43:31.668 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 5
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=4
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 6
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=3
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 4
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=2
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 7
+2021-02-27 17:43:31.669 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2021-02-27 17:43:31.671 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 3
+2021-02-27 17:43:31.671 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2021-02-27 17:43:47.845 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.845 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.846 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.848 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.848 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.852 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.853 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:43:47.853 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:45:35.538 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(1000000)
+2021-02-27 17:46:23.750 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 17:46:23.750 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 17:46:54.042 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 5
+2021-02-27 17:46:54.042 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=7
+2021-02-27 17:46:54.043 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 3
+2021-02-27 17:46:54.043 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=6
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 2
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=5
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 6
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=4
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=3
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2021-02-27 17:46:54.044 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=2
+2021-02-27 17:46:54.045 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 4
+2021-02-27 17:46:54.045 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2021-02-27 17:46:54.046 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 7
+2021-02-27 17:46:54.047 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2021-02-27 17:47:15.967 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.967 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.967 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.968 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.968 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.968 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.968 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:47:15.968 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-02-27 17:51:22.592 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(2000000)
+2021-02-27 17:52:09.258 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 17:52:09.258 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 46s
+2021-02-27 17:56:46.000 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(3000000)
+2021-02-27 17:57:35.221 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 17:57:35.229 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 49s
+2021-02-27 18:02:11.329 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(4000000)
+2021-02-27 18:02:59.948 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:02:59.949 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:07:34.208 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(5000000)
+2021-02-27 18:08:23.051 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:08:23.051 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:12:56.270 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(6000000)
+2021-02-27 18:13:45.074 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:13:45.074 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:18:19.743 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(7000000)
+2021-02-27 18:19:08.111 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:19:08.112 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:23:44.472 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(8000000)
+2021-02-27 18:24:32.725 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:24:32.725 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:29:07.260 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(9000000)
+2021-02-27 18:29:55.738 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:29:55.738 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:34:27.250 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(10000000)
+2021-02-27 18:35:15.571 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:35:15.571 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:39:49.563 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(11000000)
+2021-02-27 18:40:37.744 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:40:37.745 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:45:12.540 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Starting replica checkpoint at CID(12000000)
+2021-02-27 18:46:01.166 [Delivery Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5903MB
+2021-02-27 18:46:01.166 [Delivery Thread] INFO  s.a.server.CheckpointController$Sync - Checkpoint created after 48s
+2021-02-27 18:47:15.114 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2021-02-27 18:47:15.114 [nioEventLoopGroup-3-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=7
+2021-02-27 18:47:15.114 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 5
+2021-02-27 18:47:15.114 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=6
+2021-02-27 18:47:15.114 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 4
+2021-02-27 18:47:15.115 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=5
+2021-02-27 18:47:15.116 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2021-02-27 18:47:15.116 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=4
+2021-02-27 18:47:15.116 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 7
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=3
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 3
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=2
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 6
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 2
+2021-02-27 18:47:15.117 [nioEventLoopGroup-3-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0

@@ -1,0 +1,47 @@
+2021-03-02 14:37:55.393 [main] INFO  smarttrie.app.server.Server - No previews checkpoints to restore
+2021-03-02 14:37:55.398 [main] INFO  smarttrie.app.server.Server - Replica state has been restored with last id CID(-1)
+2021-03-02 14:37:55.493 [main] INFO  b.r.ServerViewController - Using view stored on disk
+2021-03-02 14:37:56.107 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - ID = 0
+2021-03-02 14:37:56.107 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - N = 1
+2021-03-02 14:37:56.107 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - F = 1
+2021-03-02 14:37:56.107 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Port = 11000
+2021-03-02 14:37:56.107 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - requestTimeout = 2000
+2021-03-02 14:37:56.107 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - maxBatch = 1024
+2021-03-02 14:37:56.108 [main] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Binded replica to IP address 192.168.3.41
+2021-03-02 14:37:56.108 [main] INFO  bftsmart.tom.ServiceReplica - In current view: ID:0; F:1; Processes:0(/192.168.3.41:11000),
+2021-03-02 14:37:56.199 [Server CS] INFO  s.a.s.Server$InternalStateManager - Replica state is up to date
+2021-03-02 14:37:56.200 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Retrieving State
+2021-03-02 14:37:56.201 [Delivery Thread] INFO  bftsmart.tom.core.DeliveryThread - Ready to process operations
+2021-03-02 14:38:11.605 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-03-02 14:38:11.605 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-03-02 14:43:01.539 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Starting replica checkpoint at CID(1000000)
+2021-03-02 14:43:31.649 [Checkpoint-Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 3964MB
+2021-03-02 14:43:31.649 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Checkpoint created after 30s
+2021-03-02 14:44:27.854 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2021-03-02 14:44:27.855 [nioEventLoopGroup-3-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2021-03-02 14:44:27.856 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2021-03-02 14:44:27.856 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2021-03-02 14:44:40.918 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-03-02 14:44:40.921 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-03-02 14:48:30.595 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Starting replica checkpoint at CID(2000000)
+2021-03-02 14:49:13.223 [Checkpoint-Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5158MB
+2021-03-02 14:49:13.223 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Checkpoint created after 42s
+2021-03-02 14:50:12.535 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2021-03-02 14:50:12.536 [nioEventLoopGroup-3-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2021-03-02 14:50:12.536 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2021-03-02 14:50:12.536 [nioEventLoopGroup-3-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2021-03-02 14:50:35.564 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-03-02 14:50:35.564 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Session Created, active clients=0
+2021-03-02 14:54:24.915 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Starting replica checkpoint at CID(3000000)
+2021-03-02 14:55:03.725 [Checkpoint-Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5158MB
+2021-03-02 14:55:03.725 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Checkpoint created after 38s
+2021-03-02 14:59:49.551 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Starting replica checkpoint at CID(4000000)
+2021-03-02 15:00:31.624 [Checkpoint-Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5158MB
+2021-03-02 15:00:31.624 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Checkpoint created after 42s
+2021-03-02 15:05:12.263 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Starting replica checkpoint at CID(5000000)
+2021-03-02 15:05:34.872 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 0
+2021-03-02 15:05:34.873 [nioEventLoopGroup-3-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=1
+2021-03-02 15:05:34.873 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Removing client channel with ID= 1
+2021-03-02 15:05:34.873 [nioEventLoopGroup-3-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemServerSide - Active clients=0
+2021-03-02 15:05:54.656 [Checkpoint-Thread] INFO  s.app.server.Checkpoint$Writer - Saved a checkpoint of 5158MB
+2021-03-02 15:05:54.657 [Checkpoint-Thread] INFO  s.a.s.CheckpointController$Async - Checkpoint created after 42s

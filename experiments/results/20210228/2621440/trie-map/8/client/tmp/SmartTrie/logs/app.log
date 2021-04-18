@@ -1,0 +1,936 @@
+2021-03-03 12:06:08.185 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.185 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.184 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.189 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.185 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.186 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.185 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.194 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:06:08.236 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.236 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.237 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.238 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.241 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.242 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.242 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:06:08.250 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:05.841 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.841 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.842 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.841 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.842 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.842 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=302462, Replies received: 0
+2021-03-03 12:12:05.842 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=302552, Replies received: 0
+2021-03-03 12:12:05.842 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=305742, Replies received: 0
+2021-03-03 12:12:05.842 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=305154, Replies received: 0
+2021-03-03 12:12:05.842 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.842 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=304516, Replies received: 0
+2021-03-03 12:12:05.842 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.843 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=305403, Replies received: 0
+2021-03-03 12:12:05.843 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:12:05.843 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=303084, Replies received: 0
+2021-03-03 12:12:05.842 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=300803, Replies received: 0
+2021-03-03 12:12:05.857 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:05.857 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:12:24.261 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.263 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.263 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.260 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.264 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.266 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.261 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.267 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:12:24.306 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.306 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.307 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.307 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.310 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.309 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.311 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:12:24.312 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.447 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.451 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.453 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.455 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.458 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.459 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.461 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.467 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:15:35.511 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.511 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.513 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.515 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.519 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.520 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.522 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:15:35.520 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:19:46.617 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.618 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=140461, Replies received: 0
+2021-03-03 12:19:46.618 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.618 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=141163, Replies received: 0
+2021-03-03 12:19:46.618 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.618 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=140620, Replies received: 0
+2021-03-03 12:19:46.618 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.618 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=142812, Replies received: 0
+2021-03-03 12:19:46.617 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.619 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=141606, Replies received: 0
+2021-03-03 12:19:46.619 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.620 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=141437, Replies received: 0
+2021-03-03 12:19:46.620 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.620 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=138729, Replies received: 0
+2021-03-03 12:19:46.620 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:19:46.621 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=142104, Replies received: 0
+2021-03-03 12:19:46.632 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.632 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.632 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.632 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.633 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.633 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.632 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:19:46.632 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:27:14.751 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.751 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.751 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.751 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=417247, Replies received: 0
+2021-03-03 12:27:14.751 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=413811, Replies received: 0
+2021-03-03 12:27:14.752 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.752 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=412475, Replies received: 0
+2021-03-03 12:27:14.752 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.752 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=421129, Replies received: 0
+2021-03-03 12:27:14.752 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.752 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.752 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.751 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.753 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=417521, Replies received: 0
+2021-03-03 12:27:14.753 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.754 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.754 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 12:27:14.754 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=409102, Replies received: 0
+2021-03-03 12:27:14.751 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=418450, Replies received: 0
+2021-03-03 12:27:14.754 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.753 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=415919, Replies received: 0
+2021-03-03 12:27:14.755 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.755 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:27:14.755 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 12:32:53.184 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.182 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.188 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.185 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.193 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.194 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.194 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.196 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:32:53.242 [Thread-7] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.243 [Thread-3] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.244 [Thread-4] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.245 [Thread-5] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.246 [Thread-6] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.249 [Thread-8] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.258 [Thread-2] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.258 [Thread-9] ERROR b.c.c.n.NettyClientServerCommunicationSystemClientSide - Impossible to connect to 0
+2021-03-03 12:32:53.265 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.265 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.266 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.266 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.268 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.268 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.268 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:32:53.270 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.RuntimeException: Server not connected
+	at bftsmart.communication.client.netty.NettyClientServerCommunicationSystemClientSide.send(NettyClientServerCommunicationSystemClientSide.java:403)
+	at bftsmart.tom.core.TOMSender.TOMulticast(TOMSender.java:124)
+	at bftsmart.tom.ServiceProxy.invoke(ServiceProxy.java:255)
+	at bftsmart.tom.ServiceProxy.invokeOrdered(ServiceProxy.java:180)
+	at smarttrie.app.client.Client.execute(Client.scala:106)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 12:33:16.555 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.555 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.552 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.559 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.560 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.560 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.563 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.566 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:33:16.621 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.622 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.622 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.621 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.626 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.627 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.627 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:33:16.629 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.130 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.129 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.128 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.127 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.132 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.133 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.137 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.144 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 12:36:00.187 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.189 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.190 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.190 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.185 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.191 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.195 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 12:36:00.197 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.192 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.195 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.189 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.192 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.198 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.200 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.201 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.204 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:22:31.254 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.255 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.255 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.254 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.256 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.254 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.257 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:22:31.258 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.025 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.023 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.026 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.026 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.023 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.027 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.035 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.040 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:28:57.083 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.084 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.082 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.085 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.086 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.082 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.089 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:28:57.090 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.643 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.656 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.643 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.658 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.658 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.654 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.649 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.663 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:32:08.703 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.703 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.704 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.703 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.705 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.708 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.707 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:32:08.711 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.596 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.600 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.602 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.612 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.612 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.589 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.589 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.614 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 13:53:58.657 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.657 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.659 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.659 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.661 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.664 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.665 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:53:58.671 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 13:59:57.058 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.058 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=305068, Replies received: 0
+2021-03-03 13:59:57.058 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.058 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.058 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=301273, Replies received: 0
+2021-03-03 13:59:57.058 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=303670, Replies received: 0
+2021-03-03 13:59:57.058 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.059 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=303600, Replies received: 0
+2021-03-03 13:59:57.059 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.059 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=305023, Replies received: 0
+2021-03-03 13:59:57.058 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.059 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=302389, Replies received: 0
+2021-03-03 13:59:57.058 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.060 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=304594, Replies received: 0
+2021-03-03 13:59:57.058 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 13:59:57.061 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=304317, Replies received: 0
+2021-03-03 13:59:57.075 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.075 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.075 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.075 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.075 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.075 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.080 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 13:59:57.080 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at smarttrie.app.client.Client.insert(Client.scala:44)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:03:40.829 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.828 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.826 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.830 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.835 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.836 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.836 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.842 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:03:40.882 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.882 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.883 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.885 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.886 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.888 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.892 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:03:40.893 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.462 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.459 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.460 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.459 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.460 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.463 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.471 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.472 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:06:39.524 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.524 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.526 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.524 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.527 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.528 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.524 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:06:39.532 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:10:55.439 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.440 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=143643, Replies received: 0
+2021-03-03 14:10:55.440 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.439 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.440 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=142699, Replies received: 0
+2021-03-03 14:10:55.440 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=138774, Replies received: 0
+2021-03-03 14:10:55.439 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.440 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=143263, Replies received: 0
+2021-03-03 14:10:55.440 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.441 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=142251, Replies received: 0
+2021-03-03 14:10:55.439 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.441 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=139104, Replies received: 0
+2021-03-03 14:10:55.441 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.441 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=141859, Replies received: 0
+2021-03-03 14:10:55.442 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:10:55.442 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=144312, Replies received: 0
+2021-03-03 14:10:55.455 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.455 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.455 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.456 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.457 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.457 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.459 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:10:55.460 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+	at java.base/java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:108)
+	at smarttrie.io.Codec$.reader(Codec.scala:206)
+	at smarttrie.io.Codec$.decode(Codec.scala:203)
+	at smarttrie.app.client.Client.execute(Client.scala:107)
+	at smarttrie.app.client.Client.update(Client.scala:53)
+	at site.ycsb.DBWrapper.update(DBWrapper.java:198)
+	at site.ycsb.workloads.CoreWorkload.doTransactionUpdate(CoreWorkload.java:814)
+	at site.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:647)
+	at site.ycsb.ClientThread.run(ClientThread.java:122)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-03 14:18:29.138 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.138 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.138 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=421984, Replies received: 0
+2021-03-03 14:18:29.138 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=423632, Replies received: 0
+2021-03-03 14:18:29.138 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.138 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=425643, Replies received: 0
+2021-03-03 14:18:29.139 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.139 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.139 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=423989, Replies received: 0
+2021-03-03 14:18:29.139 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.139 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=425462, Replies received: 0
+2021-03-03 14:18:29.139 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.139 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.138 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.139 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=408634, Replies received: 0
+2021-03-03 14:18:29.139 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.139 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=411368, Replies received: 0
+2021-03-03 14:18:29.140 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.138 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:18:29.140 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=418350, Replies received: 0
+2021-03-03 14:18:29.140 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.140 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.139 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:18:29.142 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.139 [Thread-4] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.140 [Thread-4] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=425463, Replies received: 0
+2021-03-03 14:19:09.140 [Thread-8] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.140 [Thread-8] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=411369, Replies received: 0
+2021-03-03 14:19:09.140 [Thread-2] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.140 [Thread-2] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=421985, Replies received: 0
+2021-03-03 14:19:09.141 [Thread-7] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.141 [Thread-7] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=418351, Replies received: 0
+2021-03-03 14:19:09.141 [Thread-6] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.141 [Thread-6] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=423990, Replies received: 0
+2021-03-03 14:19:09.142 [Thread-4] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.142 [Thread-6] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.142 [Thread-5] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.142 [Thread-5] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=408635, Replies received: 0
+2021-03-03 14:19:09.142 [Thread-5] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.142 [Thread-3] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.143 [Thread-3] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=423633, Replies received: 0
+2021-03-03 14:19:09.143 [Thread-3] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.143 [Thread-7] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.143 [Thread-2] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.143 [Thread-9] INFO  bftsmart.tom.ServiceProxy - ###################TIMEOUT#######################
+2021-03-03 14:19:09.143 [Thread-9] INFO  bftsmart.tom.ServiceProxy - Reply timeout for reqId=425644, Replies received: 0
+2021-03-03 14:19:09.144 [Thread-9] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:19:09.144 [Thread-8] ERROR smarttrie.app.client.Client$ - Request failed
+java.lang.NullPointerException: null
+2021-03-03 14:24:53.110 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.110 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.111 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.110 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.113 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.120 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.122 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.124 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:24:53.158 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.158 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.159 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.160 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.160 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.160 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.162 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:24:53.164 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.222 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.222 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.224 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.229 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.230 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.232 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.233 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.233 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:32:05.279 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.279 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.281 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.281 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.280 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.283 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.284 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:32:05.297 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.514 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.516 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.519 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.520 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.528 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.528 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.529 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.529 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:35:40.577 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.578 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.577 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.579 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.580 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.581 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.583 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:35:40.584 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.554 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.558 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.556 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.556 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.556 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.555 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.555 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.554 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:38:01.597 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.597 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.597 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.598 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.597 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.600 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.597 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:38:01.603 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.777 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.776 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.784 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.783 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.782 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.776 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.790 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.793 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:45:12.836 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.836 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.837 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.837 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.839 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.840 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.841 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:45:12.843 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.835 [Thread-7] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.834 [Thread-8] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.835 [Thread-6] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.838 [Thread-4] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.833 [Thread-2] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.840 [Thread-5] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.844 [Thread-9] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.846 [Thread-3] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Connecting to replica 0 at /192.168.3.41:11000
+2021-03-03 14:52:25.891 [nioEventLoopGroup-6-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.891 [nioEventLoopGroup-2-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.891 [nioEventLoopGroup-4-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.892 [nioEventLoopGroup-9-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.893 [nioEventLoopGroup-8-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.894 [nioEventLoopGroup-7-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.894 [nioEventLoopGroup-3-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
+2021-03-03 14:52:25.897 [nioEventLoopGroup-5-1] INFO  b.c.c.n.NettyClientServerCommunicationSystemClientSide - Channel active
